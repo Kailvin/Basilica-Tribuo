@@ -1,0 +1,61 @@
+decisions = {
+    return_cardinal_lands = {
+	potential = {
+        has_landed_title = k_papal_state
+	}
+	allow = {
+        any_realm_title = {
+            dejure_liege_title = {
+                NOT = {
+                    kingdom = { title = k_italy }
+                }
+            }
+            holder_scope = {
+                NOT = { 
+                    OR = {
+                        has_landed_title = d_card1
+                        has_landed_title = d_card2
+                    }
+                }
+            }
+        }
+	}
+	effect = {
+        random_vassal = {
+            limit = {
+                dejure_liege_title = {
+                    NOT = {
+                        kingdom = { title = k_italy }
+                    }
+                }
+                    NOT = { 
+                        OR = {
+                            has_landed_title = d_card1
+                            has_landed_title = d_card2
+                        }
+                    }
+            }
+            set_character_flag = cardinal_giveaway
+            dejure_liege_title = {
+                holder_scope = {
+                    ROOT = {
+                        random_vassal = {
+                            limit = {
+                                has_character_flag = cardinal_giveaway
+                            }
+                            set_defacto_liege = PREVPREV
+                            clr_character_flag = cardinal_giveaway
+                        }
+                    }
+            }
+            
+        }
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 100
+	}		
+    }
+}

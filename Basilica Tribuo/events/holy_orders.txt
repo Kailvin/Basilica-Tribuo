@@ -1,0 +1,1377 @@
+character_event = {
+	id = 666600
+	title = "EVTNAME39101"
+	desc = "EVTDESC39101"
+	picture = "GFX_evt_crusaders"
+	border = "GFX_event_narrative_frame_religion"
+	
+	 
+	 
+	
+	trigger = {
+        religion_authority = 0.80
+		NOT = { is_title_active = d_order_of_the_chase }
+		religion = cathar
+		controls_religion = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = cathar
+			controls_religion = yes
+		}
+		activate_title = { title = d_order_of_the_chase status = yes }
+        religion_authority = -0.1
+	}
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = cathar
+			controls_religion = no
+		}
+	}
+	option = {
+		name = "EVTOPTB39101"
+		trigger = {
+			NOT = { religion_group = christian }
+		}
+	}
+	option = {
+		name = "EVTOPTC39100"
+		trigger = {
+			religion_group = christian
+			NOT = { religion = cathar }
+		}
+	}
+}
+character_event = {
+	id = 666601
+	title = "EVTNAME39101"
+	desc = "EVTDESC39101"
+	picture = "GFX_evt_crusaders"
+	border = "GFX_event_narrative_frame_religion"
+	
+	 
+	 
+	
+	trigger = {
+        religion_authority = 0.85
+		NOT = { is_title_active = d_knights_templar_cathar }
+		religion = cathar
+		controls_religion = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = cathar
+			controls_religion = yes
+		}
+		activate_title = { title = d_knights_templar_cathar status = yes }
+        religion_authority = -0.15
+	}
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = cathar
+			controls_religion = no
+		}
+	}
+	option = {
+		name = "EVTOPTB39101"
+		trigger = {
+			NOT = { religion_group = christian }
+		}
+	}
+	option = {
+		name = "EVTOPTC39100"
+		trigger = {
+			religion_group = christian
+			NOT = { religion = cathar }
+		}
+	}
+}
+character_event = {
+	id = 666602
+	title = "EVTNAME39101"
+	desc = "EVTDESC39101"
+	picture = "GFX_evt_crusaders"
+	border = "GFX_event_narrative_frame_religion"
+	
+	 
+	 
+	
+	trigger = {
+        religion_authority = 0.90
+		NOT = { is_title_active = d_albigensian_order }
+		religion = cathar
+		controls_religion = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = cathar
+			controls_religion = yes
+		}
+		activate_title = { title = d_albigensian_order status = yes }
+        religion_authority = -0.2
+	}
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = cathar
+			controls_religion = no
+		}
+	}
+	option = {
+		name = "EVTOPTB39101"
+		trigger = {
+			NOT = { religion_group = christian }
+		}
+	}
+	option = {
+		name = "EVTOPTC39100"
+		trigger = {
+			religion_group = christian
+			NOT = { religion = cathar }
+		}
+	}
+}
+character_event = {
+	id = 666603
+	title = "EVTNAME39101"
+	desc = "EVTDESC39101"
+	picture = "GFX_evt_crusaders"
+	border = "GFX_event_narrative_frame_religion"
+	
+	 
+	 
+	
+	trigger = {
+        religion_authority = 0.90
+		NOT = { is_title_active = d_knights_of_the_holy_book }
+		religion = lollard
+		controls_religion = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = lollard
+			controls_religion = yes
+		}
+		activate_title = { title = d_knights_of_the_holy_book status = yes }
+        religion_authority = -0.2
+	}
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = lollard
+			controls_religion = no
+		}
+	}
+	option = {
+		name = "EVTOPTB39101"
+		trigger = {
+			NOT = { religion_group = christian }
+		}
+	}
+	option = {
+		name = "EVTOPTC39100"
+		trigger = {
+			religion_group = christian
+			NOT = { religion = lollard }
+		}
+	}
+}
+character_event = {
+	id = 666604
+	title = "EVTNAME39101"
+	desc = "EVTDESC39101"
+	picture = "GFX_evt_crusaders"
+	border = "GFX_event_narrative_frame_religion"
+	
+	 
+	 
+	
+	trigger = {
+        religion_authority = 0.85
+		NOT = { is_title_active = d_templar_priesthood }
+		religion = lollard
+		controls_religion = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = lollard
+			controls_religion = yes
+		}
+		activate_title = { title = d_templar_priesthood status = yes }
+        religion_authority = -0.15
+	}
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = lollard
+			controls_religion = no
+		}
+	}
+	option = {
+		name = "EVTOPTB39101"
+		trigger = {
+			NOT = { religion_group = christian }
+		}
+	}
+	option = {
+		name = "EVTOPTC39100"
+		trigger = {
+			religion_group = christian
+			NOT = { religion = lollard }
+		}
+	}
+}
+character_event = {
+	id = 666605
+	title = "EVTNAME39101"
+	desc = "EVTDESC39101"
+	picture = "GFX_evt_crusaders"
+	border = "GFX_event_narrative_frame_religion"
+	
+	 
+	 
+	
+	trigger = {
+        religion_authority = 0.8
+		NOT = { is_title_active = d_order_of_the_lay_priesthood }
+		religion = lollard
+		controls_religion = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = lollard
+			controls_religion = yes
+		}
+		activate_title = { title = d_order_of_the_lay_priesthood = yes }
+        religion_authority = -0.1
+	}
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = lollard
+			controls_religion = no
+		}
+	}
+	option = {
+		name = "EVTOPTB39101"
+		trigger = {
+			NOT = { religion_group = christian }
+		}
+	}
+	option = {
+		name = "EVTOPTC39100"
+		trigger = {
+			religion_group = christian
+			NOT = { religion = lollard }
+		}
+	}
+}
+character_event = {
+	id = 666606
+	title = "EVTNAME39101"
+	desc = "EVTDESC39101"
+	picture = "GFX_evt_crusaders"
+	border = "GFX_event_narrative_frame_religion"
+	
+	 
+	 
+	
+	trigger = {
+        religion_authority = 0.8
+		NOT = { is_title_active = d_order_of_the_impovershed }
+		religion = waldensian
+		controls_religion = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = waldensian
+			controls_religion = yes
+		}
+		activate_title = { title = d_order_of_the_impovershed = yes }
+        religion_authority = -0.1
+	}
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = waldensian
+			controls_religion = no
+		}
+	}
+	option = {
+		name = "EVTOPTB39101"
+		trigger = {
+			NOT = { religion_group = christian }
+		}
+	}
+	option = {
+		name = "EVTOPTC39100"
+		trigger = {
+			religion_group = christian
+			NOT = { religion = waldensian }
+		}
+	}
+}
+character_event = {
+	id = 666607
+	title = "EVTNAME39101"
+	desc = "EVTDESC39101"
+	picture = "GFX_evt_crusaders"
+	border = "GFX_event_narrative_frame_religion"
+	
+	 
+	 
+	
+	trigger = {
+        religion_authority = 0.9
+		NOT = { is_title_active = d_trinity_templars_order }
+		religion = waldensian
+		controls_religion = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = waldensian
+			controls_religion = yes
+		}
+		activate_title = { title = d_trinity_templars_order = yes }
+        religion_authority = -0.2
+	}
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = waldensian
+			controls_religion = no
+		}
+	}
+	option = {
+		name = "EVTOPTB39101"
+		trigger = {
+			NOT = { religion_group = christian }
+		}
+	}
+	option = {
+		name = "EVTOPTC39100"
+		trigger = {
+			religion_group = christian
+			NOT = { religion = waldensian }
+		}
+	}
+}
+character_event = {
+	id = 666608
+	title = "EVTNAME39101"
+	desc = "EVTDESC39101"
+	picture = "GFX_evt_crusaders"
+	border = "GFX_event_narrative_frame_religion"
+	
+	 
+	 
+	
+	trigger = {
+        religion_authority = 0.85
+		NOT = { is_title_active = d_templar_of_saint_peter }
+		religion = waldensian
+		controls_religion = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = waldensian
+			controls_religion = yes
+		}
+		activate_title = { title = d_templar_of_saint_peter = yes }
+        religion_authority = -0.15
+	}
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = waldensian
+			controls_religion = no
+		}
+	}
+	option = {
+		name = "EVTOPTB39101"
+		trigger = {
+			NOT = { religion_group = christian }
+		}
+	}
+	option = {
+		name = "EVTOPTC39100"
+		trigger = {
+			religion_group = christian
+			NOT = { religion = waldensian }
+		}
+	}
+}
+character_event = {
+	id = 666609
+	title = "EVTNAME39101"
+	desc = "EVTDESC39101"
+	picture = "GFX_evt_crusaders"
+	border = "GFX_event_narrative_frame_religion"
+	
+	 
+	 
+	
+	trigger = {
+        religion_authority = 0.9
+		NOT = { is_title_active = d_stigmata_templars }
+		religion = fraticelli
+		controls_religion = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = fraticelli
+			controls_religion = yes
+		}
+		activate_title = { title = d_stigmata_templars = yes }
+        religion_authority = -0.2
+	}
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = fraticelli
+			controls_religion = no
+		}
+	}
+	option = {
+		name = "EVTOPTB39101"
+		trigger = {
+			NOT = { religion_group = christian }
+		}
+	}
+	option = {
+		name = "EVTOPTC39100"
+		trigger = {
+			religion_group = christian
+			NOT = { religion = fraticelli }
+		}
+	}
+}
+character_event = {
+	id = 666610
+	title = "EVTNAME39101"
+	desc = "EVTDESC39101"
+	picture = "GFX_evt_crusaders"
+	border = "GFX_event_narrative_frame_religion"
+	
+	 
+	 
+	
+	trigger = {
+        religion_authority = 0.85
+		NOT = { is_title_active = d_templars_of_saint_francis }
+		religion = fraticelli
+		controls_religion = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = fraticelli
+			controls_religion = yes
+		}
+		activate_title = { title = d_templars_of_saint_francis = yes }
+        religion_authority = -0.15
+	}
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = fraticelli
+			controls_religion = no
+		}
+	}
+	option = {
+		name = "EVTOPTB39101"
+		trigger = {
+			NOT = { religion_group = christian }
+		}
+	}
+	option = {
+		name = "EVTOPTC39100"
+		trigger = {
+			religion_group = christian
+			NOT = { religion = fraticelli }
+		}
+	}
+}
+character_event = {
+	id = 6666011
+	title = "EVTNAME39101"
+	desc = "EVTDESC39101"
+	picture = "GFX_evt_crusaders"
+	border = "GFX_event_narrative_frame_religion"
+	
+	 
+	 
+	
+	trigger = {
+        religion_authority = 0.8
+		NOT = { is_title_active = d_order_of_friars_minor }
+		religion = fraticelli
+		controls_religion = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = fraticelli
+			controls_religion = yes
+		}
+		activate_title = { title = d_order_of_friars_minor = yes }
+        religion_authority = -0.1
+	}
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = fraticelli
+			controls_religion = no
+		}
+	}
+	option = {
+		name = "EVTOPTB39101"
+		trigger = {
+			NOT = { religion_group = christian }
+		}
+	}
+	option = {
+		name = "EVTOPTC39100"
+		trigger = {
+			religion_group = christian
+			NOT = { religion = fraticelli }
+		}
+	}
+}
+character_event = {
+	id = 6666012
+	title = "EVTNAME39101"
+	desc = "EVTDESC39101"
+	picture = "GFX_evt_crusaders"
+	border = "GFX_event_narrative_frame_religion"
+	
+	 
+	 
+	
+	trigger = {
+        religion_authority = 0.9
+		NOT = { is_title_active = d_order_of_the_cross }
+		religion = iconoclast
+		controls_religion = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = iconoclast
+			controls_religion = yes
+		}
+		activate_title = { title = d_order_of_the_cross = yes }
+        religion_authority = -0.15
+	}
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = iconoclast
+			controls_religion = no
+		}
+	}
+	option = {
+		name = "EVTOPTB39101"
+		trigger = {
+			NOT = { religion_group = christian }
+		}
+	}
+	option = {
+		name = "EVTOPTC39100"
+		trigger = {
+			religion_group = christian
+			NOT = { religion = iconoclast }
+		}
+	}
+}
+character_event = {
+	id = 6666013
+	title = "EVTNAME39101"
+	desc = "EVTDESC39101"
+	picture = "GFX_evt_crusaders"
+	border = "GFX_event_narrative_frame_religion"
+	
+	 
+	 
+	
+	trigger = {
+        religion_authority = 0.85
+		NOT = { is_title_active = d_eucharist_templars }
+		religion = iconoclast
+		controls_religion = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = iconoclast
+			controls_religion = yes
+		}
+		activate_title = { title = d_eucharist_templars = yes }
+        religion_authority = -0.15
+	}
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = iconoclast
+			controls_religion = no
+		}
+	}
+	option = {
+		name = "EVTOPTB39101"
+		trigger = {
+			NOT = { religion_group = christian }
+		}
+	}
+	option = {
+		name = "EVTOPTC39100"
+		trigger = {
+			religion_group = christian
+			NOT = { religion = iconoclast }
+		}
+	}
+}
+character_event = {
+	id = 6666014
+	title = "EVTNAME39101"
+	desc = "EVTDESC39101"
+	picture = "GFX_evt_crusaders"
+	border = "GFX_event_narrative_frame_religion"
+	
+	 
+	 
+	
+	trigger = {
+        religion_authority = 0.8
+		NOT = { is_title_active = d_iconodule_order }
+		religion = iconoclast
+		controls_religion = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = iconoclast
+			controls_religion = yes
+		}
+		activate_title = { title = d_iconodule_order = yes }
+        religion_authority = -0.1
+	}
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = iconoclast
+			controls_religion = no
+		}
+	}
+	option = {
+		name = "EVTOPTB39101"
+		trigger = {
+			NOT = { religion_group = christian }
+		}
+	}
+	option = {
+		name = "EVTOPTC39100"
+		trigger = {
+			religion_group = christian
+			NOT = { religion = iconoclast }
+		}
+	}
+}
+character_event = {
+	id = 6666015
+	title = "EVTNAME39101"
+	desc = "EVTDESC39101"
+	picture = "GFX_evt_crusaders"
+	border = "GFX_event_narrative_frame_religion"
+	
+	 
+	 
+	
+	trigger = {
+        religion_authority = 0.8
+		NOT = { is_title_active = d_order_of_the_lance }
+		religion = bogomilist
+		controls_religion = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = bogomilist
+			controls_religion = yes
+		}
+		activate_title = { title = d_order_of_the_lance = yes }
+        religion_authority = -0.1
+	}
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = bogomilist
+			controls_religion = no
+		}
+	}
+	option = {
+		name = "EVTOPTB39101"
+		trigger = {
+			NOT = { religion_group = christian }
+		}
+	}
+	option = {
+		name = "EVTOPTC39100"
+		trigger = {
+			religion_group = christian
+			NOT = { religion = bogomilist }
+		}
+	}
+}
+character_event = {
+	id = 6666016
+	title = "EVTNAME39101"
+	desc = "EVTDESC39101"
+	picture = "GFX_evt_crusaders"
+	border = "GFX_event_narrative_frame_religion"
+	
+	 
+	 
+	
+	trigger = {
+        religion_authority = 0.85
+		NOT = { is_title_active = d_peoples_hospitaler }
+		religion = bogomilist
+		controls_religion = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = bogomilist
+			controls_religion = yes
+		}
+		activate_title = { title = d_peoples_hospitaler = yes }
+        religion_authority = -0.15
+	}
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = bogomilist
+			controls_religion = no
+		}
+	}
+	option = {
+		name = "EVTOPTB39101"
+		trigger = {
+			NOT = { religion_group = christian }
+		}
+	}
+	option = {
+		name = "EVTOPTC39100"
+		trigger = {
+			religion_group = christian
+			NOT = { religion = bogomilist }
+		}
+	}
+}
+character_event = {
+	id = 6666017
+	title = "EVTNAME39101"
+	desc = "EVTDESC39101"
+	picture = "GFX_evt_crusaders"
+	border = "GFX_event_narrative_frame_religion"
+	
+	 
+	 
+	
+	trigger = {
+        religion_authority = 0.9
+		NOT = { is_title_active = d_peoples_templar }
+		religion = bogomilist
+		controls_religion = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = bogomilist
+			controls_religion = yes
+		}
+		activate_title = { title = d_peoples_templar = yes }
+        religion_authority = -0.9
+	}
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = bogomilist
+			controls_religion = no
+		}
+	}
+	option = {
+		name = "EVTOPTB39101"
+		trigger = {
+			NOT = { religion_group = christian }
+		}
+	}
+	option = {
+		name = "EVTOPTC39100"
+		trigger = {
+			religion_group = christian
+			NOT = { religion = bogomilist }
+		}
+	}
+}
+character_event = {
+	id = 6666018
+	title = "EVTNAME39101"
+	desc = "EVTDESC39101"
+	picture = "GFX_evt_crusaders"
+	border = "GFX_event_narrative_frame_religion"
+	
+	 
+	 
+	
+	trigger = {
+        religion_authority = 0.8
+		NOT = { is_title_active = d_order_of_united_nature }
+		religion = monophysite
+		controls_religion = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = monophysite
+			controls_religion = yes
+		}
+		activate_title = { title = d_order_of_united_nature = yes }
+        religion_authority = -0.1
+	}
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = monophysite
+			controls_religion = no
+		}
+	}
+	option = {
+		name = "EVTOPTB39101"
+		trigger = {
+			NOT = { religion_group = christian }
+		}
+	}
+	option = {
+		name = "EVTOPTC39100"
+		trigger = {
+			religion_group = christian
+			NOT = { religion = monophysite }
+		}
+	}
+}
+character_event = {
+	id = 6666019
+	title = "EVTNAME39101"
+	desc = "EVTDESC39101"
+	picture = "GFX_evt_crusaders"
+	border = "GFX_event_narrative_frame_religion"
+	
+	 
+	 
+	
+	trigger = {
+        religion_authority = 0.85
+		NOT = { is_title_active = d_knights_of_africa }
+		religion = monophysite
+		controls_religion = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = monophysite
+			controls_religion = yes
+		}
+		activate_title = { title = d_knights_of_africa = yes }
+        religion_authority = -0.15
+	}
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = monophysite
+			controls_religion = no
+		}
+	}
+	option = {
+		name = "EVTOPTB39101"
+		trigger = {
+			NOT = { religion_group = christian }
+		}
+	}
+	option = {
+		name = "EVTOPTC39100"
+		trigger = {
+			religion_group = christian
+			NOT = { religion = monophysite }
+		}
+	}
+}
+character_event = {
+	id = 6666020
+	title = "EVTNAME39101"
+	desc = "EVTDESC39101"
+	picture = "GFX_evt_crusaders"
+	border = "GFX_event_narrative_frame_religion"
+	
+	 
+	 
+	
+	trigger = {
+        religion_authority = 0.9
+		NOT = { is_title_active = d_coptic_templar }
+		religion = monophysite
+		controls_religion = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = monophysite
+			controls_religion = yes
+		}
+		activate_title = { title = d_coptic_templar = yes }
+        religion_authority = -0.2
+	}
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = monophysite
+			controls_religion = no
+		}
+	}
+	option = {
+		name = "EVTOPTB39101"
+		trigger = {
+			NOT = { religion_group = christian }
+		}
+	}
+	option = {
+		name = "EVTOPTC39100"
+		trigger = {
+			religion_group = christian
+			NOT = { religion = monophysite }
+		}
+	}
+}
+character_event = {
+	id = 6666021
+	title = "EVTNAME39101"
+	desc = "EVTDESC39101"
+	picture = "GFX_evt_crusaders"
+	border = "GFX_event_narrative_frame_religion"
+	
+	 
+	 
+	
+	trigger = {
+        religion_authority = 0.8
+		NOT = { is_title_active = d_hospitaler_of_the_east }
+		religion = nestorian
+		controls_religion = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = nestorian
+			controls_religion = yes
+		}
+		activate_title = { title = d_hospitaler_of_the_east = yes }
+        religion_authority = -0.1
+	}
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = nestorian
+			controls_religion = no
+		}
+	}
+	option = {
+		name = "EVTOPTB39101"
+		trigger = {
+			NOT = { religion_group = christian }
+		}
+	}
+	option = {
+		name = "EVTOPTC39100"
+		trigger = {
+			religion_group = christian
+			NOT = { religion = nestorian }
+		}
+	}
+}
+character_event = {
+	id = 6666022
+	title = "EVTNAME39101"
+	desc = "EVTDESC39101"
+	picture = "GFX_evt_crusaders"
+	border = "GFX_event_narrative_frame_religion"
+	
+	 
+	 
+	
+	trigger = {
+        religion_authority = 0.85
+		NOT = { is_title_active = d_templar_of_the_east_order }
+		religion = nestorian
+		controls_religion = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = nestorian
+			controls_religion = yes
+		}
+		activate_title = { title = d_templar_of_the_east_order = yes }
+        religion_authority = -0.15
+	}
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = nestorian
+			controls_religion = no
+		}
+	}
+	option = {
+		name = "EVTOPTB39101"
+		trigger = {
+			NOT = { religion_group = christian }
+		}
+	}
+	option = {
+		name = "EVTOPTC39100"
+		trigger = {
+			religion_group = christian
+			NOT = { religion = nestorian }
+		}
+	}
+}
+character_event = {
+	id = 6666023
+	title = "EVTNAME39101"
+	desc = "EVTDESC39101"
+	picture = "GFX_evt_crusaders"
+	border = "GFX_event_narrative_frame_religion"
+	
+	 
+	 
+	
+	trigger = {
+        religion_authority = 0.9
+		NOT = { is_title_active = d_order_of_saint_nestorius }
+		religion = nestorian
+		controls_religion = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = nestorian
+			controls_religion = yes
+		}
+		activate_title = { title = d_order_of_saint_nestorius = yes }
+        religion_authority = -0.2
+	}
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = nestorian
+			controls_religion = no
+		}
+	}
+	option = {
+		name = "EVTOPTB39101"
+		trigger = {
+			NOT = { religion_group = christian }
+		}
+	}
+	option = {
+		name = "EVTOPTC39100"
+		trigger = {
+			religion_group = christian
+			NOT = { religion = nestorian }
+		}
+	}
+}
+character_event = {
+	id = 6666024
+	title = "EVTNAME39101"
+	desc = "EVTDESC39101"
+	picture = "GFX_evt_crusaders"
+	border = "GFX_event_narrative_frame_religion"
+	
+	 
+	 
+	
+	trigger = {
+        religion_authority = 0.8
+		NOT = { is_title_active = d_order_of_the_blessed_virgin }
+		religion = orthodox
+		controls_religion = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = orthodox
+			controls_religion = yes
+		}
+		activate_title = { title = d_order_of_the_blessed_virgin = yes }
+        religion_authority = -0.1
+	}
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = orthodox
+			controls_religion = no
+		}
+	}
+	option = {
+		name = "EVTOPTB39101"
+		trigger = {
+			NOT = { religion_group = christian }
+		}
+	}
+	option = {
+		name = "EVTOPTC39100"
+		trigger = {
+			religion_group = christian
+			NOT = { religion = orthodox }
+		}
+	}
+}
+character_event = {
+	id = 6666025
+	title = "EVTNAME39101"
+	desc = "EVTDESC39101"
+	picture = "GFX_evt_crusaders"
+	border = "GFX_event_narrative_frame_religion"
+	
+	 
+	 
+	
+	trigger = {
+        religion_authority = 0.9
+		NOT = { is_title_active = d_varangian_templar }
+		religion = orthodox
+		controls_religion = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = orthodox
+			controls_religion = yes
+		}
+		activate_title = { title = d_varangian_templar = yes }
+        religion_authority = -0.2
+	}
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = orthodox
+			controls_religion = no
+		}
+	}
+	option = {
+		name = "EVTOPTB39101"
+		trigger = {
+			NOT = { religion_group = christian }
+		}
+	}
+	option = {
+		name = "EVTOPTC39100"
+		trigger = {
+			religion_group = christian
+			NOT = { religion = orthodox }
+		}
+	}
+}
+character_event = {
+	id = 6666026
+	title = "EVTNAME39101"
+	desc = "EVTDESC39101"
+	picture = "GFX_evt_crusaders"
+	border = "GFX_event_narrative_frame_religion"
+	
+	 
+	 
+	
+	trigger = {
+        religion_authority = 0.85
+		NOT = { is_title_active = d_varangian_hospitaler }
+		religion = orthodox
+		controls_religion = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = orthodox
+			controls_religion = yes
+		}
+		activate_title = { title = d_varangian_hospitaler = yes }
+        religion_authority = -0.15
+	}
+	option = {
+		name = "EVTOPTA39101"
+		trigger = {
+			religion = orthodox
+			controls_religion = no
+		}
+	}
+	option = {
+		name = "EVTOPTB39101"
+		trigger = {
+			NOT = { religion_group = christian }
+		}
+	}
+	option = {
+		name = "EVTOPTC39100"
+		trigger = {
+			religion_group = christian
+			NOT = { religion = orthodox }
+		}
+	}
+}

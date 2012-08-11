@@ -1,0 +1,121 @@
+decisions = {
+form_jerusalem = {
+	is_high_prio = yes	
+	potential = {
+        has_landed_title = c_jerusalem
+        NOT = { any_playable_ruler = { has_landed_title = k_jerusalem } }
+        NOT = { has_landed_title = k_jerusalem }
+        OR = {
+            religion = catholic
+            is_heresy_of = catholic
+        }
+	}
+	allow = {
+        has_landed_title = c_jerusalem
+        NOT = { any_playable_ruler = { has_landed_title = k_jerusalem } }
+        NOT = { has_landed_title = k_jerusalem }
+        OR = {
+            religion_group = christian
+        }
+	}
+	effect = {
+        character_event = { id = 666710 }
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 100
+	}		
+}
+form_antioch = {
+	is_high_prio = yes	
+	potential = {
+        has_landed_title = c_antiocheia
+        NOT = { any_playable_ruler = { has_landed_title = k_antioch } }
+        NOT = { has_landed_title = k_antioch }
+        OR = {
+            religion = catholic
+            is_heresy_of = catholic
+        }
+	}
+	allow = {
+        has_landed_title = c_antiocheia
+        NOT = { any_playable_ruler = { has_landed_title = k_antioch } }
+        NOT = { has_landed_title = k_antioch }
+        OR = {
+            religion = catholic
+            is_heresy_of = catholic
+        }
+	}
+	effect = {
+        character_event = { id = 666714 }
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 100
+	}		
+}
+form_cyprus = {
+	is_high_prio = yes	
+	potential = {
+        has_landed_title = c_famagusta
+        has_landed_title = c_limisol
+        NOT = { any_playable_ruler = { has_landed_title = k_cyprus } }
+        NOT = { has_landed_title = k_cyprus }
+        OR = {
+            religion = catholic
+            is_heresy_of = catholic
+        }
+	}
+	allow = {
+        has_landed_title = c_famagusta
+        has_landed_title = c_limisol
+        NOT = { any_playable_ruler = { has_landed_title = k_cyprus } }
+        NOT = { has_landed_title = k_cyprus }
+        OR = {
+            religion = catholic
+            is_heresy_of = catholic
+        }
+	}
+	effect = {
+        character_event = { id = 666718 }
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 100
+	}		
+}
+form_alexandria = {
+	is_high_prio = yes	
+	potential = {
+        has_landed_title = c_alexandria
+        NOT = { any_playable_ruler = { has_landed_title = k_alexandria } }
+        NOT = { has_landed_title = k_alexandria }
+        OR = {
+            religion_group = christian
+        }
+	}
+	allow = {
+        has_landed_title = c_alexandria
+        NOT = { any_playable_ruler = { has_landed_title = k_alexandria } }
+        NOT = { has_landed_title = k_alexandria }
+        OR = {
+            religion_group = christian
+        }
+	}
+	effect = {
+        character_event = { id = 666722 }
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 100
+	}		
+}
+}

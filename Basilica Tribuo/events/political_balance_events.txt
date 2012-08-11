@@ -1,0 +1,553 @@
+character_event = {
+        id = 666699
+        title = "EVTNAME60001"
+        desc = "EVTDESC60001"
+        
+  trigger = {
+            ai = yes
+            has_landed_title = k_persia
+            NOT = { has_global_flag = seljuk_reinforcements }
+  }
+        
+  mean_time_to_happen = {
+            months = 1
+        }
+  option = {
+        name = "OK"
+        set_global_flag = seljuk_reinforcements
+        general_opinion = 30
+        create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = sunni
+			culture = turkish
+			female = no
+			age = 25
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 683 # Balkh
+				troops =
+				{
+					horse_archers = { 2000 2000 }
+					light_cavalry = { 4000 4000 }
+				}
+			}
+		}
+  }
+}
+character_event = {
+    id = 666701
+    title = "Reinforcements!"
+    desc = "Our brother's in Persia are unable to join us in war. They have more pressing matters to attend to with that heretical caliph. They have however sent us a large compliment of troops!"
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = "To War!"
+        piety = 1000
+        759 = { # Balkh
+			kingdom = {
+				ROOT = {
+					war = {
+						casus_belli = muslim_invasion
+						target = PREVPREV # The top liege of the owner of Balkh
+						thirdparty_title = PREV # The de jure kingdom
+					}
+				}
+			}
+		}
+        piety = -500
+        
+        random_playable_ruler = {
+            limit = {
+                any_demesne_title = {
+					title = c_byzantion
+				}
+            }
+            character_event = { id = 666702 days = 1 }
+            
+        }
+        
+        create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = sunni
+			culture = turkish
+			female = no
+			age = 25
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 702 # Balkh
+				troops =
+				{
+					horse_archers = { 5000 5000 }
+					light_cavalry = { 10000 10000 }
+				}
+			}
+		}
+        
+    }
+}
+character_event = {
+    id = 666702
+    title = "EVTTITLE666702"
+    desc = "EVTDESC666702"
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = "EVTOPTION1666702"
+        ai_chance = { factor = 75 }
+        random_realm_province = {
+            limit = {
+				province_id = 509
+            }
+            add_province_modifier = {
+                name = bulgarian_riots_supressed
+                duration = 730
+            }
+        }
+        random_realm_province = {
+            limit = {
+				province_id = 499
+            }
+            add_province_modifier = {
+                name = bulgarian_riots_supressed
+                duration = 730
+            }
+        }
+        random_realm_province = {
+            limit = {
+				province_id = 506
+            }
+            add_province_modifier = {
+                name = bulgarian_riots_supressed
+                duration = 730
+            }
+        }
+        random_realm_province = {
+            limit = {
+				province_id = 501
+            }
+            add_province_modifier = {
+                name = bulgarian_riots_supressed
+                duration = 730
+            }
+        }
+        random_realm_province = {
+            limit = {
+				province_id = 507
+            }
+            add_province_modifier = {
+                name = bulgarian_riots_supressed
+                duration = 730
+            }
+        }
+        random_realm_province = {
+            limit = {
+				province_id = 500
+            }
+            add_province_modifier = {
+                name = bulgarian_riots_supressed
+                duration = 730
+            }
+        }
+        random_realm_province = {
+            limit = {
+				province_id = 508
+            }
+            add_province_modifier = {
+                name = bulgarian_riots_supressed
+                duration = 730
+            }
+        }
+        random_realm_province = {
+            limit = {
+				province_id = 498
+            }
+            add_province_modifier = {
+                name = bulgarian_riots_supressed
+                duration = 730
+            }
+        }
+        random_realm_province = {
+            limit = {
+				province_id = 510
+            }
+            add_province_modifier = {
+                name = bulgarian_riots_supressed
+                duration = 730
+            }
+        }
+        set_global_flag = no_bulgar_rebellion
+        
+    }
+    option = {
+        name = "EVTOPTION2666702"
+        ai_chance = { factor = 25 }
+        random_realm_province = {
+            limit = {
+				province_id = 509
+            }
+            add_province_modifier = {
+                name = bulgarian_riots_not_supressed
+                duration = 730
+            }
+        }
+        random_realm_province = {
+            limit = {
+				province_id = 499
+            }
+            add_province_modifier = {
+                name = bulgarian_riots_not_supressed
+                duration = 730
+            }
+        }
+        random_realm_province = {
+            limit = {
+				province_id = 506
+            }
+            add_province_modifier = {
+                name = bulgarian_riots_not_supressed
+                duration = 730
+            }
+        }
+        random_realm_province = {
+            limit = {
+				province_id = 501
+            }
+            add_province_modifier = {
+                name = bulgarian_riots_not_supressed
+                duration = 730
+            }
+        }
+        random_realm_province = {
+            limit = {
+				province_id = 507
+            }
+            add_province_modifier = {
+                name = bulgarian_riots_not_supressed
+                duration = 730
+            }
+        }
+        random_realm_province = {
+            limit = {
+				province_id = 500
+            }
+            add_province_modifier = {
+                name = bulgarian_riots_not_supressed
+                duration = 730
+            }
+        }
+        random_realm_province = {
+            limit = {
+				province_id = 508
+            }
+            add_province_modifier = {
+                name = bulgarian_riots_not_supressed
+                duration = 730
+            }
+        }
+        random_realm_province = {
+            limit = {
+				province_id = 498
+            }
+            add_province_modifier = {
+                name = bulgarian_riots_not_supressed
+                duration = 730
+            }
+        }
+        random_realm_province = {
+            limit = {
+				province_id = 510
+            }
+            add_province_modifier = {
+                name = bulgarian_riots_not_supressed
+                duration = 730
+            }
+        }
+        set_global_flag = bulgar_rebellion
+        character_event = { id = 666703 days = 730 }
+    }
+}   
+character_event = {
+    id = 666703
+    title = "EVTTITLE666703"
+    desc = "EVTDESC666703"
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = "EVTOPTION1666703"
+        ai_chance = { factor = 1 }
+        create_character = {
+			random_traits = yes
+			dynasty = 185
+			religion = orthodox
+			culture = bulgarian
+			female = no
+			age = 16
+			attributes = {
+				martial = 16
+                diplomacy = 14
+                stewardship = 16
+			}
+			trait = brilliant_strategist
+            trait = duelist
+            trait = diligent
+            trait = brave
+            trait = gregarious
+            trait = ambitious
+		}
+		new_character = {
+            k_bulgaria = { gain_title = PREV }
+            c_vidin = { gain_title = PREV }
+            c_nikopolis = { gain_title = PREV }
+            c_naissus = { gain_title = PREV }
+            c_serdica = { gain_title = PREV }
+            c_tyrnovo = { gain_title = PREV }
+            c_dorostotum = { gain_title = PREV }
+            c_mesembria = { gain_title = PREV }
+            c_karvuna = { gain_title = PREV }
+            c_constantia = { gain_title = PREV }
+            character_event = { id = 666704 }
+		}
+        war = {
+            target = k_bulgaria
+			casus_belli = claim_all
+        }
+    }
+}   
+character_event = {
+    id = 666704
+    title = "EVTTITLE666702"
+    desc = "EVTDESC666702"
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = "EVTOPTION1666702"
+        ai_chance = { factor = 1 }
+        create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = orthodox
+			culture = bulgarian
+			female = no
+			age = 16
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+        new_character = {
+			spawn_unit = {
+				province = 510 # Balkh
+				troops =
+				{
+					light_infantry = { 2000 2000 }
+				}
+			}
+		}
+        create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = orthodox
+			culture = bulgarian
+			female = no
+			age = 16
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+        new_character = {
+			spawn_unit = {
+				province = 500 # Balkh
+				troops =
+				{
+					light_infantry = { 2000 2000 }
+				}
+			}
+		}
+        create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = orthodox
+			culture = bulgarian
+			female = no
+			age = 16
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+        new_character = {
+			spawn_unit = {
+				province = 498 # Balkh
+				troops =
+				{
+					light_infantry = { 2000 2000 }
+				}
+			}
+		}
+        create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = orthodox
+			culture = bulgarian
+			female = no
+			age = 16
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+        new_character = {
+			spawn_unit = {
+				province = 507 # Balkh
+				troops =
+				{
+					light_infantry = { 2000 2000 }
+				}
+			}
+		}
+        create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = orthodox
+			culture = bulgarian
+			female = no
+			age = 16
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+        new_character = {
+			spawn_unit = {
+				province = 506 # Balkh
+				troops =
+				{
+					light_infantry = { 2000 2000 }
+				}
+			}
+		}
+        create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = orthodox
+			culture = bulgarian
+			female = no
+			age = 16
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+        new_character = {
+			spawn_unit = {
+				province = 508 # Balkh
+				troops =
+				{
+					light_infantry = { 2000 2000 }
+				}
+			}
+		}
+        create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = orthodox
+			culture = bulgarian
+			female = no
+			age = 16
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+        new_character = {
+			spawn_unit = {
+				province = 499 # Balkh
+				troops =
+				{
+					light_infantry = { 2000 2000 }
+				}
+			}
+		}
+        create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = orthodox
+			culture = bulgarian
+			female = no
+			age = 16
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+        new_character = {
+			spawn_unit = {
+				province = 501 # Balkh
+				troops =
+				{
+					light_infantry = { 2000 2000 }
+				}
+			}
+		}
+        create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = orthodox
+			culture = bulgarian
+			female = no
+			age = 16
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+        new_character = {
+			spawn_unit = {
+				province = 509 # Balkh
+				troops =
+				{
+					light_infantry = { 2000 2000 }
+				}
+			}
+		}
+        create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = orthodox
+			culture = bulgarian
+			female = no
+			age = 16
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+        new_character = {
+			spawn_unit = {
+				province = 514 # Balkh
+				troops =
+				{
+					light_infantry = { 2000 2000 }
+				}
+			}
+		}
+        set_global_flag = bulgar_invasion
+}   
+		

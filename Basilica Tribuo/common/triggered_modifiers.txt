@@ -1,0 +1,203 @@
+##################################################
+#
+# STRATEGIC EFFECTS - A.K.A. "TRIGGERED MODIFIERS"
+#
+##################################################
+
+# Bankruptcy
+negative_money = {
+	potential = {
+		is_ruler = yes
+	}
+	
+	trigger = {
+		NOT = { wealth = 0 }
+	}
+	
+	icon = 24
+	
+	land_morale = -0.25
+}
+
+#crown law effects #THESE ONES AVAR
+flex_one = {
+	potential = {
+		is_ruler = yes
+	}
+	
+	trigger = {
+		has_law = religious_1
+	}
+	
+	icon = 8
+    
+    tech_growth_modifier_culture = 0.5
+    tech_growth_modifier_military = 0.5
+    tech_growth_modifier_economy = 0.5
+}
+flex_zero = {
+	potential = {
+		is_ruler = yes
+	}
+	
+	trigger = {
+		has_law = religious_0
+	}
+	
+	icon = 8
+    
+    tech_growth_modifier_culture = 1
+    tech_growth_modifier_military = 1
+    tech_growth_modifier_economy = 1
+}
+flex_three = {
+	potential = {
+		is_ruler = yes
+	}
+	
+	trigger = {
+		has_law = religious_3
+	}
+	
+	icon = 8
+    
+    tech_growth_modifier_culture = -0.25
+    tech_growth_modifier_military = -0.25
+    tech_growth_modifier_economy = -0.25
+}
+flex_four = {
+	potential = {
+		is_ruler = yes
+	}
+	
+	trigger = {
+		has_law = religious_4
+	}
+	
+	icon = 8
+    
+    tech_growth_modifier_culture = -0.5
+    tech_growth_modifier_military = -0.5
+    tech_growth_modifier_economy = -0.5
+}
+
+#Religious Uniqueness
+
+is_cathar = {
+	potential = {
+		religion = cathar
+	}
+	
+	trigger = {
+		religion = cathar
+	}
+	
+    icon = 8
+    
+    church_opinion = 20
+    fertility = -0.25
+    monthly_character_piety = 0.5
+    learning = 2
+}
+
+is_lollard = {
+	potential = {
+		religion = lollard
+	}
+	
+	trigger = {
+		religion = lollard
+        
+	}
+	
+    icon = 8
+    
+    church_opinion = -20
+    temple_vassal_tax_modifier = 0.45
+}
+
+is_catholic = {
+	potential = {
+		religion = catholic
+	}
+	
+	trigger = {
+		religion = catholic
+        
+	}
+	
+    icon = 8
+    
+    church_opinion = 20
+    temple_vassal_tax_modifier = -0.55
+    monthly_character_piety = 0.2
+    land_morale = 0.1
+    
+}
+is_islam = {
+	potential = {
+		religion_group = muslim
+	}
+	
+	trigger = {
+		religion_group = muslim
+	}
+	
+    icon = 13
+    
+    light_cavalry_offensive = 0.40
+    light_cavalry_defensive = 0.3
+    pikemen_offensive = 0.35
+    pikemen_defensive = 0.15
+    light_infantry_offensive = 0.10
+}
+is_christian = {
+	potential = {
+		religion_group = christian
+	}
+	
+	trigger = {
+		religion_group = christian
+	}
+	
+    icon = 13
+    
+    knights_offensive = 0.35
+    knights_defensive = 0.15
+    heavy_infantry_offensive = 0.15
+    heavy_infantry_defensive = 0.35
+    archers_offensive = 0.25
+}
+
+is_pagan = {
+	potential = {
+		religion_group = pagan_group
+	}
+	
+	trigger = {
+		religion_group = pagan_group
+	}
+	
+    icon = 13
+    
+    light_infantry_offensive = 0.9
+    archers_offensive = 0.7
+    horse_archers_offensive = 0.5    
+}
+
+is_cardinal = {
+	potential = {
+        religion = catholic
+	}
+	
+	trigger = {
+        OR = {
+            has_landed_title = d_card1
+            has_landed_title = d_card2
+        }
+	}
+	
+    icon = 13
+    
+    church_opinion = 75
+}

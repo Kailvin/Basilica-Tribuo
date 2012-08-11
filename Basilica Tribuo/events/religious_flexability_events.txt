@@ -1,0 +1,2487 @@
+character_event = {
+	id = 666500
+	desc = "EVTDESC39403"
+	picture = GFX_evt_heretic
+	
+		trigger = {
+        independent = no
+        has_law = religious_1
+        is_feudal = yes
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_zero_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_one_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_three_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_four_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_zero_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_one_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_three_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_four_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_zero_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_one_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_three_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_four_church
+            }
+        }
+        liege = {
+            independent = yes
+            religion = ROOT
+        }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39403"
+        liege = {
+			reverse_opinion = {
+				who = PREV
+				modifier = same_religion_flex_one_feudal
+				months = -1
+			}
+		}
+        clear_opinion_modifier = {
+            who = liege
+            modifier = same_religion_flex_zero_feudal
+        }
+	}
+}
+
+character_event = {
+	id = 666501
+	desc = "EVTDESC39403"
+	picture = GFX_evt_heretic
+	
+	trigger = {
+        independent = no
+        has_law = religious_0
+        is_feudal = yes
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_zero_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_one_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_three_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_four_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_zero_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_one_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_three_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_four_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_zero_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_one_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_three_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_four_church
+            }
+        }
+        liege = {
+            independent = yes
+            religion = ROOT
+        }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39403"
+        liege = {
+			reverse_opinion = {
+				who = PREV
+				modifier = same_religion_flex_zero_feudal
+				months = -1
+			}
+		}
+	}
+}
+
+character_event = {
+	id = 666502
+	desc = "EVTDESC39403"
+	picture = GFX_evt_heretic
+	
+	trigger = {
+        independent = no
+        has_law = religious_3
+        is_feudal = yes
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_zero_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_one_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_three_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_four_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_zero_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_one_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_three_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_four_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_zero_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_one_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_three_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_four_church
+            }
+        }
+        liege = {
+            independent = yes
+            religion = ROOT
+        }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39403"
+        liege = {
+			reverse_opinion = {
+				who = PREV
+				modifier = same_religion_flex_three_feudal
+				months = -1
+			}
+		}
+	}
+}
+
+character_event = {
+	id = 666503
+	desc = "EVTDESC39403"
+	picture = GFX_evt_heretic
+	
+	trigger = {
+        independent = no
+        has_law = religious_4
+        is_feudal = yes
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_zero_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_one_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_three_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_four_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_zero_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_one_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_three_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_four_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_zero_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_one_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_three_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_four_church
+            }
+        }
+        liege = {
+            independent = yes
+            religion = ROOT
+        }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39403"
+        liege = {
+			reverse_opinion = {
+				who = PREV
+				modifier = same_religion_flex_four_feudal
+				months = -1
+			}
+		}
+	}
+}
+
+character_event = {
+	id = 666504
+	desc = "EVTDESC39403"
+	picture = GFX_evt_heretic
+	
+		trigger = {
+        independent = no
+        has_law = religious_1
+        is_theocracy = yes
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_zero_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_one_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_three_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_four_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_zero_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_one_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_three_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_four_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_zero_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_one_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_three_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_four_church
+            }
+        }
+        liege = {
+            independent = yes
+            religion = ROOT
+        }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39403"
+        liege = {
+			reverse_opinion = {
+				who = PREV
+				modifier = same_religion_flex_one_church
+				months = -1
+			}
+		}
+	}
+}
+
+character_event = {
+	id = 666505
+	desc = "EVTDESC39403"
+	picture = GFX_evt_heretic
+	
+	trigger = {
+        independent = no
+        has_law = religious_0
+        is_theocracy = yes
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_zero_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_one_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_three_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_four_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_zero_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_one_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_three_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_four_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_zero_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_one_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_three_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_four_church
+            }
+        }
+        liege = {
+            independent = yes
+            religion = ROOT
+        }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39403"
+        liege = {
+			reverse_opinion = {
+				who = PREV
+				modifier = same_religion_flex_zero_church
+				months = -1
+			}
+		}
+	}
+}
+
+character_event = {
+	id = 666506
+	desc = "EVTDESC39403"
+	picture = GFX_evt_heretic
+	
+	trigger = {
+        independent = no
+        has_law = religious_3
+        is_theocracy = yes
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_zero_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_one_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_three_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_four_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_zero_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_one_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_three_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_four_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_zero_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_one_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_three_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_four_church
+            }
+        }
+        liege = {
+            independent = yes
+            religion = ROOT
+        }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39403"
+        liege = {
+			reverse_opinion = {
+				who = PREV
+				modifier = same_religion_flex_three_church
+				months = -1
+			}
+		}
+	}
+}
+
+character_event = {
+	id = 666507
+	desc = "EVTDESC39403"
+	picture = GFX_evt_heretic
+	
+	trigger = {
+        independent = no
+        has_law = religious_4
+        is_theocracy = yes
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_zero_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_one_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_three_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_four_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_zero_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_one_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_three_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_four_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_zero_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_one_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_three_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_four_church
+            }
+        }
+        liege = {
+            independent = yes
+            religion = ROOT
+        }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39403"
+        liege = {
+			reverse_opinion = {
+				who = PREV
+				modifier = same_religion_flex_four_church
+				months = -1
+			}
+		}
+	}
+}
+
+character_event = {
+	id = 666508
+	desc = "EVTDESC39403"
+	picture = GFX_evt_heretic
+	
+		trigger = {
+        independent = no
+        has_law = religious_1
+        is_feudal = no
+        is_theocracy = no
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_zero_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_one_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_three_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_four_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_zero_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_one_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_three_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_four_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_zero_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_one_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_three_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_four_church
+            }
+        }
+        liege = {
+            independent = yes
+            religion = ROOT
+        }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39403"
+        liege = {
+			reverse_opinion = {
+				who = PREV
+				modifier = same_religion_flex_one_city
+				months = -1
+			}
+		}
+	}
+}
+
+character_event = {
+	id = 666509
+	desc = "EVTDESC39403"
+	picture = GFX_evt_heretic
+	
+	trigger = {
+        independent = no
+        has_law = religious_0
+        is_feudal = no
+        is_theocracy = no
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_zero_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_one_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_three_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_four_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_zero_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_one_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_three_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_four_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_zero_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_one_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_three_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_four_church
+            }
+        }
+        liege = {
+            independent = yes
+            religion = ROOT
+        }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39403"
+        liege = {
+			reverse_opinion = {
+				who = PREV
+				modifier = same_religion_flex_zero_city
+				months = -1
+			}
+		}
+	}
+}
+
+character_event = {
+	id = 666510
+	desc = "EVTDESC39403"
+	picture = GFX_evt_heretic
+	
+	trigger = {
+        independent = no
+        has_law = religious_3
+        is_feudal = no
+        is_theocracy = no
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_zero_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_one_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_three_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_four_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_zero_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_one_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_three_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_four_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_zero_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_one_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_three_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_four_church
+            }
+        }
+        liege = {
+            independent = yes
+            religion = ROOT
+        }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39403"
+        liege = {
+			reverse_opinion = {
+				who = PREV
+				modifier = same_religion_flex_three_city
+				months = -1
+			}
+		}
+	}
+}
+
+character_event = {
+	id = 666511
+	desc = "EVTDESC39403"
+	picture = GFX_evt_heretic
+	
+	trigger = {
+        independent = no
+        has_law = religious_4
+        is_feudal = no
+        is_theocracy = no
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_zero_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_one_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_three_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_four_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_zero_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_one_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_three_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_four_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_zero_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_one_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_three_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = same_religion_flex_four_church
+            }
+        }
+        liege = {
+            independent = yes
+            religion = ROOT
+        }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39403"
+        liege = {
+			reverse_opinion = {
+				who = PREV
+				modifier = same_religion_flex_four_city
+				months = -1
+			}
+		}
+	}
+}
+
+character_event = {
+	id = 666512
+	desc = "EVTDESC39403"
+	picture = GFX_evt_heretic
+	
+		trigger = {
+        independent = no
+        has_law = religious_1
+        is_feudal = yes
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_zero_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_one_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_three_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_four_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_zero_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_one_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_three_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_four_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_zero_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_one_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_three_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_four_church
+            }
+        }
+        liege = {
+            independent = yes
+            religion = ROOT
+        }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39403"
+        liege = {
+			reverse_opinion = {
+				who = PREV
+				modifier = diff_religion_flex_one_feudal
+				months = -1
+			}
+		}
+        clear_opinion_modifier = {
+            who = liege
+            modifier = diff_religion_flex_zero_feudal
+        }
+	}
+}
+
+character_event = {
+	id = 666513
+	desc = "EVTDESC39403"
+	picture = GFX_evt_heretic
+	
+	trigger = {
+        independent = no
+        has_law = religious_0
+        is_feudal = yes
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_zero_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_one_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_three_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_four_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_zero_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_one_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_three_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_four_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_zero_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_one_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_three_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_four_church
+            }
+        }
+        liege = {
+            independent = yes
+            religion = ROOT
+        }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39403"
+        liege = {
+			reverse_opinion = {
+				who = PREV
+				modifier = diff_religion_flex_zero_feudal
+				months = -1
+			}
+		}
+	}
+}
+
+character_event = {
+	id = 666514
+	desc = "EVTDESC39403"
+	picture = GFX_evt_heretic
+	
+	trigger = {
+        independent = no
+        has_law = religious_3
+        is_feudal = yes
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_zero_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_one_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_three_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_four_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_zero_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_one_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_three_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_four_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_zero_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_one_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_three_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_four_church
+            }
+        }
+        liege = {
+            independent = yes
+            religion = ROOT
+        }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39403"
+        liege = {
+			reverse_opinion = {
+				who = PREV
+				modifier = diff_religion_flex_three_feudal
+				months = -1
+			}
+		}
+	}
+}
+
+character_event = {
+	id = 666515
+	desc = "EVTDESC39403"
+	picture = GFX_evt_heretic
+	
+	trigger = {
+        independent = no
+        has_law = religious_4
+        is_feudal = yes
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_zero_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_one_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_three_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_four_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_zero_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_one_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_three_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_four_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_zero_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_one_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_three_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_four_church
+            }
+        }
+        liege = {
+            independent = yes
+            religion = ROOT
+        }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39403"
+        liege = {
+			reverse_opinion = {
+				who = PREV
+				modifier = diff_religion_flex_four_feudal
+				months = -1
+			}
+		}
+	}
+}
+
+character_event = {
+	id = 666516
+	desc = "EVTDESC39403"
+	picture = GFX_evt_heretic
+	
+		trigger = {
+        independent = no
+        has_law = religious_1
+        is_theocracy = yes
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_zero_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_one_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_three_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_four_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_zero_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_one_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_three_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_four_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_zero_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_one_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_three_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_four_church
+            }
+        }
+        liege = {
+            independent = yes
+            religion = ROOT
+        }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39403"
+        liege = {
+			reverse_opinion = {
+				who = PREV
+				modifier = diff_religion_flex_one_church
+				months = -1
+			}
+		}
+	}
+}
+
+character_event = {
+	id = 666517
+	desc = "EVTDESC39403"
+	picture = GFX_evt_heretic
+	
+	trigger = {
+        independent = no
+        has_law = religious_0
+        is_theocracy = yes
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_zero_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_one_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_three_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_four_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_zero_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_one_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_three_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_four_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_zero_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_one_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_three_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_four_church
+            }
+        }
+        liege = {
+            independent = yes
+            religion = ROOT
+        }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39403"
+        liege = {
+			reverse_opinion = {
+				who = PREV
+				modifier = diff_religion_flex_zero_church
+				months = -1
+			}
+		}
+	}
+}
+
+character_event = {
+	id = 666518
+	desc = "EVTDESC39403"
+	picture = GFX_evt_heretic
+	
+	trigger = {
+        independent = no
+        has_law = religious_3
+        is_theocracy = yes
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_zero_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_one_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_three_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_four_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_zero_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_one_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_three_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_four_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_zero_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_one_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_three_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_four_church
+            }
+        }
+        liege = {
+            independent = yes
+            religion = ROOT
+        }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39403"
+        liege = {
+			reverse_opinion = {
+				who = PREV
+				modifier = diff_religion_flex_three_church
+				months = -1
+			}
+		}
+	}
+}
+
+character_event = {
+	id = 666519
+	desc = "EVTDESC39403"
+	picture = GFX_evt_heretic
+	
+	trigger = {
+        independent = no
+        has_law = religious_4
+        is_theocracy = yes
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_zero_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_one_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_three_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_four_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_zero_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_one_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_three_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_four_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_zero_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_one_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_three_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_four_church
+            }
+        }
+        liege = {
+            independent = yes
+            religion = ROOT
+        }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39403"
+        liege = {
+			reverse_opinion = {
+				who = PREV
+				modifier = diff_religion_flex_four_church
+				months = -1
+			}
+		}
+	}
+}
+
+character_event = {
+	id = 666520
+	desc = "EVTDESC39403"
+	picture = GFX_evt_heretic
+	
+		trigger = {
+        independent = no
+        has_law = religious_1
+        is_feudal = no
+        is_theocracy = no
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_zero_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_one_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_three_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_four_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_zero_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_one_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_three_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_four_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_zero_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_one_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_three_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_four_church
+            }
+        }
+        liege = {
+            independent = yes
+            religion = ROOT
+        }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39403"
+        liege = {
+			reverse_opinion = {
+				who = PREV
+				modifier = diff_religion_flex_one_city
+				months = -1
+			}
+		}
+	}
+}
+
+character_event = {
+	id = 666521
+	desc = "EVTDESC39403"
+	picture = GFX_evt_heretic
+	
+	trigger = {
+        independent = no
+        has_law = religious_0
+        is_feudal = no
+        is_theocracy = no
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_zero_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_one_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_three_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_four_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_zero_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_one_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_three_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_four_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_zero_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_one_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_three_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_four_church
+            }
+        }
+        liege = {
+            independent = yes
+            religion = ROOT
+        }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39403"
+        liege = {
+			reverse_opinion = {
+				who = PREV
+				modifier = diff_religion_flex_zero_city
+				months = -1
+			}
+		}
+	}
+}
+
+character_event = {
+	id = 666522
+	desc = "EVTDESC39403"
+	picture = GFX_evt_heretic
+	
+	trigger = {
+        independent = no
+        has_law = religious_3
+        is_feudal = no
+        is_theocracy = no
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_zero_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_one_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_three_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_four_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_zero_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_one_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_three_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_four_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_zero_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_one_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_three_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_four_church
+            }
+        }
+        liege = {
+            independent = yes
+            religion = ROOT
+        }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39403"
+        liege = {
+			reverse_opinion = {
+				who = PREV
+				modifier = diff_religion_flex_three_city
+				months = -1
+			}
+		}
+	}
+}
+
+character_event = {
+	id = 666523
+	desc = "EVTDESC39403"
+	picture = GFX_evt_heretic
+	
+	trigger = {
+        independent = no
+        has_law = religious_4
+        is_feudal = no
+        is_theocracy = no
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_zero_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_one_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_three_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_four_feudal
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_zero_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_one_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_three_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_four_city
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_zero_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_one_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_three_church
+            }
+        }
+        NOT = {
+            has_opinion_modifier = {
+                who = liege
+                modifier = diff_religion_flex_four_church
+            }
+        }
+        liege = {
+            independent = yes
+            religion = ROOT
+        }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA39403"
+        liege = {
+			reverse_opinion = {
+				who = PREV
+				modifier = diff_religion_flex_four_city
+				months = -1
+			}
+		}
+	}
+}

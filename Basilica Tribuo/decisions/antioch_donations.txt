@@ -1,0 +1,635 @@
+decisions = {
+    donate_antiocheia = {
+	potential = {
+        has_landed_title = c_antiocheia
+        any_playable_ruler = { has_landed_title = k_antioch } 
+        NOT = { realm = k_antioch }
+        OR = {
+            religion = catholic
+            is_heresy_of = catholic
+        }
+	}
+	allow = {
+        has_landed_title = c_antiocheia
+        any_playable_ruler = { has_landed_title = k_antioch }
+        NOT = { realm = k_antioch }        
+        OR = {
+            religion = catholic
+            is_heresy_of = catholic
+        }
+	}
+	effect = {
+        k_antioch = {
+            holder_scope = {
+                c_antiocheia = { gain_title = PREV }
+            }
+        }
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 100
+	}		
+    }
+    
+    donate_alexandretta = {
+	potential = {
+        has_landed_title = c_alexandretta
+        any_playable_ruler = { has_landed_title = k_antioch } 
+        NOT = { realm = k_antioch }
+        OR = {
+            religion = catholic
+            is_heresy_of = catholic
+        }
+	}
+	allow = {
+        has_landed_title = c_alexandretta
+        any_playable_ruler = { has_landed_title = k_antioch }
+        NOT = { realm = k_antioch }        
+        OR = {
+            religion = catholic
+            is_heresy_of = catholic
+        }
+	}
+	effect = {
+        k_antioch = {
+            holder_scope = {
+                c_alexandretta = { gain_title = PREV }
+            }
+        }
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 100
+	}		
+    }
+    
+    donate_archa = {
+	potential = {
+        has_landed_title = c_archa
+        any_playable_ruler = { has_landed_title = k_antioch } 
+        NOT = { realm = k_antioch }
+        OR = {
+            religion = catholic
+            is_heresy_of = catholic
+        }
+	}
+	allow = {
+        has_landed_title = c_archa
+        any_playable_ruler = { has_landed_title = k_antioch }
+        NOT = { realm = k_antioch }        
+        OR = {
+            religion = catholic
+            is_heresy_of = catholic
+        }
+	}
+	effect = {
+        k_antioch = {
+            holder_scope = {
+                c_archa = { gain_title = PREV }
+            }
+        }
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 100
+	}		
+    }
+    
+    donate_tortosa = {
+	potential = {
+        has_landed_title = c_tortosa
+        any_playable_ruler = { has_landed_title = k_antioch } 
+        NOT = { realm = k_antioch }
+        OR = {
+            religion = catholic
+            is_heresy_of = catholic
+        }
+	}
+	allow = {
+        has_landed_title = c_tortosa
+        any_playable_ruler = { has_landed_title = k_antioch }
+        NOT = { realm = k_antioch }        
+        OR = {
+            religion = catholic
+            is_heresy_of = catholic
+        }
+	}
+	effect = {
+        k_antioch = {
+            holder_scope = {
+                c_tortosa = { gain_title = PREV }
+            }
+        }
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 100
+	}		
+    }
+    
+    donate_tripoli = {
+	potential = {
+        has_landed_title = c_tripoli
+        any_playable_ruler = { has_landed_title = k_antioch } 
+        NOT = { realm = k_antioch }
+        OR = {
+            religion = catholic
+            is_heresy_of = catholic
+        }
+	}
+	allow = {
+        has_landed_title = c_tripoli
+        any_playable_ruler = { has_landed_title = k_antioch }
+        NOT = { realm = k_antioch }        
+        OR = {
+            religion = catholic
+            is_heresy_of = catholic
+        }
+	}
+	effect = {
+        k_antioch = {
+            holder_scope = {
+                c_tripoli = { gain_title = PREV }
+            }
+        }
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 100
+	}		
+    }
+    
+    donate_baalbek = {
+	potential = {
+        has_landed_title = c_baalbek
+        any_playable_ruler = { has_landed_title = k_antioch } 
+        NOT = { realm = k_antioch }
+        OR = {
+            religion = catholic
+            is_heresy_of = catholic
+        }
+	}
+	allow = {
+        has_landed_title = c_baalbek
+        any_playable_ruler = { has_landed_title = k_antioch }
+        NOT = { realm = k_antioch }        
+        OR = {
+            religion = catholic
+            is_heresy_of = catholic
+        }
+	}
+	effect = {
+        k_antioch = {
+            holder_scope = {
+                c_baalbek = { gain_title = PREV }
+            }
+        }
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 100
+	}		
+    }
+    
+    donate_aintab = {
+	potential = {
+        has_landed_title = c_aintab
+        any_playable_ruler = { has_landed_title = k_antioch } 
+        NOT = { realm = k_antioch }
+        OR = {
+            religion = catholic
+            is_heresy_of = catholic
+        }
+	}
+	allow = {
+        has_landed_title = c_aintab
+        any_playable_ruler = { has_landed_title = k_antioch }
+        NOT = { realm = k_antioch }        
+        OR = {
+            religion = catholic
+            is_heresy_of = catholic
+        }
+	}
+	effect = {
+        k_antioch = {
+            holder_scope = {
+                c_aintab = { gain_title = PREV }
+            }
+        }
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 100
+	}		
+    }
+    donate_tell_bashir = {
+	potential = {
+        has_landed_title = c_tell_bashir
+        any_playable_ruler = { has_landed_title = k_antioch } 
+        NOT = { realm = k_antioch }
+        OR = {
+            religion = catholic
+            is_heresy_of = catholic
+        }
+	}
+	allow = {
+        has_landed_title = c_tell_bashir
+        any_playable_ruler = { has_landed_title = k_antioch }
+        NOT = { realm = k_antioch }        
+        OR = {
+            religion = catholic
+            is_heresy_of = catholic
+        }
+	}
+	effect = {
+        k_antioch = {
+            holder_scope = {
+                c_tell_bashir = { gain_title = PREV }
+            }
+        }
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 100
+	}		
+    }
+    donate_edessa = {
+	potential = {
+        has_landed_title = c_edessa
+        any_playable_ruler = { has_landed_title = k_antioch } 
+        NOT = { realm = k_antioch }
+        OR = {
+            religion = catholic
+            is_heresy_of = catholic
+        }
+	}
+	allow = {
+        has_landed_title = c_edessa
+        any_playable_ruler = { has_landed_title = k_antioch }
+        NOT = { realm = k_antioch }        
+        OR = {
+            religion = catholic
+            is_heresy_of = catholic
+        }
+	}
+	effect = {
+        k_antioch = {
+            holder_scope = {
+                c_edessa = { gain_title = PREV }
+            }
+        }
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 100
+	}		
+    }
+    donate_seleukeia = {
+	potential = {
+        has_landed_title = c_seleukeia
+        any_playable_ruler = { has_landed_title = k_antioch } 
+        NOT = { realm = k_antioch }
+        OR = {
+            religion = catholic
+            is_heresy_of = catholic
+        }
+	}
+	allow = {
+        has_landed_title = c_seleukeia
+        any_playable_ruler = { has_landed_title = k_antioch }
+        NOT = { realm = k_antioch }        
+        OR = {
+            religion = catholic
+            is_heresy_of = catholic
+        }
+	}
+	effect = {
+        k_antioch = {
+            holder_scope = {
+                c_seleukeia = { gain_title = PREV }
+            }
+        }
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 100
+	}		
+    }
+    donate_tarsos = {
+	potential = {
+        has_landed_title = c_tarsos
+        any_playable_ruler = { has_landed_title = k_antioch } 
+        NOT = { realm = k_antioch }
+        OR = {
+            religion = catholic
+            is_heresy_of = catholic
+        }
+	}
+	allow = {
+        has_landed_title = c_tarsos
+        any_playable_ruler = { has_landed_title = k_antioch }
+        NOT = { realm = k_antioch }        
+        OR = {
+            religion = catholic
+            is_heresy_of = catholic
+        }
+	}
+	effect = {
+        k_antioch = {
+            holder_scope = {
+                c_tarsos = { gain_title = PREV }
+            }
+        }
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 100
+	}		
+    }
+    donate_adana = {
+	potential = {
+        has_landed_title = c_adana
+        any_playable_ruler = { has_landed_title = k_antioch } 
+        NOT = { realm = k_antioch }
+        OR = {
+            religion = catholic
+            is_heresy_of = catholic
+        }
+	}
+	allow = {
+        has_landed_title = c_adana
+        any_playable_ruler = { has_landed_title = k_antioch }
+        NOT = { realm = k_antioch }        
+        OR = {
+            religion = catholic
+            is_heresy_of = catholic
+        }
+	}
+	effect = {
+        k_antioch = {
+            holder_scope = {
+                c_adana = { gain_title = PREV }
+            }
+        }
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 100
+	}		
+    }
+    donate_lykandos = {
+	potential = {
+        has_landed_title = c_lykandos
+        any_playable_ruler = { has_landed_title = k_antioch } 
+        NOT = { realm = k_antioch }
+        OR = {
+            religion = catholic
+            is_heresy_of = catholic
+        }
+	}
+	allow = {
+        has_landed_title = c_lykandos
+        any_playable_ruler = { has_landed_title = k_antioch }
+        NOT = { realm = k_antioch }        
+        OR = {
+            religion = catholic
+            is_heresy_of = catholic
+        }
+	}
+	effect = {
+        k_antioch = {
+            holder_scope = {
+                c_lykandos = { gain_title = PREV }
+            }
+        }
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 100
+	}		
+    }
+    donate_teluch = {
+	potential = {
+        has_landed_title = c_teluch
+        any_playable_ruler = { has_landed_title = k_antioch } 
+        NOT = { realm = k_antioch }
+        OR = {
+            religion = catholic
+            is_heresy_of = catholic
+        }
+	}
+	allow = {
+        has_landed_title = c_teluch
+        any_playable_ruler = { has_landed_title = k_antioch }
+        NOT = { realm = k_antioch }        
+        OR = {
+            religion = catholic
+            is_heresy_of = catholic
+        }
+	}
+	effect = {
+        k_antioch = {
+            holder_scope = {
+                c_teluch = { gain_title = PREV }
+            }
+        }
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 100
+	}		
+    }
+    donate_aleppo = {
+	potential = {
+        has_landed_title = c_aleppo
+        any_playable_ruler = { has_landed_title = k_antioch } 
+        NOT = { realm = k_antioch }
+        OR = {
+            religion = catholic
+            is_heresy_of = catholic
+        }
+	}
+	allow = {
+        has_landed_title = c_aleppo
+        any_playable_ruler = { has_landed_title = k_antioch }
+        NOT = { realm = k_antioch }        
+        OR = {
+            religion = catholic
+            is_heresy_of = catholic
+        }
+	}
+	effect = {
+        k_antioch = {
+            holder_scope = {
+                c_aleppo = { gain_title = PREV }
+            }
+        }
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 100
+	}		
+    }
+    donate_hama = {
+	potential = {
+        has_landed_title = c_hama
+        any_playable_ruler = { has_landed_title = k_antioch } 
+        NOT = { realm = k_antioch }
+        OR = {
+            religion = catholic
+            is_heresy_of = catholic
+        }
+	}
+	allow = {
+        has_landed_title = c_hama
+        any_playable_ruler = { has_landed_title = k_antioch }
+        NOT = { realm = k_antioch }        
+        OR = {
+            religion = catholic
+            is_heresy_of = catholic
+        }
+	}
+	effect = {
+        k_antioch = {
+            holder_scope = {
+                c_hama = { gain_title = PREV }
+            }
+        }
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 100
+	}		
+    }
+    donate_homs = {
+	potential = {
+        has_landed_title = c_homs
+        any_playable_ruler = { has_landed_title = k_antioch } 
+        NOT = { realm = k_antioch }
+        OR = {
+            religion = catholic
+            is_heresy_of = catholic
+        }
+	}
+	allow = {
+        has_landed_title = c_homs
+        any_playable_ruler = { has_landed_title = k_antioch }
+        NOT = { realm = k_antioch }        
+        OR = {
+            religion = catholic
+            is_heresy_of = catholic
+        }
+	}
+	effect = {
+        k_antioch = {
+            holder_scope = {
+                c_homs = { gain_title = PREV }
+            }
+        }
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 100
+	}		
+    }
+    donate_asas = {
+	potential = {
+        has_landed_title = c_asas
+        any_playable_ruler = { has_landed_title = k_antioch } 
+        NOT = { realm = k_antioch }
+        OR = {
+            religion = catholic
+            is_heresy_of = catholic
+        }
+	}
+	allow = {
+        has_landed_title = c_asas
+        any_playable_ruler = { has_landed_title = k_antioch }
+        NOT = { realm = k_antioch }        
+        OR = {
+            religion = catholic
+            is_heresy_of = catholic
+        }
+	}
+	effect = {
+        k_antioch = {
+            holder_scope = {
+                c_asas = { gain_title = PREV }
+            }
+        }
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 100
+	}		
+    }
+    donate_palmyra = {
+	potential = {
+        has_landed_title = c_palmyra
+        any_playable_ruler = { has_landed_title = k_antioch } 
+        NOT = { realm = k_antioch }
+        OR = {
+            religion = catholic
+            is_heresy_of = catholic
+        }
+	}
+	allow = {
+        has_landed_title = c_palmyra
+        any_playable_ruler = { has_landed_title = k_antioch }
+        NOT = { realm = k_antioch }        
+        OR = {
+            religion = catholic
+            is_heresy_of = catholic
+        }
+	}
+	effect = {
+        k_antioch = {
+            holder_scope = {
+                c_palmyra = { gain_title = PREV }
+            }
+        }
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 100
+	}		
+    }
+}

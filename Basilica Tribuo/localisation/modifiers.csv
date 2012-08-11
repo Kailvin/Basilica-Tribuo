@@ -1,0 +1,63 @@
+is_christian;Christian Military Tactics;Renforts de troupes;Wehrpflichtigen-Verstärkungen;;Refuerzos de leva;;;;;;;;;x
+is_islam;Islamic Military Tactics;Renforts de troupes;Wehrpflichtigen-Verstärkungen;;Refuerzos de leva;;;;;;;;;x
+is_pagan;Pagan Military Tactics;Renforts de troupes;Wehrpflichtigen-Verstärkungen;;Refuerzos de leva;;;;;;;;;x
+is_cathar;Religious Effects;Renforts de troupes;Wehrpflichtigen-Verstärkungen;;Refuerzos de leva;;;;;;;;;x
+is_jewish;Religious Effects;Renforts de troupes;Wehrpflichtigen-Verstärkungen;;Refuerzos de leva;;;;;;;;;x
+is_jewish_desc;The Jewish were often a minority. Even in state's such as the Khazar's where the government was jewish. They often called upon troops of all faiths. Giving many liberty's such as not having to fight their own faith. While taking away the number of troops you can use in battle. This provided great morale. ;Renforts de troupes;Wehrpflichtigen-Verstärkungen;;Refuerzos de leva;;;;;;;;;x
+is_catholic;Religious Effects;Renforts de troupes;Wehrpflichtigen-Verstärkungen;;Refuerzos de leva;;;;;;;;;x
+is_lollard;Religious Effects;Renforts de troupes;Wehrpflichtigen-Verstärkungen;;Refuerzos de leva;;;;;;;;;x
+is_waldensian;Religious Effects;Renforts de troupes;Wehrpflichtigen-Verstärkungen;;Refuerzos de leva;;;;;;;;;x
+is_fraticelli;Religious Effects;Renforts de troupes;Wehrpflichtigen-Verstärkungen;;Refuerzos de leva;;;;;;;;;x
+devout_monk;Devout Monk;Ecclésiastique soumis;Pflichtbewusster Geistlicher;;Clérigo obediente;;;;;;;;;x
+devout_monk_desc;This character has been taught the ways of the lord and has taken them to heart. He has become a very well read and pious individual.;Ce personnage est éduqué et doué pour la calligraphie, il ne s’intéresse pas particulièrement à la théologie.;Der pflichtbewusste Geistliche ist gebildet und von schöner Federführung wie besessen. Dafür mangelt es ihm aber an theologischem Interesse.;;El clérigo obediente es culto y posee una bella caligrafía, pero no le interesa particularmente la teología.;;;;;;;;;x
+province_christian;Christian Tradition;La Patriarchie œcuménique;Das Ökumenische Patriarchat;;El patriarcado ecuménico;;;;;;;;;x
+province_muslim;Muslim Tradition;La Patriarchie œcuménique;Das Ökumenische Patriarchat;;El patriarcado ecuménico;;;;;;;;;x
+province_pagan;Pagan Tradition;La Patriarchie œcuménique;Das Ökumenische Patriarchat;;El patriarcado ecuménico;;;;;;;;;x
+religious;Religious Flexability;Autorité de la couronne;Kronautorität;;Autoridad de la Corona;;;;;;;;;x
+religious_law_desc;The way the state treats heretics and heathens can be a major role in how things go. A theocratic state may hold inquisitions. While free thinking states may not even need to bother with them. However must instead deal with the religious heads wrath...;Les rois et empereurs médiévaux se battaient constamment contre leurs vassaux sur des questions de privilèges, de droits et d’obligations. La noblesse, naturellement, tendait à favoriser un État faible...;Kaiser und Könige des Mittelalters waren mit ihren Vasallen in ständige Streitereien über Privilegien, Rechte und Verpflichtungen verstrickt. Der Adel bevorzugte natürlich einen schwächeren Staat ...;;Los reyes y los emperadores medievales lucharon sin parar con sus vasallos por sus privilegios, derechos y obligaciones. La nobleza, lógicamente, suele preferir un estado débil...;;;;;;;;;x
+religious_0;Religious Acceptence;Vassaux autonomes;Autonome Vasallen;;Vasallos independientes;;;;;;;;;x
+religious_0_option;Accepting;Min;Min;;Mín.;;;;;;;;;x
+religious_0_desc;There is almost a seperation of church and state in the land. Heretics and heathans are granted almost equal rights to the majority faith.;Les vassaux imposent leur loi et dirigent leurs fiefs comme s’il s’agissait de petits royaumes. Leurs obligations envers leur suzerain sont minimum.;Vasallen sind ihre eigenen Gesetzgeber und beherrschen ihre Lehen wie kleine Königreiche. Ihre Verpflichtungen ihrem Lehnsherrn gegenüber sind minimal.;;Los vasallos tienen sus propias leyes y gobiernan sus feudos como si fueran pequeños reinos. Sus obligaciones hacia su señor son mínimas.;;;;;;;;;x
+religious_1;Religious Tolerance;Vassaux autonomes;Autonome Vasallen;;Vasallos independientes;;;;;;;;;x
+religious_1_option;Tolerant;Min;Min;;Mín.;;;;;;;;;x
+religious_1_desc;There is almost a seperation of church and state in the land. Heretics and heathans are granted almost equal rights to the majority faith.;Les vassaux imposent leur loi et dirigent leurs fiefs comme s’il s’agissait de petits royaumes. Leurs obligations envers leur suzerain sont minimum.;Vasallen sind ihre eigenen Gesetzgeber und beherrschen ihre Lehen wie kleine Königreiche. Ihre Verpflichtungen ihrem Lehnsherrn gegenüber sind minimal.;;Los vasallos tienen sus propias leyes y gobiernan sus feudos como si fueran pequeños reinos. Sus obligaciones hacia su señor son mínimas.;;;;;;;;;x
+religious_2;Balanced religious authority;Vassaux autonomes;Autonome Vasallen;;Vasallos independientes;;;;;;;;;x
+religious_2_option;Balanced;Min;Min;;Mín.;;;;;;;;;x
+religious_2_desc;There is almost a seperation of church and state in the land. Heretics and heathans are granted almost equal rights to the majority faith.;Les vassaux imposent leur loi et dirigent leurs fiefs comme s’il s’agissait de petits royaumes. Leurs obligations envers leur suzerain sont minimum.;Vasallen sind ihre eigenen Gesetzgeber und beherrschen ihre Lehen wie kleine Königreiche. Ihre Verpflichtungen ihrem Lehnsherrn gegenüber sind minimal.;;Los vasallos tienen sus propias leyes y gobiernan sus feudos como si fueran pequeños reinos. Sus obligaciones hacia su señor son mínimas.;;;;;;;;;x
+religious_3;Resolute;Vassaux autonomes;Autonome Vasallen;;Vasallos independientes;;;;;;;;;x
+religious_3_option;Resolute religious unity;Min;Min;;Mín.;;;;;;;;;x
+religious_3_desc;There is almost a seperation of church and state in the land. Heretics and heathans are granted almost equal rights to the majority faith.;Les vassaux imposent leur loi et dirigent leurs fiefs comme s’il s’agissait de petits royaumes. Leurs obligations envers leur suzerain sont minimum.;Vasallen sind ihre eigenen Gesetzgeber und beherrschen ihre Lehen wie kleine Königreiche. Ihre Verpflichtungen ihrem Lehnsherrn gegenüber sind minimal.;;Los vasallos tienen sus propias leyes y gobiernan sus feudos como si fueran pequeños reinos. Sus obligaciones hacia su señor son mínimas.;;;;;;;;;x
+religious_4;Monastic;Vassaux autonomes;Autonome Vasallen;;Vasallos independientes;;;;;;;;;x
+religious_4_option;Monastic Rule;Min;Min;;Mín.;;;;;;;;;x
+religious_4_desc;There is almost a seperation of church and state in the land. Heretics and heathans are granted almost equal rights to the majority faith.;Les vassaux imposent leur loi et dirigent leurs fiefs comme s’il s’agissait de petits royaumes. Leurs obligations envers leur suzerain sont minimum.;Vasallen sind ihre eigenen Gesetzgeber und beherrschen ihre Lehen wie kleine Königreiche. Ihre Verpflichtungen ihrem Lehnsherrn gegenüber sind minimal.;;Los vasallos tienen sus propias leyes y gobiernan sus feudos como si fueran pequeños reinos. Sus obligaciones hacia su señor son mínimas.;;;;;;;;;x
+flex_zero;Religious Tolerance Effects;Renforts de troupes;Wehrpflichtigen-Verstärkungen;;Refuerzos de leva;;;;;;;;;x
+flex_one;Religious Tolerance Effects;Renforts de troupes;Wehrpflichtigen-Verstärkungen;;Refuerzos de leva;;;;;;;;;x
+flex_three;Religious Stringency Effects;Renforts de troupes;Wehrpflichtigen-Verstärkungen;;Refuerzos de leva;;;;;;;;;x
+flex_four;Religous Stringency Effects;Renforts de troupes;Wehrpflichtigen-Verstärkungen;;Refuerzos de leva;;;;;;;;;x
+same_religion_flex_zero_feudal;Religious Laws;Renforts de troupes;Wehrpflichtigen-Verstärkungen;;Refuerzos de leva;;;;;;;;;x
+same_religion_flex_one_feudal;Religious Laws;Renforts de troupes;Wehrpflichtigen-Verstärkungen;;Refuerzos de leva;;;;;;;;;x
+same_religion_flex_three_feudal;Religious Laws;Renforts de troupes;Wehrpflichtigen-Verstärkungen;;Refuerzos de leva;;;;;;;;;x
+same_religion_flex_four_feudal;Religious Laws;Renforts de troupes;Wehrpflichtigen-Verstärkungen;;Refuerzos de leva;;;;;;;;;x
+diff_religion_flex_zero_feudal;Religious Laws;Renforts de troupes;Wehrpflichtigen-Verstärkungen;;Refuerzos de leva;;;;;;;;;x
+diff_religion_flex_one_feudal;Religious Laws;Renforts de troupes;Wehrpflichtigen-Verstärkungen;;Refuerzos de leva;;;;;;;;;x
+diff_religion_flex_three_feudal;Religious Laws;Renforts de troupes;Wehrpflichtigen-Verstärkungen;;Refuerzos de leva;;;;;;;;;x
+diff_religion_flex_four_feudal;Religious Laws;Renforts de troupes;Wehrpflichtigen-Verstärkungen;;Refuerzos de leva;;;;;;;;;x
+same_religion_flex_zero_church;Religious Laws;Renforts de troupes;Wehrpflichtigen-Verstärkungen;;Refuerzos de leva;;;;;;;;;x
+same_religion_flex_one_church;Religious Laws;Renforts de troupes;Wehrpflichtigen-Verstärkungen;;Refuerzos de leva;;;;;;;;;x
+same_religion_flex_three_church;Religious Laws;Renforts de troupes;Wehrpflichtigen-Verstärkungen;;Refuerzos de leva;;;;;;;;;x
+same_religion_flex_four_church;Religious Laws;Renforts de troupes;Wehrpflichtigen-Verstärkungen;;Refuerzos de leva;;;;;;;;;x
+diff_religion_flex_zero_church;Religious Laws;Renforts de troupes;Wehrpflichtigen-Verstärkungen;;Refuerzos de leva;;;;;;;;;x
+diff_religion_flex_one_church;Religious Laws;Renforts de troupes;Wehrpflichtigen-Verstärkungen;;Refuerzos de leva;;;;;;;;;x
+diff_religion_flex_three_church;Religious Laws;Renforts de troupes;Wehrpflichtigen-Verstärkungen;;Refuerzos de leva;;;;;;;;;x
+diff_religion_flex_four_church;Religious Laws;Renforts de troupes;Wehrpflichtigen-Verstärkungen;;Refuerzos de leva;;;;;;;;;x
+same_religion_flex_zero_city;Religious Laws;Renforts de troupes;Wehrpflichtigen-Verstärkungen;;Refuerzos de leva;;;;;;;;;x
+same_religion_flex_one_city;Religious Laws;Renforts de troupes;Wehrpflichtigen-Verstärkungen;;Refuerzos de leva;;;;;;;;;x
+same_religion_flex_three_city;Religious Laws;Renforts de troupes;Wehrpflichtigen-Verstärkungen;;Refuerzos de leva;;;;;;;;;x
+same_religion_flex_four_city;Religious Laws;Renforts de troupes;Wehrpflichtigen-Verstärkungen;;Refuerzos de leva;;;;;;;;;x
+diff_religion_flex_zero_city;Religious Laws;Renforts de troupes;Wehrpflichtigen-Verstärkungen;;Refuerzos de leva;;;;;;;;;x
+diff_religion_flex_one_city;Religious Laws;Renforts de troupes;Wehrpflichtigen-Verstärkungen;;Refuerzos de leva;;;;;;;;;x
+diff_religion_flex_three_city;Religious Laws;Renforts de troupes;Wehrpflichtigen-Verstärkungen;;Refuerzos de leva;;;;;;;;;x
+diff_religion_flex_four_city;Religious Laws;Renforts de troupes;Wehrpflichtigen-Verstärkungen;;Refuerzos de leva;;;;;;;;;x
+heretic_capital;Heretic Capital;Forteresse des hérétiques;Ketzerische Hochburg;;Fortaleza hereje;;;;;;;;;x
+heretic_fortress;Heretic Fortress;Forteresse des hérétiques;Ketzerische Hochburg;;Fortaleza hereje;;;;;;;;;x
+heretic_fort;Heretic Fort;Forteresse des hérétiques;Ketzerische Hochburg;;Fortaleza hereje;;;;;;;;;x

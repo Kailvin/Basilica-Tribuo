@@ -1,0 +1,1437 @@
+decisions = {
+create_e_tengri = {
+	is_high_prio = yes	
+	potential = {
+		NOT = { any_independent_ruler = { has_landed_title = e_tengri } }
+        NOT = { has_landed_title = e_tengri }
+        religion = tengri_pagan
+        OR = { 
+            tier = king
+            tier = emperor
+        }
+        independent = yes
+	}
+	allow = {
+		war = no
+        any_demesne_province = {
+            continent = azerbaijan
+        }
+	}
+	effect = {
+		e_tengri = { gain_title = FROM }
+        prestige = 250
+        piety = 100
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 100
+	}		
+}
+catholic_invest_on = {
+	is_high_prio = no	
+	potential = {
+        NOT = { has_global_flag = catholic_invest_conflict }
+        religion = catholic
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+            }
+            controls_religion = yes
+        }
+        independent = yes
+    }
+	allow = {
+        religion = catholic
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+                religion = catholic
+            }
+            controls_religion = yes
+        }
+	}
+	effect = {
+        set_global_flag = catholic_invest_conflict
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 0
+        modifier = {
+            factor = 1
+            year = 1075
+        }
+	}
+}
+catholic_invest_off = {
+	is_high_prio = no	
+	potential = {
+        has_global_flag = catholic_invest_conflict
+        religion = catholic
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+            }
+            controls_religion = yes
+        }
+        independent = yes
+    }
+	allow = {
+        religion = catholic
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+                religion = catholic
+            }
+            controls_religion = yes
+        }
+	}
+	effect = {
+        clr_global_flag = catholic_invest_conflict
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+orthodox_invest_on = {
+	is_high_prio = no	
+	potential = {
+        NOT = { has_global_flag = orthodox_invest_conflict }
+        religion = orthodox
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+                religion = orthodox
+            }
+            controls_religion = yes
+        }
+        independent = yes
+    }
+	allow = {
+	}
+	effect = {
+        set_global_flag = orthodox_invest_conflict
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+orthodox_invest_off = {
+	is_high_prio = no	
+	potential = {
+        has_global_flag = orthodox_invest_conflict
+        religion = orthodox
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+                religion = orthodox
+            }
+            controls_religion = yes
+        }
+        independent = yes
+    }
+	allow = {
+	}
+	effect = {
+        clr_global_flag = orthodox_invest_conflict
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+cathar_invest_on = {
+	is_high_prio = no	
+	potential = {
+        NOT = { has_global_flag = cathar_invest_conflict }
+        religion = cathar
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+            }
+            controls_religion = yes
+        }
+        independent = yes
+    }
+	allow = {
+        religion = cathar
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+                religion = cathar
+            }
+            controls_religion = yes
+        }
+	}
+	effect = {
+        set_global_flag = cathar_invest_conflict
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+cathar_invest_off = {
+	is_high_prio = no	
+	potential = {
+        has_global_flag = cathar_invest_conflict
+        religion = cathar
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+                religion = cathar
+            }
+            controls_religion = yes
+        }
+        independent = yes
+    }
+	allow = {
+        religion = cathar
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+            }
+            controls_religion = yes
+        }
+	}
+	effect = {
+        clr_global_flag = cathar_invest_conflict
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+fraticelli_invest_on = {
+	is_high_prio = no	
+	potential = {
+        NOT = { has_global_flag = fraticelli_invest_conflict }
+        religion = fraticelli
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+            }
+            controls_religion = yes
+        }
+        independent = yes
+    }
+	allow = {
+        religion = fraticelli
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+                religion = fraticelli
+            }
+            controls_religion = yes
+        }
+	}
+	effect = {
+        set_global_flag = fraticelli_invest_conflict
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+fraticelli_invest_off = {
+	is_high_prio = no	
+	potential = {
+        has_global_flag = fraticelli_invest_conflict
+        religion = fraticelli
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+                religion = fraticelli
+            }
+            controls_religion = yes
+        }
+        independent = yes
+    }
+	allow = {
+        religion = fraticelli
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+            }
+            controls_religion = yes
+        }
+	}
+	effect = {
+        clr_global_flag = fraticelli_invest_conflict
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+lollard_invest_on = {
+	is_high_prio = no	
+	potential = {
+        NOT = { has_global_flag = lollard_invest_conflict }
+        religion = lollard
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+            }
+            controls_religion = yes
+        }
+        independent = yes
+    }
+	allow = {
+        religion = lollard
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+                religion = lollard
+            }
+            controls_religion = yes
+        }
+	}
+	effect = {
+        set_global_flag = lollard_invest_conflict
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+lollard_invest_off = {
+	is_high_prio = no	
+	potential = {
+        has_global_flag = lollard_invest_conflict
+        religion = lollard
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+                religion = lollard
+            }
+            controls_religion = yes
+        }
+        independent = yes
+    }
+	allow = {
+        religion = lollard
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+            }
+            controls_religion = yes
+        }
+	}
+	effect = {
+        clr_global_flag = lollard_invest_conflict
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+waldensian_invest_on = {
+	is_high_prio = no	
+	potential = {
+        NOT = { has_global_flag = waldensian_invest_conflict }
+        religion = waldensian
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+            }
+            controls_religion = yes
+        }
+        independent = yes
+    }
+	allow = {
+        religion = waldensian
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+                religion = waldensian
+            }
+            controls_religion = yes
+        }
+	}
+	effect = {
+        set_global_flag = waldensian_invest_conflict
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+waldensian_invest_off = {
+	is_high_prio = no	
+	potential = {
+        has_global_flag = waldensian_invest_conflict
+        religion = waldensian
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+                religion = waldensian
+            }
+            controls_religion = yes
+        }
+        independent = yes
+    }
+	allow = {
+        religion = waldensian
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+            }
+            controls_religion = yes
+        }
+	}
+	effect = {
+        clr_global_flag = waldensian_invest_conflict
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+monophysite_invest_on = {
+	is_high_prio = no	
+	potential = {
+        NOT = { has_global_flag = monophysite_invest_conflict }
+        religion = monophysite
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+            }
+            controls_religion = yes
+        }
+        independent = yes
+    }
+	allow = {
+        religion = monophysite
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+                religion = monophysite
+            }
+            controls_religion = yes
+        }
+	}
+	effect = {
+        set_global_flag = monophysite_invest_conflict
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+monophysite_invest_off = {
+	is_high_prio = no	
+	potential = {
+        has_global_flag = monophysite_invest_conflict
+        religion = monophysite
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+                religion = monophysite
+            }
+            controls_religion = yes
+        }
+        independent = yes
+    }
+	allow = {
+        religion = monophysite
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+            }
+            controls_religion = yes
+        }
+	}
+	effect = {
+        clr_global_flag = monophysite_invest_conflict
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+iconoclast_invest_on = {
+	is_high_prio = no	
+	potential = {
+        NOT = { has_global_flag = iconoclast_invest_conflict }
+        religion = iconoclast
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+            }
+            controls_religion = yes
+        }
+        independent = yes
+    }
+	allow = {
+        religion = iconoclast
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+                religion = iconoclast
+            }
+            controls_religion = yes
+        }
+	}
+	effect = {
+        set_global_flag = iconoclast_invest_conflict
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+iconoclast_invest_off = {
+	is_high_prio = no	
+	potential = {
+        has_global_flag = iconoclast_invest_conflict
+        religion = iconoclast
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+                religion = iconoclast
+            }
+            controls_religion = yes
+        }
+        independent = yes
+    }
+	allow = {
+        religion = iconoclast
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+            }
+            controls_religion = yes
+        }
+	}
+	effect = {
+        clr_global_flag = iconoclast_invest_conflict
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+monophysite_invest_on = {
+	is_high_prio = no	
+	potential = {
+        NOT = { has_global_flag = monophysite_invest_conflict }
+        religion = monophysite
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+            }
+            controls_religion = yes
+        }
+        independent = yes
+    }
+	allow = {
+        religion = monophysite
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+                religion = monophysite
+            }
+            controls_religion = yes
+        }
+	}
+	effect = {
+        set_global_flag = monophysite_invest_conflict
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+monophysite_invest_off = {
+	is_high_prio = no	
+	potential = {
+        has_global_flag = monophysite_invest_conflict
+        religion = monophysite
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+                religion = monophysite
+            }
+            controls_religion = yes
+        }
+        independent = yes
+    }
+	allow = {
+        religion = monophysite
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+            }
+            controls_religion = yes
+        }
+	}
+	effect = {
+        clr_global_flag = monophysite_invest_conflict
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+nestorian_invest_on = {
+	is_high_prio = no	
+	potential = {
+        NOT = { has_global_flag = nestorian_invest_conflict }
+        religion = nestorian
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+            }
+            controls_religion = yes
+        }
+        independent = yes
+    }
+	allow = {
+        religion = nestorian
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+                religion = nestorian
+            }
+            controls_religion = yes
+        }
+	}
+	effect = {
+        set_global_flag = nestorian_invest_conflict
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+nestorian_invest_off = {
+	is_high_prio = no	
+	potential = {
+        has_global_flag = nestorian_invest_conflict
+        religion = nestorian
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+                religion = nestorian
+            }
+            controls_religion = yes
+        }
+        independent = yes
+    }
+	allow = {
+        religion = nestorian
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+            }
+            controls_religion = yes
+        }
+	}
+	effect = {
+        clr_global_flag = nestorian_invest_conflict
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+pagan_invest_on = {
+	is_high_prio = no	
+	potential = {
+        NOT = { has_global_flag = pagan_invest_conflict }
+        religion = pagan
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+            }
+            controls_religion = yes
+        }
+        independent = yes
+    }
+	allow = {
+        religion = pagan
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+                religion = pagan
+            }
+            controls_religion = yes
+        }
+	}
+	effect = {
+        set_global_flag = pagan_invest_conflict
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+pagan_invest_off = {
+	is_high_prio = no	
+	potential = {
+        has_global_flag = pagan_invest_conflict
+        religion = pagan
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+                religion = pagan
+            }
+            controls_religion = yes
+        }
+        independent = yes
+    }
+	allow = {
+        religion = pagan
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+            }
+            controls_religion = yes
+        }
+	}
+	effect = {
+        clr_global_flag = pagan_invest_conflict
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+norse_pagan_invest_on = {
+	is_high_prio = no	
+	potential = {
+        NOT = { has_global_flag = norse_pagan_invest_conflict }
+        religion = norse_pagan
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+            }
+            controls_religion = yes
+        }
+        independent = yes
+    }
+	allow = {
+        religion = norse_pagan
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+                religion = norse_pagan
+            }
+            controls_religion = yes
+        }
+	}
+	effect = {
+        set_global_flag = norse_pagan_invest_conflict
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+norse_pagan_invest_off = {
+	is_high_prio = no	
+	potential = {
+        has_global_flag = norse_pagan_invest_conflict
+        religion = norse_pagan
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+                religion = norse_pagan
+            }
+            controls_religion = yes
+        }
+        independent = yes
+    }
+	allow = {
+        religion = norse_pagan
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+            }
+            controls_religion = yes
+        }
+	}
+	effect = {
+        clr_global_flag = norse_pagan_invest_conflict
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+tengri_pagan_invest_on = {
+	is_high_prio = no	
+	potential = {
+        NOT = { has_global_flag = tengri_pagan_invest_conflict }
+        religion = tengri_pagan
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+            }
+            controls_religion = yes
+        }
+        independent = yes
+    }
+	allow = {
+        religion = tengri_pagan
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+                religion = tengri_pagan
+            }
+            controls_religion = yes
+        }
+	}
+	effect = {
+        set_global_flag = tengri_pagan_invest_conflict
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+tengri_pagan_invest_off = {
+	is_high_prio = no	
+	potential = {
+        has_global_flag = tengri_pagan_invest_conflict
+        religion = tengri_pagan
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+                religion = tengri_pagan
+            }
+            controls_religion = yes
+        }
+        independent = yes
+    }
+	allow = {
+        religion = tengri_pagan
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+            }
+            controls_religion = yes
+        }
+	}
+	effect = {
+        clr_global_flag = tengri_pagan_invest_conflict
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+baltic_pagan_invest_on = {
+	is_high_prio = no	
+	potential = {
+        NOT = { has_global_flag = baltic_pagan_invest_conflict }
+        religion = baltic_pagan
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+            }
+            controls_religion = yes
+        }
+        independent = yes
+    }
+	allow = {
+        religion = baltic_pagan
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+                religion = baltic_pagan
+            }
+            controls_religion = yes
+        }
+	}
+	effect = {
+        set_global_flag = baltic_pagan_invest_conflict
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+baltic_pagan_invest_off = {
+	is_high_prio = no	
+	potential = {
+        has_global_flag = baltic_pagan_invest_conflict
+        religion = baltic_pagan
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+                religion = baltic_pagan
+            }
+            controls_religion = yes
+        }
+        independent = yes
+    }
+	allow = {
+        religion = baltic_pagan
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+            }
+            controls_religion = yes
+        }
+	}
+	effect = {
+        clr_global_flag = baltic_pagan_invest_conflict
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+finnish_pagan_invest_on = {
+	is_high_prio = no	
+	potential = {
+        NOT = { has_global_flag = finnish_pagan_invest_conflict }
+        religion = finnish_pagan
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+            }
+            controls_religion = yes
+        }
+        independent = yes
+    }
+	allow = {
+        religion = finnish_pagan
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+                religion = finnish_pagan
+            }
+            controls_religion = yes
+        }
+	}
+	effect = {
+        set_global_flag = finnish_pagan_invest_conflict
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+finnish_pagan_invest_off = {
+	is_high_prio = no	
+	potential = {
+        has_global_flag = finnish_pagan_invest_conflict
+        religion = finnish_pagan
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+                religion = finnish_pagan
+            }
+            controls_religion = yes
+        }
+        independent = yes
+    }
+	allow = {
+        religion = finnish_pagan
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+            }
+            controls_religion = yes
+        }
+	}
+	effect = {
+        clr_global_flag = finnish_pagan_invest_conflict
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+zoroastrian_invest_on = {
+	is_high_prio = no	
+	potential = {
+        NOT = { has_global_flag = zoroastrian_invest_conflict }
+        religion = zoroastrian
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+            }
+            controls_religion = yes
+        }
+        independent = yes
+    }
+	allow = {
+        religion = zoroastrian
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+                religion = zoroastrian
+            }
+            controls_religion = yes
+        }
+	}
+	effect = {
+        set_global_flag = zoroastrian_invest_conflict
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+zoroastrian_invest_off = {
+	is_high_prio = no	
+	potential = {
+        has_global_flag = zoroastrian_invest_conflict
+        religion = zoroastrian
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+                religion = zoroastrian
+            }
+            controls_religion = yes
+        }
+        independent = yes
+    }
+	allow = {
+        religion = zoroastrian
+        OR = {
+            any_vassal = {
+                controls_religion = yes
+            }
+            controls_religion = yes
+        }
+	}
+	effect = {
+        clr_global_flag = zoroastrian_invest_conflict
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+sunni_anti_caliph = {
+	is_high_prio = no	
+	potential = { 
+        religion = sunni
+        NOT = { has_character_flag = anti_caliph }
+        NOT = { has_landed_title = d_sunni }
+        OR = {
+            trait = sayyid
+            trait = mirza
+        }
+    }
+	allow = {
+        OR = {
+            AND = {
+            trait = sayyid
+            prestige = 250
+            }
+            AND = {
+            trait = mirza
+            prestige = 500
+            piety = 250
+            }
+        }
+	}
+	effect = {
+        if = {
+            limit = {
+                trait = sayyid
+            }
+            prestige = -250
+        }
+        if = {
+            limit = {
+                trait = mirza
+            }
+            prestige = -500
+            piety = -250
+        }
+        d_sunni = { add_claim = from }
+        set_character_flag = anti_caliph
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 0
+        modifier = {
+            factor = 1
+            AND = {
+                num_of_realm_counties = 20
+                NOT = { culture = turkish }
+            }
+        }
+	}
+}
+zikri_anti_caliph = {
+	is_high_prio = no	
+	potential = { 
+        religion = zikri
+        NOT = { has_character_flag = anti_caliph }
+        NOT = { has_landed_title = d_zikri }
+        OR = {
+            trait = sayyid
+            trait = mirza
+        }
+    }
+	allow = {
+        OR = {
+            AND = {
+            trait = sayyid
+            prestige = 250
+            }
+            AND = {
+            trait = mirza
+            prestige = 500
+            piety = 250
+            }
+        }
+	}
+	effect = {
+        if = {
+            limit = {
+                trait = sayyid
+            }
+            prestige = -250
+        }
+        if = {
+            limit = {
+                trait = mirza
+            }
+            prestige = -500
+            piety = -250
+        }
+        d_zikri = { add_claim = from }
+        set_character_flag = anti_caliph
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+yazidi_anti_caliph = {
+	is_high_prio = no	
+	potential = { 
+        religion = yazidi
+        NOT = { has_character_flag = anti_caliph }
+        NOT = { has_landed_title = d_yazidi }
+        OR = {
+            trait = sayyid
+            trait = mirza
+        }
+    }
+	allow = {
+        OR = {
+            AND = {
+            trait = sayyid
+            prestige = 250
+            }
+            AND = {
+            trait = mirza
+            prestige = 500
+            piety = 250
+            }
+        }
+	}
+	effect = {
+        if = {
+            limit = {
+                trait = sayyid
+            }
+            prestige = -250
+        }
+        if = {
+            limit = {
+                trait = mirza
+            }
+            prestige = -500
+            piety = -250
+        }
+        d_yazidi = { add_claim = from }
+        set_character_flag = anti_caliph
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+ibadi_anti_caliph = {
+	is_high_prio = no	
+	potential = { 
+        religion = ibadi
+        NOT = { has_character_flag = anti_caliph }
+        NOT = { has_landed_title = d_ibadi }
+        OR = {
+            trait = sayyid
+            trait = mirza
+        }
+    }
+	allow = {
+        OR = {
+            AND = {
+            trait = sayyid
+            prestige = 250
+            }
+            AND = {
+            trait = mirza
+            prestige = 500
+            piety = 250
+            }
+        }
+	}
+	effect = {
+        if = {
+            limit = {
+                trait = sayyid
+            }
+            prestige = -250
+        }
+        if = {
+            limit = {
+                trait = mirza
+            }
+            prestige = -500
+            piety = -250
+        }
+        d_ibadi = { add_claim = from }
+        set_character_flag = anti_caliph
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+shiite_anti_caliph = {
+	is_high_prio = no	
+	potential = { 
+        religion = shiite
+        NOT = { has_character_flag = anti_caliph }
+        NOT = { has_landed_title = d_shiite }
+        OR = {
+            trait = sayyid
+        }
+    }
+	allow = {
+        OR = {
+            AND = {
+            trait = sayyid
+            prestige = 250
+            }
+            AND = {
+            trait = mirza
+            prestige = 500
+            piety = 250
+            }
+        }
+	}
+	effect = {
+        if = {
+            limit = {
+                trait = sayyid
+            }
+            prestige = -250
+        }
+        d_shiite = { add_claim = from }
+        set_character_flag = anti_caliph
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+bektashi_anti_caliph = {
+	is_high_prio = no	
+	potential = { 
+        religion = bektashi
+        NOT = { has_character_flag = anti_caliph }
+        NOT = { has_landed_title = d_bektashi }
+        OR = {
+            trait = sayyid
+        }
+    }
+	allow = {
+        OR = {
+            AND = {
+            trait = sayyid
+            prestige = 250
+            }
+            AND = {
+            trait = mirza
+            prestige = 500
+            piety = 250
+            }
+        }
+	}
+	effect = {
+        if = {
+            limit = {
+                trait = sayyid
+            }
+            prestige = -250
+        }
+        d_bektashi = { add_claim = from }
+        set_character_flag = anti_caliph
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+druze_anti_caliph = {
+	is_high_prio = no	
+	potential = { 
+        religion = druze
+        NOT = { has_character_flag = anti_caliph }
+        NOT = { has_landed_title = d_druze }
+        OR = {
+            trait = sayyid
+        }
+    }
+	allow = {
+        OR = {
+            AND = {
+            trait = sayyid
+            prestige = 250
+            }
+            AND = {
+            trait = mirza
+            prestige = 500
+            piety = 250
+            }
+        }
+	}
+	effect = {
+        if = {
+            limit = {
+                trait = sayyid
+            }
+            prestige = -250
+        }
+        d_druze = { add_claim = from }
+        set_character_flag = anti_caliph
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+hurufi_anti_caliph = {
+	is_high_prio = no	
+	potential = { 
+        religion = hurufi
+        NOT = { has_character_flag = anti_caliph }
+        NOT = { has_landed_title = d_hurufi }
+        OR = {
+            trait = sayyid
+        }
+    }
+	allow = {
+        OR = {
+            AND = {
+            trait = sayyid
+            prestige = 250
+            }
+            AND = {
+            trait = mirza
+            prestige = 500
+            piety = 250
+            }
+        }
+	}
+	effect = {
+        if = {
+            limit = {
+                trait = sayyid
+            }
+            prestige = -250
+        }
+        d_hurufi = { add_claim = from }
+        set_character_flag = anti_caliph
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+}

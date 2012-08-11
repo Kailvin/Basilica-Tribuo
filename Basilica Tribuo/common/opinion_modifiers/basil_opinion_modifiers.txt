@@ -1,0 +1,76 @@
+#CUSTOM
+same_religion_flex_one_feudal = {
+    opinion = -5
+}
+same_religion_flex_zero_feudal = {
+    opinion = -10
+}
+same_religion_flex_three_feudal = {
+    opinion = 10
+}
+same_religion_flex_four_feudal = {
+    opinion = 20
+}
+diff_religion_flex_zero_feudal = {
+    opinion = 20
+}
+diff_religion_flex_one_feudal = {
+    opinion = 10
+}
+diff_religion_flex_three_feudal = {
+    opinion = -15
+}
+diff_religion_flex_four_feudal = {
+    opinion = -30
+}
+same_religion_flex_one_church = {
+    opinion = -20
+}
+same_religion_flex_zero_church = {
+    opinion = -40
+}
+same_religion_flex_three_church = {
+    opinion = 15
+}
+same_religion_flex_four_church = {
+    opinion = 30
+}
+diff_religion_flex_zero_church = {
+    opinion = 30
+}
+diff_religion_flex_one_church = {
+    opinion = 15
+}
+diff_religion_flex_three_church = {
+    opinion = -20
+}
+diff_religion_flex_four_church = {
+    opinion = -40
+}
+same_religion_flex_one_city = {
+    opinion = -10
+}
+same_religion_flex_zero_city = {
+    opinion = -20
+}
+same_religion_flex_three_city = {
+    opinion = 5
+}
+same_religion_flex_four_city = {
+    opinion = 10
+}
+diff_religion_flex_zero_city = {
+    opinion = 10
+}
+diff_religion_flex_one_city = {
+    opinion = 5
+}
+diff_religion_flex_three_city = {
+    opinion = -10
+}
+diff_religion_flex_four_city = {
+    opinion = -20
+}
+controlled_cardinal = {
+    opinion = 100
+}

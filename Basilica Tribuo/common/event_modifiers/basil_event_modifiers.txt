@@ -1,0 +1,41 @@
+province_christian = {
+    castle_levy_size = 0.25
+    knights = 10
+    heavy_infantry = 20
+    icon = 8
+}
+province_muslim = {
+    temple_levy_size = 0.50
+    light_cavalry = 50
+    pikemen = 20
+    icon = 8
+}
+province_pagan = {
+    city_levy_size = 0.75
+    light_infantry = 100
+    heavy_infantry = 50
+    icon = 8
+}
+bulgarian_riots_supressed = {
+    castle_levy_size = -10.00
+    temple_levy_size = -10.00
+    city_levy_size = -10.00
+    local_revolt_risk = -0.1
+    icon = 32
+}
+bulgarian_riots_not_supressed = {
+    local_revolt_risk = 0.1
+    icon = 32
+}
+heretic_capital = {
+	icon = 35
+}
+heretic_fortress = {
+	icon = 35
+}
+heretic_stronghold = {
+	icon = 35
+}
+heretic_fort = {
+	icon = 35
+}

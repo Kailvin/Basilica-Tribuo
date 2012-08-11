@@ -1,0 +1,904 @@
+############
+character_event = {
+	id = 666001
+	desc = "EVTDESC39260"	
+	picture = GFX_evt_heretic
+
+	
+	trigger = {
+    NOT = { is_title_active = c_cathar_papal_state }
+    independent = no
+    religion = cathar
+		top_liege = {
+				religion = cathar
+				prisoner = no
+                OR = {
+                tier = king
+                tier = emperor
+                }
+	}
+    OR = {
+        AND = {
+        religion_authority = 0.9
+        tier = count
+        }
+        AND = {
+        tier = duke
+        religion_authority = 0.75
+        }
+    }
+	is_theocracy = yes
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "EVTOPTA39260"	#ask them
+		ai_chance = { factor = 100 }
+        activate_title = { title = c_cathar_papal_state = yes }
+        c_cathar_papal_state = { gain_title = FROM }
+        
+	}
+    
+}
+#
+character_event = {
+	id = 666002
+	desc = "EVTDESC39260"	
+	picture = GFX_evt_heretic
+
+	
+	trigger = {
+    NOT = { is_title_active = c_fraticelli_papal_state }
+    independent = no
+    religion = fraticelli
+		top_liege = {
+				religion = fraticelli
+				prisoner = no
+                OR = {
+                tier = king
+                tier = emperor
+                }
+	}
+    OR = {
+        AND = {
+        religion_authority = 0.9
+        tier = count
+        }
+        AND = {
+        tier = duke
+        religion_authority = 0.75
+        }
+    }
+	is_theocracy = yes
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "EVTOPTA39260"	#ask them
+		ai_chance = { factor = 100 }
+        activate_title = { title = c_fraticelli_papal_state = yes }
+        c_fraticelli_papal_state = { gain_title = FROM }
+        
+	}
+    
+}
+#
+character_event = {
+	id = 666003
+	desc = "EVTDESC39260"	
+	picture = GFX_evt_heretic
+
+	
+	trigger = {
+    NOT = { is_title_active = c_waldensian_papal_state }
+    independent = no
+    religion = waldensian
+		top_liege = {
+				religion = waldensian
+				prisoner = no
+                OR = {
+                tier = king
+                tier = emperor
+                }
+	}
+    OR = {
+        AND = {
+        religion_authority = 0.9
+        tier = count
+        }
+        AND = {
+        tier = duke
+        religion_authority = 0.75
+        }
+    }
+	is_theocracy = yes
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "EVTOPTA39260"	#ask them
+		ai_chance = { factor = 100 }
+        activate_title = { title = c_waldensian_papal_state = yes }
+        c_waldensian_papal_state = { gain_title = FROM }
+        
+	}
+    
+}
+#
+character_event = {
+	id = 666004
+	desc = "EVTDESC39260"	
+	picture = GFX_evt_heretic
+
+	
+	trigger = {
+    NOT = { is_title_active = c_lollard_papal_state }
+    independent = no
+    religion = lollard
+		top_liege = {
+				religion = lollard
+				prisoner = no
+                OR = {
+                tier = king
+                tier = emperor
+                }
+	}
+    OR = {
+        AND = {
+        religion_authority = 0.9
+        tier = count
+        }
+        AND = {
+        tier = duke
+        religion_authority = 0.75
+        }
+    }
+	is_theocracy = yes
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "EVTOPTA39260"	#ask them
+		ai_chance = { factor = 100 }
+        activate_title = { title = c_lollard_papal_state = yes }
+        c_lollard_papal_state = { gain_title = FROM }
+        
+	}
+    
+}
+##################
+province_event = {
+	id = 666000
+	desc = "Province under rebel control converts To heresy"
+	picture = "GFX_evt_burning_house"
+trigger = {
+		# Rebel occupied
+		NOT = {
+			any_province_lord = {
+				any_demesne_title = {
+					location = {
+						province_id = ROOT
+					}
+					tier = baron
+					NOT = { controlled_by = e_rebels }
+				}
+			}
+		}
+		any_province_lord = {
+			any_demesne_title = {
+				location = {
+					province_id = ROOT
+				}
+				tier = baron
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	immediate = {
+		become_heretic = yes
+		set_province_flag = heresy_in_province
+		add_province_modifier = {
+			name = heresy_in_province_timer
+			duration = 730
+			hidden = yes
+		}
+	}
+	
+	option = {
+		name = "Where is my chaplain!"
+	}
+}
+#####################
+
+character_event = {
+	id = 666005
+	desc = "EVTDESC39260"	
+	picture = GFX_evt_heretic
+
+	
+	trigger = {
+    religion = catholic
+	controls_religion = yes
+    NOT = { has_global_flag = catholic_balanced_starting_authority }
+	}
+    
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "EVTOPTA39260"	#ask them
+		ai_chance = { factor = 100 }
+        religion_authority = 0.1
+        set_global_flag = catholic_balanced_starting_authority
+        set_global_flag = catholic_invest_conflict
+        set_global_flag = catholic_crusade_on
+        
+	}
+    
+}
+character_event = {
+	id = 666006
+	desc = "EVTDESC39260"	
+	picture = GFX_evt_heretic
+
+	
+	trigger = {
+    religion = orthodox
+	controls_religion = yes
+    NOT = { has_global_flag = orthodox_balanced_starting_authority }
+	}
+    
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "EVTOPTA39260"	#ask them
+		ai_chance = { factor = 100 }
+        religion_authority = 0.4
+        set_global_flag = orthodox_balanced_starting_authority
+        
+	}
+    
+}
+#Orthodox Heresy Heads
+character_event = {
+	id = 666007
+	desc = "EVTDESC39260"	
+	picture = GFX_evt_heretic
+
+	
+	trigger = {
+    NOT = { is_title_active = c_iconoclast }
+    independent = no
+    religion = iconoclast
+		top_liege = {
+				religion = iconoclast
+				prisoner = no
+                OR = {
+                tier = king
+                tier = emperor
+                }
+	}
+    OR = {
+        AND = {
+        religion_authority = 0.9
+        tier = count
+        }
+        AND = {
+        tier = duke
+        religion_authority = 0.75
+        }
+    }
+	is_theocracy = yes
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "EVTOPTA39260"	#ask them
+		ai_chance = { factor = 100 }
+        activate_title = { title = c_iconoclast = yes }
+        c_iconoclast = { gain_title = FROM }
+	}
+    
+}
+character_event = {
+	id = 666008
+	desc = "EVTDESC39260"	
+	picture = GFX_evt_heretic
+
+	
+	trigger = {
+    NOT = { is_title_active = c_nestorian }
+    independent = no
+    religion = nestorian
+		top_liege = {
+				religion = nestorian
+				prisoner = no
+                OR = {
+                tier = king
+                tier = emperor
+                }
+	}
+    OR = {
+        AND = {
+        religion_authority = 0.9
+        tier = count
+        }
+        AND = {
+        tier = duke
+        religion_authority = 0.75
+        }
+    }
+	is_theocracy = yes
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "EVTOPTA39260"	#ask them
+		ai_chance = { factor = 100 }
+        activate_title = { title = c_nestorian = yes }
+        c_nestorian = { gain_title = FROM }
+        
+	}
+    
+}
+character_event = {
+	id = 666008
+	desc = "EVTDESC39260"	
+	picture = GFX_evt_heretic
+
+	
+	trigger = {
+    NOT = { is_title_active = c_monophysite }
+    independent = no
+    religion = monophysite
+		top_liege = {
+				religion = monophysite
+				prisoner = no
+                OR = {
+                tier = king
+                tier = emperor
+                }
+	}
+    OR = {
+        AND = {
+        religion_authority = 0.9
+        tier = count
+        }
+        AND = {
+        tier = duke
+        religion_authority = 0.75
+        }
+    }
+	is_theocracy = yes
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "EVTOPTA39260"	#ask them
+		ai_chance = { factor = 100 }
+        activate_title = { title = c_monophysite = yes }
+        c_monophysite = { gain_title = FROM }
+        
+	}
+    
+}
+character_event = {
+	id = 666008
+	desc = "EVTDESC39260"	
+	picture = GFX_evt_heretic
+
+	
+	trigger = {
+    NOT = { is_title_active = c_bogomilist }
+    independent = no
+    religion = bogomilist
+		top_liege = {
+				religion = bogomilist
+				prisoner = no
+                OR = {
+                tier = king
+                tier = emperor
+                }
+	}
+    OR = {
+        AND = {
+        religion_authority = 0.9
+        tier = count
+        }
+        AND = {
+        tier = duke
+        religion_authority = 0.75
+        }
+    }
+	is_theocracy = yes
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "EVTOPTA39260"	#ask them
+		ai_chance = { factor = 100 }
+        activate_title = { title = c_bogomilist = yes }
+        c_bogomilist = { gain_title = FROM }
+        
+	}
+    
+}
+character_event = {
+	id = 666009
+	desc = "Our liege has decided to side with the il-legitamite pope in Rome and has declared war on us to save face with the false pope!"	
+	picture = GFX_evt_heretic
+    
+    trigger = {
+        ai = no
+        independent = no
+        top_liege = { NOT = { has_character_flag = anti_pope_support } }
+        controls_religion = no
+        any_vassal = {
+            religion_head = {
+                    PREV = {
+                        rightful_religious_head_scope = {
+                        character = PREV
+                    }
+				}
+			}
+        }
+    }
+    mean_time_to_happen = {
+		months = 1
+	}
+    
+    option = {
+        name = "I guess we will have to make him see the truth..."	#ask them
+		ai_chance = { factor = 100 }
+        top_liege = {
+			war = {
+				target = ROOT
+				casus_belli = anti_popea
+			}
+		}
+    }
+}
+##################
+#Muslim Heretical Head Events
+##################
+character_event = {
+	id = 666020
+	desc = "Allah has chosen us to rise above the heretics. Us of the Zikri faith have become incredably powerful. The time to establish a caliphate has come my lord. You have been chosen for the throne..."	
+	picture = GFX_evt_heretic
+
+	
+	trigger = {
+    NOT = { is_title_active = d_zikri }
+    NOT = { trait = humble }
+    NOT = {	has_character_flag = refused_caliph }
+    independent = yes
+    religion = zikri
+    tier = king
+    religion_authority = 0.75
+	}
+    
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "In the name of Allah I shall lead us to greatness!"	#ask them
+		ai_chance = { factor = 100 }
+        activate_title = { title = d_zikri = yes }
+        d_zikri = { gain_title = FROM }
+        
+	}
+    option = {
+		name = "This is an offer I cannot accept..."	#ask them
+		ai_chance = { factor = 0 }
+        set_character_flag = refused_caliph
+        
+	}
+    
+}
+
+character_event = {
+	id = 666021
+	desc = "Allah has chosen us to rise above the heretics. Us of the Yazidi faith have become incredably powerful. The time to establish a caliphate has come my lord. You have been chosen for the throne..."	
+	picture = GFX_evt_heretic
+
+	
+	trigger = {
+    NOT = { is_title_active = d_yazidi }
+    NOT = { trait = humble }
+    NOT = {	has_character_flag = refused_caliph }
+    independent = yes
+    religion = yazidi
+    tier = king
+    religion_authority = 0.75
+	}
+    
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "In the name of Allah I shall lead us to greatness!"	#ask them
+		ai_chance = { factor = 100 }
+        activate_title = { title = d_yazidi = yes }
+        d_yazidi = { gain_title = FROM }
+        
+	}
+    option = {
+		name = "This is an offer I cannot accept..."	#ask them
+		ai_chance = { factor = 0 }
+        set_character_flag = refused_caliph
+        
+	}
+    
+}
+
+character_event = {
+	id = 666022
+	desc = "Allah has chosen us to rise above the heretics. Us of the Ibadi faith have become incredably powerful. The time to establish a caliphate has come my lord. You have been chosen for the throne..."	
+	picture = GFX_evt_heretic
+
+	
+	trigger = {
+    NOT = { is_title_active = d_ibadi }
+    NOT = { trait = humble }
+    NOT = {	has_character_flag = refused_caliph }
+    independent = yes
+    religion = ibadi
+    tier = king
+    religion_authority = 0.75
+	}
+    
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "In the name of Allah I shall lead us to greatness!"	#ask them
+		ai_chance = { factor = 100 }
+        activate_title = { title = d_ibadi = yes }
+        d_ibadi = { gain_title = FROM }
+        
+	}
+    option = {
+		name = "This is an offer I cannot accept..."	#ask them
+		ai_chance = { factor = 0 }
+        set_character_flag = refused_caliph
+        
+	}
+    
+}
+
+character_event = {
+	id = 666023
+	desc = "Allah has chosen us to rise above the heretics. Us of the Bektashi faith have become incredably powerful. The time to establish a caliphate has come my lord. You have been chosen for the throne..."	
+	picture = GFX_evt_heretic
+
+	
+	trigger = {
+    NOT = { is_title_active = d_bektashi }
+    NOT = { trait = humble }
+    NOT = {	has_character_flag = refused_caliph }
+    independent = yes
+    religion = bektashi
+    tier = king
+    religion_authority = 0.75
+	}
+    
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "In the name of Allah I shall lead us to greatness!"	#ask them
+		ai_chance = { factor = 100 }
+        activate_title = { title = d_bektashi = yes }
+        d_bektashi = { gain_title = FROM }
+        
+	}
+    option = {
+		name = "This is an offer I cannot accept..."	#ask them
+		ai_chance = { factor = 0 }
+        set_character_flag = refused_caliph
+        
+	}
+    
+}
+
+character_event = {
+	id = 666024
+	desc = "Allah has chosen us to rise above the heretics. Us of the Druze faith have become incredably powerful. The time to establish a caliphate has come my lord. You have been chosen for the throne..."	
+	picture = GFX_evt_heretic
+
+	
+	trigger = {
+    NOT = { is_title_active = d_druze }
+    NOT = { trait = humble }
+    NOT = {	has_character_flag = refused_caliph }
+    independent = yes
+    religion = druze
+    tier = king
+    religion_authority = 0.75
+	}
+    
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "In the name of Allah I shall lead us to greatness!"	#ask them
+		ai_chance = { factor = 100 }
+        activate_title = { title = d_druze = yes }
+        d_druze = { gain_title = FROM }
+        
+	}
+    option = {
+		name = "This is an offer I cannot accept..."	#ask them
+		ai_chance = { factor = 0 }
+        set_character_flag = refused_caliph
+        
+	}
+    
+}
+
+character_event = {
+	id = 666025
+	desc = "Allah has chosen us to rise above the heretics. Us of the Hurufi faith have become incredably powerful. The time to establish a caliphate has come my lord. You have been chosen for the throne..."	
+	picture = GFX_evt_heretic
+
+	
+	trigger = {
+    NOT = { is_title_active = d_hurufi }
+    NOT = { trait = humble }
+    NOT = {	has_character_flag = refused_caliph }
+    independent = yes
+    religion = hurufi
+    tier = king
+    religion_authority = 0.75
+	}
+    
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "In the name of Allah I shall lead us to greatness!"	#ask them
+		ai_chance = { factor = 100 }
+        activate_title = { title = d_hurufi = yes }
+        d_hurufi = { gain_title = FROM }
+	}
+    option = {
+		name = "This is an offer I cannot accept..."	#ask them
+		ai_chance = { factor = 0 }
+        set_character_flag = refused_caliph
+        
+	}
+    
+}
+
+character_event = {
+	id = 666030
+	desc = "EVTDESC39260"	
+	picture = GFX_evt_heretic
+
+	
+	trigger = {
+    religion = shiite
+	controls_religion = yes
+    ai = yes
+    NOT = { has_global_flag = shiite_balanced_starting_authority }
+	}
+    
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "EVTOPTA39260"	#ask them
+		ai_chance = { factor = 100 }
+        religion_authority = 0.4
+        set_global_flag = shiite_balanced_starting_authority
+        set_global_flag = shiite_crusade_on
+        
+	}
+    
+}
+character_event = {
+	id = 666031
+	desc = "EVTDESC39260"	
+	picture = GFX_evt_heretic
+
+	
+	trigger = {
+    ai = yes
+    religion = sunni
+	controls_religion = yes
+    NOT = { has_global_flag = sunni_balanced_starting_authority }
+	}
+    
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "EVTOPTA39260"	#ask them
+		ai_chance = { factor = 100 }
+        religion_authority = 0.4
+        set_global_flag = sunni_balanced_starting_authority
+        set_global_flag = sunni_crusade_on
+        
+	}
+    
+}
+province_event = {
+	id = 666050
+	desc = "The people of this region have embraced classical traditions of christian teachings. We will be able to get more troops of certain types from this region."	
+	picture = GFX_evt_heretic
+
+	
+	trigger = {
+    religion_group = christian
+    NOT = { has_province_modifier = province_christian }
+	}
+    
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA39260"	#ask them
+		ai_chance = { factor = 100 }
+        add_province_modifier = {
+            name = province_christian
+            duration = -1
+        }
+        remove_province_modifier = province_pagan
+        remove_province_modifier = province_muslim
+	}
+}
+province_event = {
+	id = 666051
+	desc = "The people of this region have embraced classical traditions of islamic teachings. We will be able to get more troops of certain types from this region."	
+	picture = GFX_evt_heretic
+
+	
+	trigger = {
+    religion_group = muslim
+    NOT = { has_province_modifier = province_muslim }
+	}
+    
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA39260"	#ask them
+		ai_chance = { factor = 100 }
+        add_province_modifier = {
+            name = province_muslim
+            duration = -1
+        }
+        remove_province_modifier = province_christian
+        remove_province_modifier = province_pagan
+	}
+}
+province_event = {
+	id = 666052
+	desc = "The people of this region have embraced classical traditions of our the gods. We will be able to get more troops of certain types from this region."	
+	picture = GFX_evt_heretic
+
+	
+	trigger = {
+    religion_group = pagan_group
+    NOT = { has_province_modifier = province_pagan }
+	}
+    
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA39260"	#ask them
+		ai_chance = { factor = 100 }
+        add_province_modifier = {
+            name = province_pagan
+            duration = -1
+        }
+        remove_province_modifier = province_christian
+        remove_province_modifier = province_muslim
+	}
+}
+#PAGAN
+character_event = {
+	id = 666053
+	desc = "EVTDESC39260"	
+	picture = GFX_evt_heretic
+
+	
+	trigger = {
+    NOT = { is_title_active = b_hofgodar }
+    independent = no
+    religion = norse_pagan
+		top_liege = {
+				religion = norse_pagan
+				prisoner = no
+                OR = {
+                tier = king
+                tier = emperor
+                }
+	}
+	is_theocracy = yes
+    ROOT = { has_landed_title = b_uppsala }
+    }
+    
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "EVTOPTA39260"	#ask them
+		ai_chance = { factor = 100 }
+        activate_title = { title = b_hofgodar = yes }
+        b_hofgodar = { gain_title = FROM }
+        
+	}
+    
+}
+character_event = {
+	id = 666057
+	desc = "EVTDESC39260"	
+	picture = GFX_evt_heretic
+
+	
+	trigger = {
+    NOT = { is_title_active = b_dastur }
+    independent = no
+    religion = zoroastrian
+		top_liege = {
+				religion = zoroastrian
+				prisoner = no
+                OR = {
+                tier = king
+                tier = emperor
+                }
+	}
+	is_theocracy = yes
+    ROOT = { has_landed_title = b_chak_chak }
+    }
+    
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "EVTOPTA39260"	#ask them
+		ai_chance = { factor = 100 }
+        activate_title = { title = b_dastur = yes }
+        b_dastur = { gain_title = FROM }
+        
+	}
+    
+}

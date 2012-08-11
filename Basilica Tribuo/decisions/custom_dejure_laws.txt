@@ -1,0 +1,190 @@
+de_jure_laws = {
+    religious_0 = {
+		show_as_title = yes
+		group = religious_law
+		
+        city_vassal_tax_modifier = 0.10
+        castle_vassal_tax_modifier = 0.10
+        church_vassal_tax_modifier = 0.10
+        rel_head_opinion = -30
+		
+		potential = {
+			NOT = { has_law = religious_0 }
+		}
+		allow = {
+            has_law = religious_1
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			revoke_law = religious_1
+            revoke_law = religious_2
+            revoke_law = religious_3
+            revoke_law = religious_4
+			set_allow_free_infidel_revokation = no
+            set_investiture = any
+		}
+	}
+    
+	religious_1 = {
+		show_as_title = yes
+		group = religious_law
+		
+		city_vassal_tax_modifier = 0.05
+        castle_vassal_tax_modifier = 0.05
+        church_vassal_tax_modifier = 0.05
+        rel_head_opinion = -15
+        
+		potential = {
+			NOT = { has_law = religious_1 }
+		}
+		allow = {
+            OR = {
+                has_law = religious_2
+                has_law = religious_0
+            }
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 10
+                    trait = cynical
+            }
+            modifier = {
+                factor = 5
+                    trait = zealous
+            }
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			revoke_law = religious_0
+            revoke_law = religious_2
+            revoke_law = religious_3
+            revoke_law = religious_4
+			set_allow_free_infidel_revokation = no
+            set_investiture = any
+		}
+	}
+    
+    religious_2 = {
+		show_as_title = yes
+		group = religious_law
+		default = yes
+        
+        general_opinion = -5
+        
+		potential = {
+			NOT = { has_law = religious_2 }
+		}
+		allow = {
+            OR = {
+                has_law = religious_1
+                has_law = religious_3
+            }
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			revoke_law = religious_0
+            revoke_law = religious_1
+            revoke_law = religious_3
+            revoke_law = religious_4
+			set_allow_free_infidel_revokation = no
+            set_investiture = any
+		}
+	}
+    
+    religious_3 = {
+		show_as_title = yes
+		group = religious_law
+		
+		rel_head_opinion = 15
+        global_revolt_risk = 0.01
+		
+		potential = {
+			NOT = { has_law = religious_3 }
+		}
+		allow = {
+            OR = {
+                has_law = religious_4
+                has_law = religious_2
+            }
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+            modifier = {
+                factor = 5
+                    trait = cynical
+            }
+            modifier = {
+                factor = 10
+                    trait = zealous
+            }
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			revoke_law = religious_0
+            revoke_law = religious_1
+            revoke_law = religious_2
+            revoke_law = religious_4
+			set_allow_free_infidel_revokation = no
+            set_investiture = head
+		}
+	}
+    
+    religious_4 = {
+		show_as_title = yes
+		group = religious_law
+		
+		rel_head_opinion = 30
+        global_revolt_risk = 0.025
+        
+		potential = {
+			NOT = { has_law = religious_4 }
+		}
+		allow = {
+            has_law = religious_3
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			revoke_law = religious_3
+            revoke_law = religious_2
+            revoke_law = religious_1
+            revoke_law = religious_0
+			set_allow_free_infidel_revokation = yes
+            set_investiture = head
+		}
+	}
+}

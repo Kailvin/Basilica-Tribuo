@@ -1,0 +1,648 @@
+# Custom Holy Orders
+d_albigensian_order = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	capital = 138 # Orleans
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	# Parent Religion 
+	religion = cathar
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+
+	modifier = d_albigensian_order_modifier
+}
+
+d_knights_templar_cathar = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	capital = 138 # Orleans
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	# Parent Religion 
+	religion = cathar
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+
+	modifier = d_knights_templar_cathar_modifier
+}
+
+d_order_of_the_chase = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	capital = 138 # Orleans
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	# Parent Religion 
+	religion = cathar
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+
+	modifier = d_order_of_the_chase_modifier
+}
+
+d_knights_of_the_holy_book = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	capital = 138 # Orleans
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	# Parent Religion 
+	religion = lollard
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+
+	modifier = d_knights_of_the_holy_book_modifier
+}
+
+d_templar_priesthood = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	capital = 138 # Orleans
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	# Parent Religion 
+	religion = lollard
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+
+	modifier = d_templar_priesthood_modifier
+}
+
+d_order_of_the_lay_priesthood = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	capital = 138 # Orleans
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	# Parent Religion 
+	religion = lollard
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+
+	modifier = d_order_of_the_lay_priesthood_modifier
+}
+
+d_order_of_the_impovershed = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	capital = 138 # Orleans
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	# Parent Religion 
+	religion = waldensian
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+
+	modifier = d_order_of_the_impovershed_modifier
+}
+
+d_trinity_templars_order = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	capital = 138 # Orleans
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	# Parent Religion 
+	religion = waldensian
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+
+	modifier = d_trinity_templars_modifier
+}
+
+d_templar_of_saint_peter = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	capital = 138 # Orleans
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	# Parent Religion 
+	religion = waldensian
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+
+	modifier = d_templar_of_saint_peter_modifier
+}
+
+d_stigmata_templars_order = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	capital = 138 # Orleans
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	# Parent Religion 
+	religion = fraticelli
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+
+	modifier = d_stigmata_templars_modifier
+}
+
+d_templars_of_saint_francis = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	capital = 138 # Orleans
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	# Parent Religion 
+	religion = fraticelli
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+
+	modifier = d_templars_of_saint_francis_modifier
+}
+
+d_order_of_friars_minor = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	capital = 138 # Orleans
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	# Parent Religion 
+	religion = fraticelli
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+
+	modifier = d_order_of_friars_minor_modifier
+}
+#Orthodox Holy Orders
+d_order_of_the_cross = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	capital = 138 # Orleans
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	# Parent Religion 
+	religion = iconoclast
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+
+	modifier = d_order_of_the_cross_modifier
+}
+
+d_iconodule_order = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	capital = 138 # Orleans
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	# Parent Religion 
+	religion = iconoclast
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+
+	modifier = d_iconodule_order_modifier
+}
+
+d_eucharist_templars = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	capital = 138 # Orleans
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	# Parent Religion 
+	religion = iconoclast
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+
+	modifier = d_eucharist_templars_modifier
+}
+
+d_order_of_the_lance = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	capital = 138 # Orleans
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	# Parent Religion 
+	religion = bogomilist
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+
+	modifier = d_order_of_the_lance_modifier
+}
+
+d_peoples_hospitaler = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	capital = 138 # Orleans
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	# Parent Religion 
+	religion = bogomilist
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+
+	modifier = d_peoples_hospitaler_modifier
+}
+
+d_peoples_templar = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	capital = 138 # Orleans
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	# Parent Religion 
+	religion = bogomilist
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+
+	modifier = d_peoples_templar_modifier
+}
+
+d_order_of_united_nature = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	capital = 138 # Orleans
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	# Parent Religion 
+	religion = monophysite
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+
+	modifier = d_order_of_united_nature_modifier
+}
+
+d_knights_of_africa = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	capital = 138 # Orleans
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	# Parent Religion 
+	religion = monophysite
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+
+	modifier = d_knights_of_africa_modifier
+}
+
+d_coptic_templar = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	capital = 138 # Orleans
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	# Parent Religion 
+	religion = monophysite
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+
+	modifier = d_coptic_templar_modifier
+}
+
+d_hospitaler_of_the_east = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	capital = 138 # Orleans
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	# Parent Religion 
+	religion = nestorian
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+
+	modifier = d_hospitaler_of_the_east_modifier
+}
+
+d_templar_of_the_east_order = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	capital = 138 # Orleans
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	# Parent Religion 
+	religion = nestorian
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+
+	modifier = d_templar_of_the_east_modifier
+}
+
+d_order_of_saint_nestorius = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	capital = 138 # Orleans
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	# Parent Religion 
+	religion = nestorian
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+
+	modifier = d_order_of_saint_nestorius_modifier
+}
+
+d_varangian_templar = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	capital = 138 # Orleans
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	# Parent Religion 
+	religion = orthodox
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+
+	modifier = d_varangian_templar_modifier
+}
+
+d_varangian_hospitaler = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	capital = 138 # Orleans
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	# Parent Religion 
+	religion = orthodox
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+
+	modifier = d_varangian_hospitaler_modifier
+}
+
+d_order_of_the_blessed_virgin = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	capital = 138 # Orleans
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	# Parent Religion 
+	religion = orthodox
+	
+	# Cannot be held as a secondary title
+	primary = yes
+		
+
+	modifier = d_order_of_the_blessed_virgin_modifier
+}

@@ -1,0 +1,4719 @@
+character_event = {
+	id = 666800
+	desc = "One of your bishops has been apointed a cardinal!"	
+	picture = GFX_evt_icon
+    
+    is_triggered_only = yes
+	
+    option = {
+		name = "Good for him!"
+        prestige = 200
+        piety = 100
+        FROM = {
+			opinion = {
+				modifier = controlled_cardinal
+				who = ROOT
+                months = -1
+			}
+		}
+    }
+    
+}
+character_event = {
+	id = 666899
+	desc = "Although you were a cardinals heir. You may not take the cardinal title. The pope has confescated it."	
+	picture = GFX_evt_icon
+    
+    trigger = {
+        OR = {
+            NOT = { has_character_flag = appointed_cardinal }
+            has_landed_title = k_papal_state
+            ai = no
+        }
+        OR = {
+            has_landed_title = d_card1
+            has_landed_title = d_card2
+            has_landed_title = d_card3
+            has_landed_title = d_card4
+            has_landed_title = d_card5
+            has_landed_title = d_card6
+            has_landed_title = d_card7
+            has_landed_title = d_card8
+            has_landed_title = d_card9
+            has_landed_title = d_card10
+            has_landed_title = d_card11
+            has_landed_title = d_card12
+            has_landed_title = d_card13
+            has_landed_title = d_card14
+            has_landed_title = d_card15
+            has_landed_title = d_card16
+            has_landed_title = d_card17
+            has_landed_title = d_card18
+            has_landed_title = d_card19
+            has_landed_title = d_card20
+            has_landed_title = d_card21
+            has_landed_title = d_card22
+            has_landed_title = d_card23
+            has_landed_title = d_card24
+            has_landed_title = d_card25
+            has_landed_title = d_card26
+            has_landed_title = d_card27
+            has_landed_title = d_card28
+        }
+    }
+    
+    mean_time_to_happen = {
+		days = 1
+	}
+    
+    option = {
+		name = "Oh well"
+        trigger = {
+            has_landed_title = d_card1
+        }
+        d_card1 = { destroy_landed_title = yes }
+    }
+    option = {
+		name = "Oh well"
+        trigger = {
+            has_landed_title = d_card2
+        }
+        d_card2 = { destroy_landed_title = yes }
+    }
+    option = {
+		name = "Oh well"
+        trigger = {
+            has_landed_title = d_card3
+        }
+        d_card3 = { destroy_landed_title = yes }
+    }
+    option = {
+		name = "Oh well"
+        trigger = {
+            has_landed_title = d_card4
+        }
+        d_card4 = { destroy_landed_title = yes }
+    }
+    option = {
+		name = "Oh well"
+        trigger = {
+            has_landed_title = d_card5
+        }
+        d_card5 = { destroy_landed_title = yes }
+    }
+    option = {
+		name = "Oh well"
+        trigger = {
+            has_landed_title = d_card6
+        }
+        d_card6 = { destroy_landed_title = yes }
+    }
+    option = {
+		name = "Oh well"
+        trigger = {
+            has_landed_title = d_card7
+        }
+        d_card7 = { destroy_landed_title = yes }
+    }
+    option = {
+		name = "Oh well"
+        trigger = {
+            has_landed_title = d_card8
+        }
+        d_card8 = { destroy_landed_title = yes }
+    }
+    option = {
+		name = "Oh well"
+        trigger = {
+            has_landed_title = d_card9
+        }
+        d_card9 = { destroy_landed_title = yes }
+    }
+    option = {
+		name = "Oh well"
+        trigger = {
+            has_landed_title = d_card10
+        }
+        d_card10 = { destroy_landed_title = yes }
+    }
+    option = {
+		name = "Oh well"
+        trigger = {
+            has_landed_title = d_card11
+        }
+        d_card11 = { destroy_landed_title = yes }
+    }
+    option = {
+		name = "Oh well"
+        trigger = {
+            has_landed_title = d_card12
+        }
+        d_card12 = { destroy_landed_title = yes }
+    }
+    option = {
+		name = "Oh well"
+        trigger = {
+            has_landed_title = d_card13
+        }
+        d_card13 = { destroy_landed_title = yes }
+    }
+    option = {
+		name = "Oh well"
+        trigger = {
+            has_landed_title = d_card14
+        }
+        d_card14 = { destroy_landed_title = yes }
+    }
+    option = {
+		name = "Oh well"
+        trigger = {
+            has_landed_title = d_card15
+        }
+        d_card15 = { destroy_landed_title = yes }
+    }
+    option = {
+		name = "Oh well"
+        trigger = {
+            has_landed_title = d_card16
+        }
+        d_card16 = { destroy_landed_title = yes }
+    }
+    option = {
+		name = "Oh well"
+        trigger = {
+            has_landed_title = d_card17
+        }
+        d_card17 = { destroy_landed_title = yes }
+    }
+    option = {
+		name = "Oh well"
+        trigger = {
+            has_landed_title = d_card18
+        }
+        d_card18 = { destroy_landed_title = yes }
+    }
+    option = {
+		name = "Oh well"
+        trigger = {
+            has_landed_title = d_card19
+        }
+        d_card19 = { destroy_landed_title = yes }
+    }
+    option = {
+		name = "Oh well"
+        trigger = {
+            has_landed_title = d_card20
+        }
+        d_card20 = { destroy_landed_title = yes }
+    }
+    option = {
+		name = "Oh well"
+        trigger = {
+            has_landed_title = d_card21
+        }
+        d_card21 = { destroy_landed_title = yes }
+    }
+    option = {
+		name = "Oh well"
+        trigger = {
+            has_landed_title = d_card22
+        }
+        d_card22 = { destroy_landed_title = yes }
+    }
+    option = {
+		name = "Oh well"
+        trigger = {
+            has_landed_title = d_card23
+        }
+        d_card23 = { destroy_landed_title = yes }
+    }
+    option = {
+		name = "Oh well"
+        trigger = {
+            has_landed_title = d_card24
+        }
+        d_card24 = { destroy_landed_title = yes }
+    }
+    option = {
+		name = "Oh well"
+        trigger = {
+            has_landed_title = d_card25
+        }
+        d_card25 = { destroy_landed_title = yes }
+    }
+    option = {
+		name = "Oh well"
+        trigger = {
+            has_landed_title = d_card26
+        }
+        d_card26 = { destroy_landed_title = yes }
+    }
+    option = {
+		name = "Oh well"
+        trigger = {
+            has_landed_title = d_card27
+        }
+        d_card27 = { destroy_landed_title = yes }
+    }
+    option = {
+		name = "Oh well"
+        trigger = {
+            has_landed_title = d_card28
+        }
+        d_card28 = { destroy_landed_title = yes }
+    }
+    
+}
+
+character_event = {
+	id = 666801
+	desc = "You Have been appointed as a Cardinal"
+	picture = "GFX_evt_icon"
+	
+	only_men = yes
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	trigger = {
+		religion = catholic
+        is_theocracy = yes
+        piety = 100
+        tier = baron
+        NOT = { has_character_flag = appointed_cardinal }
+        NOT = { any_playable_ruler = { has_landed_title = d_card1 } }
+        NOT = { has_landed_title = k_papal_states }
+	}
+
+	mean_time_to_happen = {
+		months = 120
+        modifier = {
+			factor = 0.75
+			trait = zealous
+		}
+        modifier = {
+			factor = 0.75
+			trait = chaste
+		}
+        modifier = {
+			factor = 0.75
+			trait = temperate
+		}
+        modifier = {
+			factor = 0.75
+			trait = charitable
+		}
+        modifier = {
+			factor = 0.75
+			trait = diligent
+		}
+        modifier = {
+			factor = 0.75
+			trait = kind
+		}
+        modifier = {
+			factor = 0.75
+			trait = patient
+		}
+        modifier = {
+			factor = 0.75
+			trait = humble
+		}
+        modifier = {
+			factor = 0.25
+			trait = celibate
+		}
+        modifier = {
+			factor = 0.75
+			piety = 250
+		}
+        modifier = {
+			factor = 0.75
+			piety = 500
+		}
+        modifier = {
+			factor = 0.5
+			piety = 1000
+		}
+        modifier = {
+			factor = 1.25
+			trait = lustful
+		}
+        modifier = {
+			factor = 1.25
+			trait = gluttonous
+		}
+        modifier = {
+			factor = 1.25
+			trait = greedy
+		}
+        modifier = {
+			factor = 1.25
+			trait = slothful
+		}
+        modifier = {
+			factor = 1.25
+			trait = wroth
+		}
+        modifier = {
+			factor = 1.25
+			trait = envious
+		}
+        modifier = {
+			factor = 1.25
+			trait = proud
+		}
+        modifier = {
+			factor = 2.0
+			trait = hedonist
+		}
+        modifier = {
+			factor = 2.0
+			trait = impailer
+		}
+        modifier = {
+			factor = 0.75
+			trait = scholar
+		}
+        modifier = {
+			factor = 0.5
+			culture = italian
+		}
+        modifier = {
+			factor = 0.75
+			tier = count
+		}
+        modifier = {
+			factor = 0.5
+			tier = duke
+		}
+        modifier = {
+			factor = 0.25
+			tier = king
+		}
+        modifier = {
+            factor = 0.01
+            NOT = { year = 1070 }
+        }
+        
+	}
+    option = {
+		name = "EXCELLENT"
+        if = {
+			limit = { 
+				independent =  no
+			}
+			top_liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        if = {
+			limit = { 
+				independent =  no
+                liege = {
+                    independent =  no
+                }
+			}
+            liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        d_card1 = { gain_title = FROM }
+        set_character_flag = appointed_cardinal
+        ROOT = {
+            set_defacto_liege = k_papal_state
+        }
+    }
+}
+character_event = {
+	id = 666802
+	desc = "You Have been appointed as a Cardinal"
+	picture = "GFX_evt_icon"
+	
+	only_men = yes
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	trigger = {
+		religion = catholic
+        is_theocracy = yes
+        piety = 100
+        tier = baron
+        NOT = { has_character_flag = appointed_cardinal }
+        NOT = { any_playable_ruler = { has_landed_title = d_card2 } }
+        NOT = { has_landed_title = k_papal_states }
+	}
+
+	mean_time_to_happen = {
+		months = 120
+        modifier = {
+			factor = 0.75
+			trait = zealous
+		}
+        modifier = {
+			factor = 0.75
+			trait = chaste
+		}
+        modifier = {
+			factor = 0.75
+			trait = temperate
+		}
+        modifier = {
+			factor = 0.75
+			trait = charitable
+		}
+        modifier = {
+			factor = 0.75
+			trait = diligent
+		}
+        modifier = {
+			factor = 0.75
+			trait = kind
+		}
+        modifier = {
+			factor = 0.75
+			trait = patient
+		}
+        modifier = {
+			factor = 0.75
+			trait = humble
+		}
+        modifier = {
+			factor = 0.25
+			trait = celibate
+		}
+        modifier = {
+			factor = 0.75
+			piety = 250
+		}
+        modifier = {
+			factor = 0.75
+			piety = 500
+		}
+        modifier = {
+			factor = 0.5
+			piety = 1000
+		}
+        modifier = {
+			factor = 1.25
+			trait = lustful
+		}
+        modifier = {
+			factor = 1.25
+			trait = gluttonous
+		}
+        modifier = {
+			factor = 1.25
+			trait = greedy
+		}
+        modifier = {
+			factor = 1.25
+			trait = slothful
+		}
+        modifier = {
+			factor = 1.25
+			trait = wroth
+		}
+        modifier = {
+			factor = 1.25
+			trait = envious
+		}
+        modifier = {
+			factor = 1.25
+			trait = proud
+		}
+        modifier = {
+			factor = 2.0
+			trait = hedonist
+		}
+        modifier = {
+			factor = 2.0
+			trait = impailer
+		}
+        modifier = {
+			factor = 0.75
+			trait = scholar
+		}
+        modifier = {
+			factor = 0.5
+			culture = italian
+		}
+        modifier = {
+			factor = 0.75
+			tier = count
+		}
+        modifier = {
+			factor = 0.5
+			tier = duke
+		}
+        modifier = {
+			factor = 0.25
+			tier = king
+		}
+        modifier = {
+            factor = 0.01
+            NOT = { year = 1070 }
+        }
+        
+	}
+    option = {
+		name = "EXCELLENT"
+        if = {
+			limit = { 
+				independent =  no
+			}
+			top_liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        if = {
+			limit = { 
+				independent =  no
+                liege = {
+                    independent =  no
+                }
+			}
+            liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        d_card2 = { gain_title = FROM }
+        set_character_flag = appointed_cardinal
+        ROOT = {
+            set_defacto_liege = k_papal_state
+        }
+    }
+}
+character_event = {
+	id = 666803
+	desc = "You Have been appointed as a Cardinal"
+	picture = "GFX_evt_icon"
+	
+	only_men = yes
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	trigger = {
+		religion = catholic
+        is_theocracy = yes
+        piety = 100
+        tier = baron
+        NOT = { has_character_flag = appointed_cardinal }
+        NOT = { any_playable_ruler = { has_landed_title = d_card3 } }
+        NOT = { has_landed_title = k_papal_states }
+	}
+
+	mean_time_to_happen = {
+		months = 120
+        modifier = {
+			factor = 0.75
+			trait = zealous
+		}
+        modifier = {
+			factor = 0.75
+			trait = chaste
+		}
+        modifier = {
+			factor = 0.75
+			trait = temperate
+		}
+        modifier = {
+			factor = 0.75
+			trait = charitable
+		}
+        modifier = {
+			factor = 0.75
+			trait = diligent
+		}
+        modifier = {
+			factor = 0.75
+			trait = kind
+		}
+        modifier = {
+			factor = 0.75
+			trait = patient
+		}
+        modifier = {
+			factor = 0.75
+			trait = humble
+		}
+        modifier = {
+			factor = 0.25
+			trait = celibate
+		}
+        modifier = {
+			factor = 0.75
+			piety = 250
+		}
+        modifier = {
+			factor = 0.75
+			piety = 500
+		}
+        modifier = {
+			factor = 0.5
+			piety = 1000
+		}
+        modifier = {
+			factor = 1.25
+			trait = lustful
+		}
+        modifier = {
+			factor = 1.25
+			trait = gluttonous
+		}
+        modifier = {
+			factor = 1.25
+			trait = greedy
+		}
+        modifier = {
+			factor = 1.25
+			trait = slothful
+		}
+        modifier = {
+			factor = 1.25
+			trait = wroth
+		}
+        modifier = {
+			factor = 1.25
+			trait = envious
+		}
+        modifier = {
+			factor = 1.25
+			trait = proud
+		}
+        modifier = {
+			factor = 2.0
+			trait = hedonist
+		}
+        modifier = {
+			factor = 2.0
+			trait = impailer
+		}
+        modifier = {
+			factor = 0.75
+			trait = scholar
+		}
+        modifier = {
+			factor = 0.5
+			culture = italian
+		}
+        modifier = {
+			factor = 0.75
+			tier = count
+		}
+        modifier = {
+			factor = 0.5
+			tier = duke
+		}
+        modifier = {
+			factor = 0.25
+			tier = king
+		}
+        modifier = {
+            factor = 0.01
+            NOT = { year = 1070 }
+        }
+        
+	}
+    option = {
+		name = "EXCELLENT"
+        if = {
+			limit = { 
+				independent =  no
+			}
+			top_liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        if = {
+			limit = { 
+				independent =  no
+                liege = {
+                    independent =  no
+                }
+			}
+            liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        d_card3 = { gain_title = FROM }
+        set_character_flag = appointed_cardinal
+        ROOT = {
+            set_defacto_liege = k_papal_state
+        }
+    }
+}
+character_event = {
+	id = 666804
+	desc = "You Have been appointed as a Cardinal"
+	picture = "GFX_evt_icon"
+	
+	only_men = yes
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	trigger = {
+		religion = catholic
+        is_theocracy = yes
+        piety = 100
+        tier = baron
+        NOT = { has_character_flag = appointed_cardinal }
+        NOT = { any_playable_ruler = { has_landed_title = d_card4 } }
+        NOT = { has_landed_title = k_papal_states }
+	}
+
+	mean_time_to_happen = {
+		months = 120
+        modifier = {
+			factor = 0.75
+			trait = zealous
+		}
+        modifier = {
+			factor = 0.75
+			trait = chaste
+		}
+        modifier = {
+			factor = 0.75
+			trait = temperate
+		}
+        modifier = {
+			factor = 0.75
+			trait = charitable
+		}
+        modifier = {
+			factor = 0.75
+			trait = diligent
+		}
+        modifier = {
+			factor = 0.75
+			trait = kind
+		}
+        modifier = {
+			factor = 0.75
+			trait = patient
+		}
+        modifier = {
+			factor = 0.75
+			trait = humble
+		}
+        modifier = {
+			factor = 0.25
+			trait = celibate
+		}
+        modifier = {
+			factor = 0.75
+			piety = 250
+		}
+        modifier = {
+			factor = 0.75
+			piety = 500
+		}
+        modifier = {
+			factor = 0.5
+			piety = 1000
+		}
+        modifier = {
+			factor = 1.25
+			trait = lustful
+		}
+        modifier = {
+			factor = 1.25
+			trait = gluttonous
+		}
+        modifier = {
+			factor = 1.25
+			trait = greedy
+		}
+        modifier = {
+			factor = 1.25
+			trait = slothful
+		}
+        modifier = {
+			factor = 1.25
+			trait = wroth
+		}
+        modifier = {
+			factor = 1.25
+			trait = envious
+		}
+        modifier = {
+			factor = 1.25
+			trait = proud
+		}
+        modifier = {
+			factor = 2.0
+			trait = hedonist
+		}
+        modifier = {
+			factor = 2.0
+			trait = impailer
+		}
+        modifier = {
+			factor = 0.75
+			trait = scholar
+		}
+        modifier = {
+			factor = 0.5
+			culture = italian
+		}
+        modifier = {
+			factor = 0.75
+			tier = count
+		}
+        modifier = {
+			factor = 0.5
+			tier = duke
+		}
+        modifier = {
+			factor = 0.25
+			tier = king
+		}
+        modifier = {
+            factor = 0.01
+            NOT = { year = 1070 }
+        }
+        
+	}
+    option = {
+		name = "EXCELLENT"
+        if = {
+			limit = { 
+				independent =  no
+			}
+			top_liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        if = {
+			limit = { 
+				independent =  no
+                liege = {
+                    independent =  no
+                }
+			}
+            liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        d_card4 = { gain_title = FROM }
+        set_character_flag = appointed_cardinal
+        ROOT = {
+            set_defacto_liege = k_papal_state
+        }
+    }
+}
+character_event = {
+	id = 666805
+	desc = "You Have been appointed as a Cardinal"
+	picture = "GFX_evt_icon"
+	
+	only_men = yes
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	trigger = {
+		religion = catholic
+        is_theocracy = yes
+        piety = 100
+        tier = baron
+        NOT = { has_character_flag = appointed_cardinal }
+        NOT = { any_playable_ruler = { has_landed_title = d_card5 } }
+        NOT = { has_landed_title = k_papal_states }
+	}
+
+	mean_time_to_happen = {
+		months = 120
+        modifier = {
+			factor = 0.75
+			trait = zealous
+		}
+        modifier = {
+			factor = 0.75
+			trait = chaste
+		}
+        modifier = {
+			factor = 0.75
+			trait = temperate
+		}
+        modifier = {
+			factor = 0.75
+			trait = charitable
+		}
+        modifier = {
+			factor = 0.75
+			trait = diligent
+		}
+        modifier = {
+			factor = 0.75
+			trait = kind
+		}
+        modifier = {
+			factor = 0.75
+			trait = patient
+		}
+        modifier = {
+			factor = 0.75
+			trait = humble
+		}
+        modifier = {
+			factor = 0.25
+			trait = celibate
+		}
+        modifier = {
+			factor = 0.75
+			piety = 250
+		}
+        modifier = {
+			factor = 0.75
+			piety = 500
+		}
+        modifier = {
+			factor = 0.5
+			piety = 1000
+		}
+        modifier = {
+			factor = 1.25
+			trait = lustful
+		}
+        modifier = {
+			factor = 1.25
+			trait = gluttonous
+		}
+        modifier = {
+			factor = 1.25
+			trait = greedy
+		}
+        modifier = {
+			factor = 1.25
+			trait = slothful
+		}
+        modifier = {
+			factor = 1.25
+			trait = wroth
+		}
+        modifier = {
+			factor = 1.25
+			trait = envious
+		}
+        modifier = {
+			factor = 1.25
+			trait = proud
+		}
+        modifier = {
+			factor = 2.0
+			trait = hedonist
+		}
+        modifier = {
+			factor = 2.0
+			trait = impailer
+		}
+        modifier = {
+			factor = 0.75
+			trait = scholar
+		}
+        modifier = {
+			factor = 0.5
+			culture = italian
+		}
+        modifier = {
+			factor = 0.75
+			tier = count
+		}
+        modifier = {
+			factor = 0.5
+			tier = duke
+		}
+        modifier = {
+			factor = 0.25
+			tier = king
+		}
+        modifier = {
+            factor = 0.01
+            NOT = { year = 1070 }
+        }
+        
+	}
+    option = {
+		name = "EXCELLENT"
+        if = {
+			limit = { 
+				independent =  no
+			}
+			top_liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        if = {
+			limit = { 
+				independent =  no
+                liege = {
+                    independent =  no
+                }
+			}
+            liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        d_card5 = { gain_title = FROM }
+        set_character_flag = appointed_cardinal
+        ROOT = {
+            set_defacto_liege = k_papal_state
+        }
+    }
+}
+character_event = {
+	id = 666806
+	desc = "You Have been appointed as a Cardinal"
+	picture = "GFX_evt_icon"
+	
+	only_men = yes
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	trigger = {
+		religion = catholic
+        is_theocracy = yes
+        piety = 100
+        tier = baron
+        NOT = { has_character_flag = appointed_cardinal }
+        NOT = { any_playable_ruler = { has_landed_title = d_card6 } }
+        NOT = { has_landed_title = k_papal_states }
+	}
+
+	mean_time_to_happen = {
+		months = 120
+        modifier = {
+			factor = 0.75
+			trait = zealous
+		}
+        modifier = {
+			factor = 0.75
+			trait = chaste
+		}
+        modifier = {
+			factor = 0.75
+			trait = temperate
+		}
+        modifier = {
+			factor = 0.75
+			trait = charitable
+		}
+        modifier = {
+			factor = 0.75
+			trait = diligent
+		}
+        modifier = {
+			factor = 0.75
+			trait = kind
+		}
+        modifier = {
+			factor = 0.75
+			trait = patient
+		}
+        modifier = {
+			factor = 0.75
+			trait = humble
+		}
+        modifier = {
+			factor = 0.25
+			trait = celibate
+		}
+        modifier = {
+			factor = 0.75
+			piety = 250
+		}
+        modifier = {
+			factor = 0.75
+			piety = 500
+		}
+        modifier = {
+			factor = 0.5
+			piety = 1000
+		}
+        modifier = {
+			factor = 1.25
+			trait = lustful
+		}
+        modifier = {
+			factor = 1.25
+			trait = gluttonous
+		}
+        modifier = {
+			factor = 1.25
+			trait = greedy
+		}
+        modifier = {
+			factor = 1.25
+			trait = slothful
+		}
+        modifier = {
+			factor = 1.25
+			trait = wroth
+		}
+        modifier = {
+			factor = 1.25
+			trait = envious
+		}
+        modifier = {
+			factor = 1.25
+			trait = proud
+		}
+        modifier = {
+			factor = 2.0
+			trait = hedonist
+		}
+        modifier = {
+			factor = 2.0
+			trait = impailer
+		}
+        modifier = {
+			factor = 0.75
+			trait = scholar
+		}
+        modifier = {
+			factor = 0.5
+			culture = italian
+		}
+        modifier = {
+			factor = 0.75
+			tier = count
+		}
+        modifier = {
+			factor = 0.5
+			tier = duke
+		}
+        modifier = {
+			factor = 0.25
+			tier = king
+		}
+        modifier = {
+            factor = 0.01
+            NOT = { year = 1070 }
+        }
+        
+	}
+    option = {
+		name = "EXCELLENT"
+        if = {
+			limit = { 
+				independent =  no
+			}
+			top_liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        if = {
+			limit = { 
+				independent =  no
+                liege = {
+                    independent =  no
+                }
+			}
+            liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        d_card6 = { gain_title = FROM }
+        set_character_flag = appointed_cardinal
+        ROOT = {
+            set_defacto_liege = k_papal_state
+        }
+    }
+}
+character_event = {
+	id = 666807
+	desc = "You Have been appointed as a Cardinal"
+	picture = "GFX_evt_icon"
+	
+	only_men = yes
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	trigger = {
+		religion = catholic
+        is_theocracy = yes
+        piety = 100
+        tier = baron
+        NOT = { has_character_flag = appointed_cardinal }
+        NOT = { any_playable_ruler = { has_landed_title = d_card7 } }
+        NOT = { has_landed_title = k_papal_states }
+	}
+
+	mean_time_to_happen = {
+		months = 120
+        modifier = {
+			factor = 0.75
+			trait = zealous
+		}
+        modifier = {
+			factor = 0.75
+			trait = chaste
+		}
+        modifier = {
+			factor = 0.75
+			trait = temperate
+		}
+        modifier = {
+			factor = 0.75
+			trait = charitable
+		}
+        modifier = {
+			factor = 0.75
+			trait = diligent
+		}
+        modifier = {
+			factor = 0.75
+			trait = kind
+		}
+        modifier = {
+			factor = 0.75
+			trait = patient
+		}
+        modifier = {
+			factor = 0.75
+			trait = humble
+		}
+        modifier = {
+			factor = 0.25
+			trait = celibate
+		}
+        modifier = {
+			factor = 0.75
+			piety = 250
+		}
+        modifier = {
+			factor = 0.75
+			piety = 500
+		}
+        modifier = {
+			factor = 0.5
+			piety = 1000
+		}
+        modifier = {
+			factor = 1.25
+			trait = lustful
+		}
+        modifier = {
+			factor = 1.25
+			trait = gluttonous
+		}
+        modifier = {
+			factor = 1.25
+			trait = greedy
+		}
+        modifier = {
+			factor = 1.25
+			trait = slothful
+		}
+        modifier = {
+			factor = 1.25
+			trait = wroth
+		}
+        modifier = {
+			factor = 1.25
+			trait = envious
+		}
+        modifier = {
+			factor = 1.25
+			trait = proud
+		}
+        modifier = {
+			factor = 2.0
+			trait = hedonist
+		}
+        modifier = {
+			factor = 2.0
+			trait = impailer
+		}
+        modifier = {
+			factor = 0.75
+			trait = scholar
+		}
+        modifier = {
+			factor = 0.5
+			culture = italian
+		}
+        modifier = {
+			factor = 0.75
+			tier = count
+		}
+        modifier = {
+			factor = 0.5
+			tier = duke
+		}
+        modifier = {
+			factor = 0.25
+			tier = king
+		}
+        modifier = {
+            factor = 0.01
+            NOT = { year = 1070 }
+        }
+        
+	}
+    option = {
+		name = "EXCELLENT"
+        if = {
+			limit = { 
+				independent =  no
+			}
+			top_liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        if = {
+			limit = { 
+				independent =  no
+                liege = {
+                    independent =  no
+                }
+			}
+            liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        d_card7 = { gain_title = FROM }
+        set_character_flag = appointed_cardinal
+        ROOT = {
+            set_defacto_liege = k_papal_state
+        }
+    }
+}
+character_event = {
+	id = 666808
+	desc = "You Have been appointed as a Cardinal"
+	picture = "GFX_evt_icon"
+	
+	only_men = yes
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	trigger = {
+		religion = catholic
+        is_theocracy = yes
+        piety = 100
+        tier = baron
+        NOT = { has_character_flag = appointed_cardinal }
+        NOT = { any_playable_ruler = { has_landed_title = d_card8 } }
+        NOT = { has_landed_title = k_papal_states }
+	}
+
+	mean_time_to_happen = {
+		months = 120
+        modifier = {
+			factor = 0.75
+			trait = zealous
+		}
+        modifier = {
+			factor = 0.75
+			trait = chaste
+		}
+        modifier = {
+			factor = 0.75
+			trait = temperate
+		}
+        modifier = {
+			factor = 0.75
+			trait = charitable
+		}
+        modifier = {
+			factor = 0.75
+			trait = diligent
+		}
+        modifier = {
+			factor = 0.75
+			trait = kind
+		}
+        modifier = {
+			factor = 0.75
+			trait = patient
+		}
+        modifier = {
+			factor = 0.75
+			trait = humble
+		}
+        modifier = {
+			factor = 0.25
+			trait = celibate
+		}
+        modifier = {
+			factor = 0.75
+			piety = 250
+		}
+        modifier = {
+			factor = 0.75
+			piety = 500
+		}
+        modifier = {
+			factor = 0.5
+			piety = 1000
+		}
+        modifier = {
+			factor = 1.25
+			trait = lustful
+		}
+        modifier = {
+			factor = 1.25
+			trait = gluttonous
+		}
+        modifier = {
+			factor = 1.25
+			trait = greedy
+		}
+        modifier = {
+			factor = 1.25
+			trait = slothful
+		}
+        modifier = {
+			factor = 1.25
+			trait = wroth
+		}
+        modifier = {
+			factor = 1.25
+			trait = envious
+		}
+        modifier = {
+			factor = 1.25
+			trait = proud
+		}
+        modifier = {
+			factor = 2.0
+			trait = hedonist
+		}
+        modifier = {
+			factor = 2.0
+			trait = impailer
+		}
+        modifier = {
+			factor = 0.75
+			trait = scholar
+		}
+        modifier = {
+			factor = 0.5
+			culture = italian
+		}
+        modifier = {
+			factor = 0.75
+			tier = count
+		}
+        modifier = {
+			factor = 0.5
+			tier = duke
+		}
+        modifier = {
+			factor = 0.25
+			tier = king
+		}
+        modifier = {
+            factor = 0.01
+            NOT = { year = 1070 }
+        }
+        
+	}
+    option = {
+		name = "EXCELLENT"
+        if = {
+			limit = { 
+				independent =  no
+			}
+			top_liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        if = {
+			limit = { 
+				independent =  no
+                liege = {
+                    independent =  no
+                }
+			}
+            liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        d_card8 = { gain_title = FROM }
+        set_character_flag = appointed_cardinal
+        ROOT = {
+            set_defacto_liege = k_papal_state
+        }
+    }
+}
+character_event = {
+	id = 666809
+	desc = "You Have been appointed as a Cardinal"
+	picture = "GFX_evt_icon"
+	
+	only_men = yes
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	trigger = {
+		religion = catholic
+        is_theocracy = yes
+        piety = 100
+        tier = baron
+        NOT = { has_character_flag = appointed_cardinal }
+        NOT = { any_playable_ruler = { has_landed_title = d_card9 } }
+        NOT = { has_landed_title = k_papal_states }
+	}
+
+	mean_time_to_happen = {
+		months = 120
+        modifier = {
+			factor = 0.75
+			trait = zealous
+		}
+        modifier = {
+			factor = 0.75
+			trait = chaste
+		}
+        modifier = {
+			factor = 0.75
+			trait = temperate
+		}
+        modifier = {
+			factor = 0.75
+			trait = charitable
+		}
+        modifier = {
+			factor = 0.75
+			trait = diligent
+		}
+        modifier = {
+			factor = 0.75
+			trait = kind
+		}
+        modifier = {
+			factor = 0.75
+			trait = patient
+		}
+        modifier = {
+			factor = 0.75
+			trait = humble
+		}
+        modifier = {
+			factor = 0.25
+			trait = celibate
+		}
+        modifier = {
+			factor = 0.75
+			piety = 250
+		}
+        modifier = {
+			factor = 0.75
+			piety = 500
+		}
+        modifier = {
+			factor = 0.5
+			piety = 1000
+		}
+        modifier = {
+			factor = 1.25
+			trait = lustful
+		}
+        modifier = {
+			factor = 1.25
+			trait = gluttonous
+		}
+        modifier = {
+			factor = 1.25
+			trait = greedy
+		}
+        modifier = {
+			factor = 1.25
+			trait = slothful
+		}
+        modifier = {
+			factor = 1.25
+			trait = wroth
+		}
+        modifier = {
+			factor = 1.25
+			trait = envious
+		}
+        modifier = {
+			factor = 1.25
+			trait = proud
+		}
+        modifier = {
+			factor = 2.0
+			trait = hedonist
+		}
+        modifier = {
+			factor = 2.0
+			trait = impailer
+		}
+        modifier = {
+			factor = 0.75
+			trait = scholar
+		}
+        modifier = {
+			factor = 0.5
+			culture = italian
+		}
+        modifier = {
+			factor = 0.75
+			tier = count
+		}
+        modifier = {
+			factor = 0.5
+			tier = duke
+		}
+        modifier = {
+			factor = 0.25
+			tier = king
+		}
+        modifier = {
+            factor = 0.01
+            NOT = { year = 1070 }
+        }
+        
+	}
+    option = {
+		name = "EXCELLENT"
+        if = {
+			limit = { 
+				independent =  no
+			}
+			top_liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        if = {
+			limit = { 
+				independent =  no
+                liege = {
+                    independent =  no
+                }
+			}
+            liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        d_card9 = { gain_title = FROM }
+        set_character_flag = appointed_cardinal
+        ROOT = {
+            set_defacto_liege = k_papal_state
+        }
+    }
+}
+character_event = {
+	id = 666810
+	desc = "You Have been appointed as a Cardinal"
+	picture = "GFX_evt_icon"
+	
+	only_men = yes
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	trigger = {
+		religion = catholic
+        is_theocracy = yes
+        piety = 100
+        tier = baron
+        NOT = { has_character_flag = appointed_cardinal }
+        NOT = { any_playable_ruler = { has_landed_title = d_card10 } }
+        NOT = { has_landed_title = k_papal_states }
+	}
+
+	mean_time_to_happen = {
+		months = 120
+        modifier = {
+			factor = 0.75
+			trait = zealous
+		}
+        modifier = {
+			factor = 0.75
+			trait = chaste
+		}
+        modifier = {
+			factor = 0.75
+			trait = temperate
+		}
+        modifier = {
+			factor = 0.75
+			trait = charitable
+		}
+        modifier = {
+			factor = 0.75
+			trait = diligent
+		}
+        modifier = {
+			factor = 0.75
+			trait = kind
+		}
+        modifier = {
+			factor = 0.75
+			trait = patient
+		}
+        modifier = {
+			factor = 0.75
+			trait = humble
+		}
+        modifier = {
+			factor = 0.25
+			trait = celibate
+		}
+        modifier = {
+			factor = 0.75
+			piety = 250
+		}
+        modifier = {
+			factor = 0.75
+			piety = 500
+		}
+        modifier = {
+			factor = 0.5
+			piety = 1000
+		}
+        modifier = {
+			factor = 1.25
+			trait = lustful
+		}
+        modifier = {
+			factor = 1.25
+			trait = gluttonous
+		}
+        modifier = {
+			factor = 1.25
+			trait = greedy
+		}
+        modifier = {
+			factor = 1.25
+			trait = slothful
+		}
+        modifier = {
+			factor = 1.25
+			trait = wroth
+		}
+        modifier = {
+			factor = 1.25
+			trait = envious
+		}
+        modifier = {
+			factor = 1.25
+			trait = proud
+		}
+        modifier = {
+			factor = 2.0
+			trait = hedonist
+		}
+        modifier = {
+			factor = 2.0
+			trait = impailer
+		}
+        modifier = {
+			factor = 0.75
+			trait = scholar
+		}
+        modifier = {
+			factor = 0.5
+			culture = italian
+		}
+        modifier = {
+			factor = 0.75
+			tier = count
+		}
+        modifier = {
+			factor = 0.5
+			tier = duke
+		}
+        modifier = {
+			factor = 0.25
+			tier = king
+		}
+        modifier = {
+            factor = 0.01
+            NOT = { year = 1070 }
+        }
+        
+	}
+    option = {
+		name = "EXCELLENT"
+        if = {
+			limit = { 
+				independent =  no
+			}
+			top_liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        if = {
+			limit = { 
+				independent =  no
+                liege = {
+                    independent =  no
+                }
+			}
+            liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        d_card10 = { gain_title = FROM }
+        set_character_flag = appointed_cardinal
+        ROOT = {
+            set_defacto_liege = k_papal_state
+        }
+    }
+}
+character_event = {
+	id = 666811
+	desc = "You Have been appointed as a Cardinal"
+	picture = "GFX_evt_icon"
+	
+	only_men = yes
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	trigger = {
+		religion = catholic
+        is_theocracy = yes
+        piety = 100
+        tier = baron
+        NOT = { has_character_flag = appointed_cardinal }
+        NOT = { any_playable_ruler = { has_landed_title = d_card11 } }
+        NOT = { has_landed_title = k_papal_states }
+	}
+
+	mean_time_to_happen = {
+		months = 120
+        modifier = {
+			factor = 0.75
+			trait = zealous
+		}
+        modifier = {
+			factor = 0.75
+			trait = chaste
+		}
+        modifier = {
+			factor = 0.75
+			trait = temperate
+		}
+        modifier = {
+			factor = 0.75
+			trait = charitable
+		}
+        modifier = {
+			factor = 0.75
+			trait = diligent
+		}
+        modifier = {
+			factor = 0.75
+			trait = kind
+		}
+        modifier = {
+			factor = 0.75
+			trait = patient
+		}
+        modifier = {
+			factor = 0.75
+			trait = humble
+		}
+        modifier = {
+			factor = 0.25
+			trait = celibate
+		}
+        modifier = {
+			factor = 0.75
+			piety = 250
+		}
+        modifier = {
+			factor = 0.75
+			piety = 500
+		}
+        modifier = {
+			factor = 0.5
+			piety = 1000
+		}
+        modifier = {
+			factor = 1.25
+			trait = lustful
+		}
+        modifier = {
+			factor = 1.25
+			trait = gluttonous
+		}
+        modifier = {
+			factor = 1.25
+			trait = greedy
+		}
+        modifier = {
+			factor = 1.25
+			trait = slothful
+		}
+        modifier = {
+			factor = 1.25
+			trait = wroth
+		}
+        modifier = {
+			factor = 1.25
+			trait = envious
+		}
+        modifier = {
+			factor = 1.25
+			trait = proud
+		}
+        modifier = {
+			factor = 2.0
+			trait = hedonist
+		}
+        modifier = {
+			factor = 2.0
+			trait = impailer
+		}
+        modifier = {
+			factor = 0.75
+			trait = scholar
+		}
+        modifier = {
+			factor = 0.5
+			culture = italian
+		}
+        modifier = {
+			factor = 0.75
+			tier = count
+		}
+        modifier = {
+			factor = 0.5
+			tier = duke
+		}
+        modifier = {
+			factor = 0.25
+			tier = king
+		}
+        modifier = {
+            factor = 0.01
+            NOT = { year = 1070 }
+        }
+        
+	}
+    option = {
+		name = "EXCELLENT"
+        if = {
+			limit = { 
+				independent =  no
+			}
+			top_liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        if = {
+			limit = { 
+				independent =  no
+                liege = {
+                    independent =  no
+                }
+			}
+            liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        d_card11 = { gain_title = FROM }
+        set_character_flag = appointed_cardinal
+        ROOT = {
+            set_defacto_liege = k_papal_state
+        }
+    }
+}
+character_event = {
+	id = 666812
+	desc = "You Have been appointed as a Cardinal"
+	picture = "GFX_evt_icon"
+	
+	only_men = yes
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	trigger = {
+		religion = catholic
+        is_theocracy = yes
+        piety = 100
+        tier = baron
+        NOT = { has_character_flag = appointed_cardinal }
+        NOT = { any_playable_ruler = { has_landed_title = d_card12 } }
+        NOT = { has_landed_title = k_papal_states }
+	}
+
+	mean_time_to_happen = {
+		months = 120
+        modifier = {
+			factor = 0.75
+			trait = zealous
+		}
+        modifier = {
+			factor = 0.75
+			trait = chaste
+		}
+        modifier = {
+			factor = 0.75
+			trait = temperate
+		}
+        modifier = {
+			factor = 0.75
+			trait = charitable
+		}
+        modifier = {
+			factor = 0.75
+			trait = diligent
+		}
+        modifier = {
+			factor = 0.75
+			trait = kind
+		}
+        modifier = {
+			factor = 0.75
+			trait = patient
+		}
+        modifier = {
+			factor = 0.75
+			trait = humble
+		}
+        modifier = {
+			factor = 0.25
+			trait = celibate
+		}
+        modifier = {
+			factor = 0.75
+			piety = 250
+		}
+        modifier = {
+			factor = 0.75
+			piety = 500
+		}
+        modifier = {
+			factor = 0.5
+			piety = 1000
+		}
+        modifier = {
+			factor = 1.25
+			trait = lustful
+		}
+        modifier = {
+			factor = 1.25
+			trait = gluttonous
+		}
+        modifier = {
+			factor = 1.25
+			trait = greedy
+		}
+        modifier = {
+			factor = 1.25
+			trait = slothful
+		}
+        modifier = {
+			factor = 1.25
+			trait = wroth
+		}
+        modifier = {
+			factor = 1.25
+			trait = envious
+		}
+        modifier = {
+			factor = 1.25
+			trait = proud
+		}
+        modifier = {
+			factor = 2.0
+			trait = hedonist
+		}
+        modifier = {
+			factor = 2.0
+			trait = impailer
+		}
+        modifier = {
+			factor = 0.75
+			trait = scholar
+		}
+        modifier = {
+			factor = 0.5
+			culture = italian
+		}
+        modifier = {
+			factor = 0.75
+			tier = count
+		}
+        modifier = {
+			factor = 0.5
+			tier = duke
+		}
+        modifier = {
+			factor = 0.25
+			tier = king
+		}
+        modifier = {
+            factor = 0.01
+            NOT = { year = 1070 }
+        }
+        
+	}
+    option = {
+		name = "EXCELLENT"
+        if = {
+			limit = { 
+				independent =  no
+			}
+			top_liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        if = {
+			limit = { 
+				independent =  no
+                liege = {
+                    independent =  no
+                }
+			}
+            liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        d_card12 = { gain_title = FROM }
+        set_character_flag = appointed_cardinal
+        ROOT = {
+            set_defacto_liege = k_papal_state
+        }
+    }
+}
+character_event = {
+	id = 666813
+	desc = "You Have been appointed as a Cardinal"
+	picture = "GFX_evt_icon"
+	
+	only_men = yes
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	trigger = {
+		religion = catholic
+        is_theocracy = yes
+        piety = 100
+        tier = baron
+        NOT = { has_character_flag = appointed_cardinal }
+        NOT = { any_playable_ruler = { has_landed_title = d_card13 } }
+        NOT = { has_landed_title = k_papal_states }
+	}
+
+	mean_time_to_happen = {
+		months = 120
+        modifier = {
+			factor = 0.75
+			trait = zealous
+		}
+        modifier = {
+			factor = 0.75
+			trait = chaste
+		}
+        modifier = {
+			factor = 0.75
+			trait = temperate
+		}
+        modifier = {
+			factor = 0.75
+			trait = charitable
+		}
+        modifier = {
+			factor = 0.75
+			trait = diligent
+		}
+        modifier = {
+			factor = 0.75
+			trait = kind
+		}
+        modifier = {
+			factor = 0.75
+			trait = patient
+		}
+        modifier = {
+			factor = 0.75
+			trait = humble
+		}
+        modifier = {
+			factor = 0.25
+			trait = celibate
+		}
+        modifier = {
+			factor = 0.75
+			piety = 250
+		}
+        modifier = {
+			factor = 0.75
+			piety = 500
+		}
+        modifier = {
+			factor = 0.5
+			piety = 1000
+		}
+        modifier = {
+			factor = 1.25
+			trait = lustful
+		}
+        modifier = {
+			factor = 1.25
+			trait = gluttonous
+		}
+        modifier = {
+			factor = 1.25
+			trait = greedy
+		}
+        modifier = {
+			factor = 1.25
+			trait = slothful
+		}
+        modifier = {
+			factor = 1.25
+			trait = wroth
+		}
+        modifier = {
+			factor = 1.25
+			trait = envious
+		}
+        modifier = {
+			factor = 1.25
+			trait = proud
+		}
+        modifier = {
+			factor = 2.0
+			trait = hedonist
+		}
+        modifier = {
+			factor = 2.0
+			trait = impailer
+		}
+        modifier = {
+			factor = 0.75
+			trait = scholar
+		}
+        modifier = {
+			factor = 0.5
+			culture = italian
+		}
+        modifier = {
+			factor = 0.75
+			tier = count
+		}
+        modifier = {
+			factor = 0.5
+			tier = duke
+		}
+        modifier = {
+			factor = 0.25
+			tier = king
+		}
+        modifier = {
+            factor = 0.01
+            NOT = { year = 1070 }
+        }
+        
+	}
+    option = {
+		name = "EXCELLENT"
+        if = {
+			limit = { 
+				independent =  no
+			}
+			top_liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        if = {
+			limit = { 
+				independent =  no
+                liege = {
+                    independent =  no
+                }
+			}
+            liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        d_card13 = { gain_title = FROM }
+        set_character_flag = appointed_cardinal
+        ROOT = {
+            set_defacto_liege = k_papal_state
+        }
+    }
+}
+character_event = {
+	id = 666814
+	desc = "You Have been appointed as a Cardinal"
+	picture = "GFX_evt_icon"
+	
+	only_men = yes
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	trigger = {
+		religion = catholic
+        is_theocracy = yes
+        piety = 100
+        tier = baron
+        NOT = { has_character_flag = appointed_cardinal }
+        NOT = { any_playable_ruler = { has_landed_title = d_card14 } }
+        NOT = { has_landed_title = k_papal_states }
+	}
+
+	mean_time_to_happen = {
+		months = 120
+        modifier = {
+			factor = 0.75
+			trait = zealous
+		}
+        modifier = {
+			factor = 0.75
+			trait = chaste
+		}
+        modifier = {
+			factor = 0.75
+			trait = temperate
+		}
+        modifier = {
+			factor = 0.75
+			trait = charitable
+		}
+        modifier = {
+			factor = 0.75
+			trait = diligent
+		}
+        modifier = {
+			factor = 0.75
+			trait = kind
+		}
+        modifier = {
+			factor = 0.75
+			trait = patient
+		}
+        modifier = {
+			factor = 0.75
+			trait = humble
+		}
+        modifier = {
+			factor = 0.25
+			trait = celibate
+		}
+        modifier = {
+			factor = 0.75
+			piety = 250
+		}
+        modifier = {
+			factor = 0.75
+			piety = 500
+		}
+        modifier = {
+			factor = 0.5
+			piety = 1000
+		}
+        modifier = {
+			factor = 1.25
+			trait = lustful
+		}
+        modifier = {
+			factor = 1.25
+			trait = gluttonous
+		}
+        modifier = {
+			factor = 1.25
+			trait = greedy
+		}
+        modifier = {
+			factor = 1.25
+			trait = slothful
+		}
+        modifier = {
+			factor = 1.25
+			trait = wroth
+		}
+        modifier = {
+			factor = 1.25
+			trait = envious
+		}
+        modifier = {
+			factor = 1.25
+			trait = proud
+		}
+        modifier = {
+			factor = 2.0
+			trait = hedonist
+		}
+        modifier = {
+			factor = 2.0
+			trait = impailer
+		}
+        modifier = {
+			factor = 0.75
+			trait = scholar
+		}
+        modifier = {
+			factor = 0.5
+			culture = italian
+		}
+        modifier = {
+			factor = 0.75
+			tier = count
+		}
+        modifier = {
+			factor = 0.5
+			tier = duke
+		}
+        modifier = {
+			factor = 0.25
+			tier = king
+		}
+        modifier = {
+            factor = 0.01
+            NOT = { year = 1070 }
+        }
+        
+	}
+    option = {
+		name = "EXCELLENT"
+        if = {
+			limit = { 
+				independent =  no
+			}
+			top_liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        if = {
+			limit = { 
+				independent =  no
+                liege = {
+                    independent =  no
+                }
+			}
+            liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        d_card14 = { gain_title = FROM }
+        set_character_flag = appointed_cardinal
+        ROOT = {
+            set_defacto_liege = k_papal_state
+        }
+    }
+}
+character_event = {
+	id = 666815
+	desc = "You Have been appointed as a Cardinal"
+	picture = "GFX_evt_icon"
+	
+	only_men = yes
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	trigger = {
+		religion = catholic
+        is_theocracy = yes
+        piety = 100
+        tier = baron
+        NOT = { has_character_flag = appointed_cardinal }
+        NOT = { any_playable_ruler = { has_landed_title = d_card15 } }
+        NOT = { has_landed_title = k_papal_states }
+	}
+
+	mean_time_to_happen = {
+		months = 120
+        modifier = {
+			factor = 0.75
+			trait = zealous
+		}
+        modifier = {
+			factor = 0.75
+			trait = chaste
+		}
+        modifier = {
+			factor = 0.75
+			trait = temperate
+		}
+        modifier = {
+			factor = 0.75
+			trait = charitable
+		}
+        modifier = {
+			factor = 0.75
+			trait = diligent
+		}
+        modifier = {
+			factor = 0.75
+			trait = kind
+		}
+        modifier = {
+			factor = 0.75
+			trait = patient
+		}
+        modifier = {
+			factor = 0.75
+			trait = humble
+		}
+        modifier = {
+			factor = 0.25
+			trait = celibate
+		}
+        modifier = {
+			factor = 0.75
+			piety = 250
+		}
+        modifier = {
+			factor = 0.75
+			piety = 500
+		}
+        modifier = {
+			factor = 0.5
+			piety = 1000
+		}
+        modifier = {
+			factor = 1.25
+			trait = lustful
+		}
+        modifier = {
+			factor = 1.25
+			trait = gluttonous
+		}
+        modifier = {
+			factor = 1.25
+			trait = greedy
+		}
+        modifier = {
+			factor = 1.25
+			trait = slothful
+		}
+        modifier = {
+			factor = 1.25
+			trait = wroth
+		}
+        modifier = {
+			factor = 1.25
+			trait = envious
+		}
+        modifier = {
+			factor = 1.25
+			trait = proud
+		}
+        modifier = {
+			factor = 2.0
+			trait = hedonist
+		}
+        modifier = {
+			factor = 2.0
+			trait = impailer
+		}
+        modifier = {
+			factor = 0.75
+			trait = scholar
+		}
+        modifier = {
+			factor = 0.5
+			culture = italian
+		}
+        modifier = {
+			factor = 0.75
+			tier = count
+		}
+        modifier = {
+			factor = 0.5
+			tier = duke
+		}
+        modifier = {
+			factor = 0.25
+			tier = king
+		}
+        modifier = {
+            factor = 0.01
+            NOT = { year = 1070 }
+        }
+        
+	}
+    option = {
+		name = "EXCELLENT"
+        if = {
+			limit = { 
+				independent =  no
+			}
+			top_liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        if = {
+			limit = { 
+				independent =  no
+                liege = {
+                    independent =  no
+                }
+			}
+            liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        d_card15 = { gain_title = FROM }
+        set_character_flag = appointed_cardinal
+        ROOT = {
+            set_defacto_liege = k_papal_state
+        }
+    }
+}
+character_event = {
+	id = 666816
+	desc = "You Have been appointed as a Cardinal"
+	picture = "GFX_evt_icon"
+	
+	only_men = yes
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	trigger = {
+		religion = catholic
+        is_theocracy = yes
+        piety = 100
+        tier = baron
+        NOT = { has_character_flag = appointed_cardinal }
+        NOT = { any_playable_ruler = { has_landed_title = d_card16 } }
+        NOT = { has_landed_title = k_papal_states }
+	}
+
+	mean_time_to_happen = {
+		months = 120
+        modifier = {
+			factor = 0.75
+			trait = zealous
+		}
+        modifier = {
+			factor = 0.75
+			trait = chaste
+		}
+        modifier = {
+			factor = 0.75
+			trait = temperate
+		}
+        modifier = {
+			factor = 0.75
+			trait = charitable
+		}
+        modifier = {
+			factor = 0.75
+			trait = diligent
+		}
+        modifier = {
+			factor = 0.75
+			trait = kind
+		}
+        modifier = {
+			factor = 0.75
+			trait = patient
+		}
+        modifier = {
+			factor = 0.75
+			trait = humble
+		}
+        modifier = {
+			factor = 0.25
+			trait = celibate
+		}
+        modifier = {
+			factor = 0.75
+			piety = 250
+		}
+        modifier = {
+			factor = 0.75
+			piety = 500
+		}
+        modifier = {
+			factor = 0.5
+			piety = 1000
+		}
+        modifier = {
+			factor = 1.25
+			trait = lustful
+		}
+        modifier = {
+			factor = 1.25
+			trait = gluttonous
+		}
+        modifier = {
+			factor = 1.25
+			trait = greedy
+		}
+        modifier = {
+			factor = 1.25
+			trait = slothful
+		}
+        modifier = {
+			factor = 1.25
+			trait = wroth
+		}
+        modifier = {
+			factor = 1.25
+			trait = envious
+		}
+        modifier = {
+			factor = 1.25
+			trait = proud
+		}
+        modifier = {
+			factor = 2.0
+			trait = hedonist
+		}
+        modifier = {
+			factor = 2.0
+			trait = impailer
+		}
+        modifier = {
+			factor = 0.75
+			trait = scholar
+		}
+        modifier = {
+			factor = 0.5
+			culture = italian
+		}
+        modifier = {
+			factor = 0.75
+			tier = count
+		}
+        modifier = {
+			factor = 0.5
+			tier = duke
+		}
+        modifier = {
+			factor = 0.25
+			tier = king
+		}
+        modifier = {
+            factor = 0.01
+            NOT = { year = 1070 }
+        }
+        
+	}
+    option = {
+		name = "EXCELLENT"
+        if = {
+			limit = { 
+				independent =  no
+			}
+			top_liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        if = {
+			limit = { 
+				independent =  no
+                liege = {
+                    independent =  no
+                }
+			}
+            liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        d_card16 = { gain_title = FROM }
+        set_character_flag = appointed_cardinal
+        ROOT = {
+            set_defacto_liege = k_papal_state
+        }
+    }
+}
+character_event = {
+	id = 666817
+	desc = "You Have been appointed as a Cardinal"
+	picture = "GFX_evt_icon"
+	
+	only_men = yes
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	trigger = {
+		religion = catholic
+        is_theocracy = yes
+        piety = 100
+        tier = baron
+        NOT = { has_character_flag = appointed_cardinal }
+        NOT = { any_playable_ruler = { has_landed_title = d_card17 } }
+        NOT = { has_landed_title = k_papal_states }
+	}
+
+	mean_time_to_happen = {
+		months = 120
+        modifier = {
+			factor = 0.75
+			trait = zealous
+		}
+        modifier = {
+			factor = 0.75
+			trait = chaste
+		}
+        modifier = {
+			factor = 0.75
+			trait = temperate
+		}
+        modifier = {
+			factor = 0.75
+			trait = charitable
+		}
+        modifier = {
+			factor = 0.75
+			trait = diligent
+		}
+        modifier = {
+			factor = 0.75
+			trait = kind
+		}
+        modifier = {
+			factor = 0.75
+			trait = patient
+		}
+        modifier = {
+			factor = 0.75
+			trait = humble
+		}
+        modifier = {
+			factor = 0.25
+			trait = celibate
+		}
+        modifier = {
+			factor = 0.75
+			piety = 250
+		}
+        modifier = {
+			factor = 0.75
+			piety = 500
+		}
+        modifier = {
+			factor = 0.5
+			piety = 1000
+		}
+        modifier = {
+			factor = 1.25
+			trait = lustful
+		}
+        modifier = {
+			factor = 1.25
+			trait = gluttonous
+		}
+        modifier = {
+			factor = 1.25
+			trait = greedy
+		}
+        modifier = {
+			factor = 1.25
+			trait = slothful
+		}
+        modifier = {
+			factor = 1.25
+			trait = wroth
+		}
+        modifier = {
+			factor = 1.25
+			trait = envious
+		}
+        modifier = {
+			factor = 1.25
+			trait = proud
+		}
+        modifier = {
+			factor = 2.0
+			trait = hedonist
+		}
+        modifier = {
+			factor = 2.0
+			trait = impailer
+		}
+        modifier = {
+			factor = 0.75
+			trait = scholar
+		}
+        modifier = {
+			factor = 0.5
+			culture = italian
+		}
+        modifier = {
+			factor = 0.75
+			tier = count
+		}
+        modifier = {
+			factor = 0.5
+			tier = duke
+		}
+        modifier = {
+			factor = 0.25
+			tier = king
+		}
+        modifier = {
+            factor = 0.01
+            NOT = { year = 1070 }
+        }
+        
+	}
+    option = {
+		name = "EXCELLENT"
+        if = {
+			limit = { 
+				independent =  no
+			}
+			top_liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        if = {
+			limit = { 
+				independent =  no
+                liege = {
+                    independent =  no
+                }
+			}
+            liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        d_card17 = { gain_title = FROM }
+        set_character_flag = appointed_cardinal
+        ROOT = {
+            set_defacto_liege = k_papal_state
+        }
+    }
+}
+character_event = {
+	id = 666818
+	desc = "You Have been appointed as a Cardinal"
+	picture = "GFX_evt_icon"
+	
+	only_men = yes
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	trigger = {
+		religion = catholic
+        is_theocracy = yes
+        piety = 100
+        tier = baron
+        NOT = { has_character_flag = appointed_cardinal }
+        NOT = { any_playable_ruler = { has_landed_title = d_card18 } }
+        NOT = { has_landed_title = k_papal_states }
+	}
+
+	mean_time_to_happen = {
+		months = 120
+        modifier = {
+			factor = 0.75
+			trait = zealous
+		}
+        modifier = {
+			factor = 0.75
+			trait = chaste
+		}
+        modifier = {
+			factor = 0.75
+			trait = temperate
+		}
+        modifier = {
+			factor = 0.75
+			trait = charitable
+		}
+        modifier = {
+			factor = 0.75
+			trait = diligent
+		}
+        modifier = {
+			factor = 0.75
+			trait = kind
+		}
+        modifier = {
+			factor = 0.75
+			trait = patient
+		}
+        modifier = {
+			factor = 0.75
+			trait = humble
+		}
+        modifier = {
+			factor = 0.25
+			trait = celibate
+		}
+        modifier = {
+			factor = 0.75
+			piety = 250
+		}
+        modifier = {
+			factor = 0.75
+			piety = 500
+		}
+        modifier = {
+			factor = 0.5
+			piety = 1000
+		}
+        modifier = {
+			factor = 1.25
+			trait = lustful
+		}
+        modifier = {
+			factor = 1.25
+			trait = gluttonous
+		}
+        modifier = {
+			factor = 1.25
+			trait = greedy
+		}
+        modifier = {
+			factor = 1.25
+			trait = slothful
+		}
+        modifier = {
+			factor = 1.25
+			trait = wroth
+		}
+        modifier = {
+			factor = 1.25
+			trait = envious
+		}
+        modifier = {
+			factor = 1.25
+			trait = proud
+		}
+        modifier = {
+			factor = 2.0
+			trait = hedonist
+		}
+        modifier = {
+			factor = 2.0
+			trait = impailer
+		}
+        modifier = {
+			factor = 0.75
+			trait = scholar
+		}
+        modifier = {
+			factor = 0.5
+			culture = italian
+		}
+        modifier = {
+			factor = 0.75
+			tier = count
+		}
+        modifier = {
+			factor = 0.5
+			tier = duke
+		}
+        modifier = {
+			factor = 0.25
+			tier = king
+		}
+        modifier = {
+            factor = 0.01
+            NOT = { year = 1070 }
+        }
+        
+	}
+    option = {
+		name = "EXCELLENT"
+        if = {
+			limit = { 
+				independent =  no
+			}
+			top_liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        if = {
+			limit = { 
+				independent =  no
+                liege = {
+                    independent =  no
+                }
+			}
+            liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        d_card18 = { gain_title = FROM }
+        set_character_flag = appointed_cardinal
+        ROOT = {
+            set_defacto_liege = k_papal_state
+        }
+    }
+}
+character_event = {
+	id = 666819
+	desc = "You Have been appointed as a Cardinal"
+	picture = "GFX_evt_icon"
+	
+	only_men = yes
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	trigger = {
+		religion = catholic
+        is_theocracy = yes
+        piety = 100
+        tier = baron
+        NOT = { has_character_flag = appointed_cardinal }
+        NOT = { any_playable_ruler = { has_landed_title = d_card19 } }
+        NOT = { has_landed_title = k_papal_states }
+	}
+
+	mean_time_to_happen = {
+		months = 120
+        modifier = {
+			factor = 0.75
+			trait = zealous
+		}
+        modifier = {
+			factor = 0.75
+			trait = chaste
+		}
+        modifier = {
+			factor = 0.75
+			trait = temperate
+		}
+        modifier = {
+			factor = 0.75
+			trait = charitable
+		}
+        modifier = {
+			factor = 0.75
+			trait = diligent
+		}
+        modifier = {
+			factor = 0.75
+			trait = kind
+		}
+        modifier = {
+			factor = 0.75
+			trait = patient
+		}
+        modifier = {
+			factor = 0.75
+			trait = humble
+		}
+        modifier = {
+			factor = 0.25
+			trait = celibate
+		}
+        modifier = {
+			factor = 0.75
+			piety = 250
+		}
+        modifier = {
+			factor = 0.75
+			piety = 500
+		}
+        modifier = {
+			factor = 0.5
+			piety = 1000
+		}
+        modifier = {
+			factor = 1.25
+			trait = lustful
+		}
+        modifier = {
+			factor = 1.25
+			trait = gluttonous
+		}
+        modifier = {
+			factor = 1.25
+			trait = greedy
+		}
+        modifier = {
+			factor = 1.25
+			trait = slothful
+		}
+        modifier = {
+			factor = 1.25
+			trait = wroth
+		}
+        modifier = {
+			factor = 1.25
+			trait = envious
+		}
+        modifier = {
+			factor = 1.25
+			trait = proud
+		}
+        modifier = {
+			factor = 2.0
+			trait = hedonist
+		}
+        modifier = {
+			factor = 2.0
+			trait = impailer
+		}
+        modifier = {
+			factor = 0.75
+			trait = scholar
+		}
+        modifier = {
+			factor = 0.5
+			culture = italian
+		}
+        modifier = {
+			factor = 0.75
+			tier = count
+		}
+        modifier = {
+			factor = 0.5
+			tier = duke
+		}
+        modifier = {
+			factor = 0.25
+			tier = king
+		}
+        modifier = {
+            factor = 0.01
+            NOT = { year = 1070 }
+        }
+        
+	}
+    option = {
+		name = "EXCELLENT"
+        if = {
+			limit = { 
+				independent =  no
+			}
+			top_liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        if = {
+			limit = { 
+				independent =  no
+                liege = {
+                    independent =  no
+                }
+			}
+            liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        d_card19 = { gain_title = FROM }
+        set_character_flag = appointed_cardinal
+        ROOT = {
+            set_defacto_liege = k_papal_state
+        }
+    }
+}
+character_event = {
+	id = 666820
+	desc = "You Have been appointed as a Cardinal"
+	picture = "GFX_evt_icon"
+	
+	only_men = yes
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	trigger = {
+		religion = catholic
+        is_theocracy = yes
+        piety = 100
+        tier = baron
+        NOT = { has_character_flag = appointed_cardinal }
+        NOT = { any_playable_ruler = { has_landed_title = d_card20 } }
+        NOT = { has_landed_title = k_papal_states }
+	}
+
+	mean_time_to_happen = {
+		months = 120
+        modifier = {
+			factor = 0.75
+			trait = zealous
+		}
+        modifier = {
+			factor = 0.75
+			trait = chaste
+		}
+        modifier = {
+			factor = 0.75
+			trait = temperate
+		}
+        modifier = {
+			factor = 0.75
+			trait = charitable
+		}
+        modifier = {
+			factor = 0.75
+			trait = diligent
+		}
+        modifier = {
+			factor = 0.75
+			trait = kind
+		}
+        modifier = {
+			factor = 0.75
+			trait = patient
+		}
+        modifier = {
+			factor = 0.75
+			trait = humble
+		}
+        modifier = {
+			factor = 0.25
+			trait = celibate
+		}
+        modifier = {
+			factor = 0.75
+			piety = 250
+		}
+        modifier = {
+			factor = 0.75
+			piety = 500
+		}
+        modifier = {
+			factor = 0.5
+			piety = 1000
+		}
+        modifier = {
+			factor = 1.25
+			trait = lustful
+		}
+        modifier = {
+			factor = 1.25
+			trait = gluttonous
+		}
+        modifier = {
+			factor = 1.25
+			trait = greedy
+		}
+        modifier = {
+			factor = 1.25
+			trait = slothful
+		}
+        modifier = {
+			factor = 1.25
+			trait = wroth
+		}
+        modifier = {
+			factor = 1.25
+			trait = envious
+		}
+        modifier = {
+			factor = 1.25
+			trait = proud
+		}
+        modifier = {
+			factor = 2.0
+			trait = hedonist
+		}
+        modifier = {
+			factor = 2.0
+			trait = impailer
+		}
+        modifier = {
+			factor = 0.75
+			trait = scholar
+		}
+        modifier = {
+			factor = 0.5
+			culture = italian
+		}
+        modifier = {
+			factor = 0.75
+			tier = count
+		}
+        modifier = {
+			factor = 0.5
+			tier = duke
+		}
+        modifier = {
+			factor = 0.25
+			tier = king
+		}
+        modifier = {
+            factor = 0.01
+            NOT = { year = 1070 }
+        }
+        
+	}
+    option = {
+		name = "EXCELLENT"
+        if = {
+			limit = { 
+				independent =  no
+			}
+			top_liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        if = {
+			limit = { 
+				independent =  no
+                liege = {
+                    independent =  no
+                }
+			}
+            liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        d_card20 = { gain_title = FROM }
+        set_character_flag = appointed_cardinal
+        ROOT = {
+            set_defacto_liege = k_papal_state
+        }
+    }
+}
+character_event = {
+	id = 666821
+	desc = "You Have been appointed as a Cardinal"
+	picture = "GFX_evt_icon"
+	
+	only_men = yes
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	trigger = {
+		religion = catholic
+        is_theocracy = yes
+        piety = 100
+        tier = baron
+        NOT = { has_character_flag = appointed_cardinal }
+        NOT = { any_playable_ruler = { has_landed_title = d_card21 } }
+        NOT = { has_landed_title = k_papal_states }
+	}
+
+	mean_time_to_happen = {
+		months = 120
+        modifier = {
+			factor = 0.75
+			trait = zealous
+		}
+        modifier = {
+			factor = 0.75
+			trait = chaste
+		}
+        modifier = {
+			factor = 0.75
+			trait = temperate
+		}
+        modifier = {
+			factor = 0.75
+			trait = charitable
+		}
+        modifier = {
+			factor = 0.75
+			trait = diligent
+		}
+        modifier = {
+			factor = 0.75
+			trait = kind
+		}
+        modifier = {
+			factor = 0.75
+			trait = patient
+		}
+        modifier = {
+			factor = 0.75
+			trait = humble
+		}
+        modifier = {
+			factor = 0.25
+			trait = celibate
+		}
+        modifier = {
+			factor = 0.75
+			piety = 250
+		}
+        modifier = {
+			factor = 0.75
+			piety = 500
+		}
+        modifier = {
+			factor = 0.5
+			piety = 1000
+		}
+        modifier = {
+			factor = 1.25
+			trait = lustful
+		}
+        modifier = {
+			factor = 1.25
+			trait = gluttonous
+		}
+        modifier = {
+			factor = 1.25
+			trait = greedy
+		}
+        modifier = {
+			factor = 1.25
+			trait = slothful
+		}
+        modifier = {
+			factor = 1.25
+			trait = wroth
+		}
+        modifier = {
+			factor = 1.25
+			trait = envious
+		}
+        modifier = {
+			factor = 1.25
+			trait = proud
+		}
+        modifier = {
+			factor = 2.0
+			trait = hedonist
+		}
+        modifier = {
+			factor = 2.0
+			trait = impailer
+		}
+        modifier = {
+			factor = 0.75
+			trait = scholar
+		}
+        modifier = {
+			factor = 0.5
+			culture = italian
+		}
+        modifier = {
+			factor = 0.75
+			tier = count
+		}
+        modifier = {
+			factor = 0.5
+			tier = duke
+		}
+        modifier = {
+			factor = 0.25
+			tier = king
+		}
+        modifier = {
+            factor = 0.01
+            NOT = { year = 1070 }
+        }
+        
+	}
+    option = {
+		name = "EXCELLENT"
+        if = {
+			limit = { 
+				independent =  no
+			}
+			top_liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        if = {
+			limit = { 
+				independent =  no
+                liege = {
+                    independent =  no
+                }
+			}
+            liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        d_card21 = { gain_title = FROM }
+        set_character_flag = appointed_cardinal
+        ROOT = {
+            set_defacto_liege = k_papal_state
+        }
+    }
+}
+character_event = {
+	id = 666822
+	desc = "You Have been appointed as a Cardinal"
+	picture = "GFX_evt_icon"
+	
+	only_men = yes
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	trigger = {
+		religion = catholic
+        is_theocracy = yes
+        piety = 100
+        tier = baron
+        NOT = { has_character_flag = appointed_cardinal }
+        NOT = { any_playable_ruler = { has_landed_title = d_card22 } }
+        NOT = { has_landed_title = k_papal_states }
+	}
+
+	mean_time_to_happen = {
+		months = 120
+        modifier = {
+			factor = 0.75
+			trait = zealous
+		}
+        modifier = {
+			factor = 0.75
+			trait = chaste
+		}
+        modifier = {
+			factor = 0.75
+			trait = temperate
+		}
+        modifier = {
+			factor = 0.75
+			trait = charitable
+		}
+        modifier = {
+			factor = 0.75
+			trait = diligent
+		}
+        modifier = {
+			factor = 0.75
+			trait = kind
+		}
+        modifier = {
+			factor = 0.75
+			trait = patient
+		}
+        modifier = {
+			factor = 0.75
+			trait = humble
+		}
+        modifier = {
+			factor = 0.25
+			trait = celibate
+		}
+        modifier = {
+			factor = 0.75
+			piety = 250
+		}
+        modifier = {
+			factor = 0.75
+			piety = 500
+		}
+        modifier = {
+			factor = 0.5
+			piety = 1000
+		}
+        modifier = {
+			factor = 1.25
+			trait = lustful
+		}
+        modifier = {
+			factor = 1.25
+			trait = gluttonous
+		}
+        modifier = {
+			factor = 1.25
+			trait = greedy
+		}
+        modifier = {
+			factor = 1.25
+			trait = slothful
+		}
+        modifier = {
+			factor = 1.25
+			trait = wroth
+		}
+        modifier = {
+			factor = 1.25
+			trait = envious
+		}
+        modifier = {
+			factor = 1.25
+			trait = proud
+		}
+        modifier = {
+			factor = 2.0
+			trait = hedonist
+		}
+        modifier = {
+			factor = 2.0
+			trait = impailer
+		}
+        modifier = {
+			factor = 0.75
+			trait = scholar
+		}
+        modifier = {
+			factor = 0.5
+			culture = italian
+		}
+        modifier = {
+			factor = 0.75
+			tier = count
+		}
+        modifier = {
+			factor = 0.5
+			tier = duke
+		}
+        modifier = {
+			factor = 0.25
+			tier = king
+		}
+        modifier = {
+            factor = 0.01
+            NOT = { year = 1070 }
+        }
+        
+	}
+    option = {
+		name = "EXCELLENT"
+        if = {
+			limit = { 
+				independent =  no
+			}
+			top_liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        if = {
+			limit = { 
+				independent =  no
+                liege = {
+                    independent =  no
+                }
+			}
+            liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        d_card22 = { gain_title = FROM }
+        set_character_flag = appointed_cardinal
+        ROOT = {
+            set_defacto_liege = k_papal_state
+        }
+    }
+}
+character_event = {
+	id = 666823
+	desc = "You Have been appointed as a Cardinal"
+	picture = "GFX_evt_icon"
+	
+	only_men = yes
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	trigger = {
+		religion = catholic
+        is_theocracy = yes
+        piety = 100
+        tier = baron
+        NOT = { has_character_flag = appointed_cardinal }
+        NOT = { any_playable_ruler = { has_landed_title = d_card23 } }
+        NOT = { has_landed_title = k_papal_states }
+	}
+
+	mean_time_to_happen = {
+		months = 120
+        modifier = {
+			factor = 0.75
+			trait = zealous
+		}
+        modifier = {
+			factor = 0.75
+			trait = chaste
+		}
+        modifier = {
+			factor = 0.75
+			trait = temperate
+		}
+        modifier = {
+			factor = 0.75
+			trait = charitable
+		}
+        modifier = {
+			factor = 0.75
+			trait = diligent
+		}
+        modifier = {
+			factor = 0.75
+			trait = kind
+		}
+        modifier = {
+			factor = 0.75
+			trait = patient
+		}
+        modifier = {
+			factor = 0.75
+			trait = humble
+		}
+        modifier = {
+			factor = 0.25
+			trait = celibate
+		}
+        modifier = {
+			factor = 0.75
+			piety = 250
+		}
+        modifier = {
+			factor = 0.75
+			piety = 500
+		}
+        modifier = {
+			factor = 0.5
+			piety = 1000
+		}
+        modifier = {
+			factor = 1.25
+			trait = lustful
+		}
+        modifier = {
+			factor = 1.25
+			trait = gluttonous
+		}
+        modifier = {
+			factor = 1.25
+			trait = greedy
+		}
+        modifier = {
+			factor = 1.25
+			trait = slothful
+		}
+        modifier = {
+			factor = 1.25
+			trait = wroth
+		}
+        modifier = {
+			factor = 1.25
+			trait = envious
+		}
+        modifier = {
+			factor = 1.25
+			trait = proud
+		}
+        modifier = {
+			factor = 2.0
+			trait = hedonist
+		}
+        modifier = {
+			factor = 2.0
+			trait = impailer
+		}
+        modifier = {
+			factor = 0.75
+			trait = scholar
+		}
+        modifier = {
+			factor = 0.5
+			culture = italian
+		}
+        modifier = {
+			factor = 0.75
+			tier = count
+		}
+        modifier = {
+			factor = 0.5
+			tier = duke
+		}
+        modifier = {
+			factor = 0.25
+			tier = king
+		}
+        modifier = {
+            factor = 0.01
+            NOT = { year = 1070 }
+        }
+        
+	}
+    option = {
+		name = "EXCELLENT"
+        if = {
+			limit = { 
+				independent =  no
+			}
+			top_liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        if = {
+			limit = { 
+				independent =  no
+                liege = {
+                    independent =  no
+                }
+			}
+            liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        d_card23 = { gain_title = FROM }
+        set_character_flag = appointed_cardinal
+        ROOT = {
+            set_defacto_liege = k_papal_state
+        }
+    }
+}
+character_event = {
+	id = 666824
+	desc = "You Have been appointed as a Cardinal"
+	picture = "GFX_evt_icon"
+	
+	only_men = yes
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	trigger = {
+		religion = catholic
+        is_theocracy = yes
+        piety = 100
+        tier = baron
+        NOT = { has_character_flag = appointed_cardinal }
+        NOT = { any_playable_ruler = { has_landed_title = d_card24 } }
+        NOT = { has_landed_title = k_papal_states }
+	}
+
+	mean_time_to_happen = {
+		months = 120
+        modifier = {
+			factor = 0.75
+			trait = zealous
+		}
+        modifier = {
+			factor = 0.75
+			trait = chaste
+		}
+        modifier = {
+			factor = 0.75
+			trait = temperate
+		}
+        modifier = {
+			factor = 0.75
+			trait = charitable
+		}
+        modifier = {
+			factor = 0.75
+			trait = diligent
+		}
+        modifier = {
+			factor = 0.75
+			trait = kind
+		}
+        modifier = {
+			factor = 0.75
+			trait = patient
+		}
+        modifier = {
+			factor = 0.75
+			trait = humble
+		}
+        modifier = {
+			factor = 0.25
+			trait = celibate
+		}
+        modifier = {
+			factor = 0.75
+			piety = 250
+		}
+        modifier = {
+			factor = 0.75
+			piety = 500
+		}
+        modifier = {
+			factor = 0.5
+			piety = 1000
+		}
+        modifier = {
+			factor = 1.25
+			trait = lustful
+		}
+        modifier = {
+			factor = 1.25
+			trait = gluttonous
+		}
+        modifier = {
+			factor = 1.25
+			trait = greedy
+		}
+        modifier = {
+			factor = 1.25
+			trait = slothful
+		}
+        modifier = {
+			factor = 1.25
+			trait = wroth
+		}
+        modifier = {
+			factor = 1.25
+			trait = envious
+		}
+        modifier = {
+			factor = 1.25
+			trait = proud
+		}
+        modifier = {
+			factor = 2.0
+			trait = hedonist
+		}
+        modifier = {
+			factor = 2.0
+			trait = impailer
+		}
+        modifier = {
+			factor = 0.75
+			trait = scholar
+		}
+        modifier = {
+			factor = 0.5
+			culture = italian
+		}
+        modifier = {
+			factor = 0.75
+			tier = count
+		}
+        modifier = {
+			factor = 0.5
+			tier = duke
+		}
+        modifier = {
+			factor = 0.25
+			tier = king
+		}
+        modifier = {
+            factor = 0.01
+            NOT = { year = 1070 }
+        }
+        
+	}
+    option = {
+		name = "EXCELLENT"
+        if = {
+			limit = { 
+				independent =  no
+			}
+			top_liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        if = {
+			limit = { 
+				independent =  no
+                liege = {
+                    independent =  no
+                }
+			}
+            liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        d_card24 = { gain_title = FROM }
+        set_character_flag = appointed_cardinal
+        ROOT = {
+            set_defacto_liege = k_papal_state
+        }
+    }
+}
+character_event = {
+	id = 666825
+	desc = "You Have been appointed as a Cardinal"
+	picture = "GFX_evt_icon"
+	
+	only_men = yes
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	trigger = {
+		religion = catholic
+        is_theocracy = yes
+        piety = 100
+        tier = baron
+        NOT = { has_character_flag = appointed_cardinal }
+        NOT = { any_playable_ruler = { has_landed_title = d_card25 } }
+        NOT = { has_landed_title = k_papal_states }
+	}
+
+	mean_time_to_happen = {
+		months = 120
+        modifier = {
+			factor = 0.75
+			trait = zealous
+		}
+        modifier = {
+			factor = 0.75
+			trait = chaste
+		}
+        modifier = {
+			factor = 0.75
+			trait = temperate
+		}
+        modifier = {
+			factor = 0.75
+			trait = charitable
+		}
+        modifier = {
+			factor = 0.75
+			trait = diligent
+		}
+        modifier = {
+			factor = 0.75
+			trait = kind
+		}
+        modifier = {
+			factor = 0.75
+			trait = patient
+		}
+        modifier = {
+			factor = 0.75
+			trait = humble
+		}
+        modifier = {
+			factor = 0.25
+			trait = celibate
+		}
+        modifier = {
+			factor = 0.75
+			piety = 250
+		}
+        modifier = {
+			factor = 0.75
+			piety = 500
+		}
+        modifier = {
+			factor = 0.5
+			piety = 1000
+		}
+        modifier = {
+			factor = 1.25
+			trait = lustful
+		}
+        modifier = {
+			factor = 1.25
+			trait = gluttonous
+		}
+        modifier = {
+			factor = 1.25
+			trait = greedy
+		}
+        modifier = {
+			factor = 1.25
+			trait = slothful
+		}
+        modifier = {
+			factor = 1.25
+			trait = wroth
+		}
+        modifier = {
+			factor = 1.25
+			trait = envious
+		}
+        modifier = {
+			factor = 1.25
+			trait = proud
+		}
+        modifier = {
+			factor = 2.0
+			trait = hedonist
+		}
+        modifier = {
+			factor = 2.0
+			trait = impailer
+		}
+        modifier = {
+			factor = 0.75
+			trait = scholar
+		}
+        modifier = {
+			factor = 0.5
+			culture = italian
+		}
+        modifier = {
+			factor = 0.75
+			tier = count
+		}
+        modifier = {
+			factor = 0.5
+			tier = duke
+		}
+        modifier = {
+			factor = 0.25
+			tier = king
+		}
+        modifier = {
+            factor = 0.01
+            NOT = { year = 1070 }
+        }
+        
+	}
+    option = {
+		name = "EXCELLENT"
+        if = {
+			limit = { 
+				independent =  no
+			}
+			top_liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        if = {
+			limit = { 
+				independent =  no
+                liege = {
+                    independent =  no
+                }
+			}
+            liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        d_card25 = { gain_title = FROM }
+        set_character_flag = appointed_cardinal
+        ROOT = {
+            set_defacto_liege = k_papal_state
+        }
+    }
+}
+character_event = {
+	id = 666826
+	desc = "You Have been appointed as a Cardinal"
+	picture = "GFX_evt_icon"
+	
+	only_men = yes
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	trigger = {
+		religion = catholic
+        is_theocracy = yes
+        piety = 100
+        tier = baron
+        NOT = { has_character_flag = appointed_cardinal }
+        NOT = { any_playable_ruler = { has_landed_title = d_card26 } }
+        NOT = { has_landed_title = k_papal_states }
+	}
+
+	mean_time_to_happen = {
+		months = 120
+        modifier = {
+			factor = 0.75
+			trait = zealous
+		}
+        modifier = {
+			factor = 0.75
+			trait = chaste
+		}
+        modifier = {
+			factor = 0.75
+			trait = temperate
+		}
+        modifier = {
+			factor = 0.75
+			trait = charitable
+		}
+        modifier = {
+			factor = 0.75
+			trait = diligent
+		}
+        modifier = {
+			factor = 0.75
+			trait = kind
+		}
+        modifier = {
+			factor = 0.75
+			trait = patient
+		}
+        modifier = {
+			factor = 0.75
+			trait = humble
+		}
+        modifier = {
+			factor = 0.25
+			trait = celibate
+		}
+        modifier = {
+			factor = 0.75
+			piety = 250
+		}
+        modifier = {
+			factor = 0.75
+			piety = 500
+		}
+        modifier = {
+			factor = 0.5
+			piety = 1000
+		}
+        modifier = {
+			factor = 1.25
+			trait = lustful
+		}
+        modifier = {
+			factor = 1.25
+			trait = gluttonous
+		}
+        modifier = {
+			factor = 1.25
+			trait = greedy
+		}
+        modifier = {
+			factor = 1.25
+			trait = slothful
+		}
+        modifier = {
+			factor = 1.25
+			trait = wroth
+		}
+        modifier = {
+			factor = 1.25
+			trait = envious
+		}
+        modifier = {
+			factor = 1.25
+			trait = proud
+		}
+        modifier = {
+			factor = 2.0
+			trait = hedonist
+		}
+        modifier = {
+			factor = 2.0
+			trait = impailer
+		}
+        modifier = {
+			factor = 0.75
+			trait = scholar
+		}
+        modifier = {
+			factor = 0.5
+			culture = italian
+		}
+        modifier = {
+			factor = 0.75
+			tier = count
+		}
+        modifier = {
+			factor = 0.5
+			tier = duke
+		}
+        modifier = {
+			factor = 0.25
+			tier = king
+		}
+        modifier = {
+            factor = 0.01
+            NOT = { year = 1070 }
+        }
+        
+	}
+    option = {
+		name = "EXCELLENT"
+        if = {
+			limit = { 
+				independent =  no
+			}
+			top_liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        if = {
+			limit = { 
+				independent =  no
+                liege = {
+                    independent =  no
+                }
+			}
+            liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        d_card26 = { gain_title = FROM }
+        set_character_flag = appointed_cardinal
+        ROOT = {
+            set_defacto_liege = k_papal_state
+        }
+    }
+}
+character_event = {
+	id = 666827
+	desc = "You Have been appointed as a Cardinal"
+	picture = "GFX_evt_icon"
+	
+	only_men = yes
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	trigger = {
+		religion = catholic
+        is_theocracy = yes
+        piety = 100
+        tier = baron
+        NOT = { has_character_flag = appointed_cardinal }
+        NOT = { any_playable_ruler = { has_landed_title = d_card27 } }
+        NOT = { has_landed_title = k_papal_states }
+	}
+
+	mean_time_to_happen = {
+		months = 120
+        modifier = {
+			factor = 0.75
+			trait = zealous
+		}
+        modifier = {
+			factor = 0.75
+			trait = chaste
+		}
+        modifier = {
+			factor = 0.75
+			trait = temperate
+		}
+        modifier = {
+			factor = 0.75
+			trait = charitable
+		}
+        modifier = {
+			factor = 0.75
+			trait = diligent
+		}
+        modifier = {
+			factor = 0.75
+			trait = kind
+		}
+        modifier = {
+			factor = 0.75
+			trait = patient
+		}
+        modifier = {
+			factor = 0.75
+			trait = humble
+		}
+        modifier = {
+			factor = 0.25
+			trait = celibate
+		}
+        modifier = {
+			factor = 0.75
+			piety = 250
+		}
+        modifier = {
+			factor = 0.75
+			piety = 500
+		}
+        modifier = {
+			factor = 0.5
+			piety = 1000
+		}
+        modifier = {
+			factor = 1.25
+			trait = lustful
+		}
+        modifier = {
+			factor = 1.25
+			trait = gluttonous
+		}
+        modifier = {
+			factor = 1.25
+			trait = greedy
+		}
+        modifier = {
+			factor = 1.25
+			trait = slothful
+		}
+        modifier = {
+			factor = 1.25
+			trait = wroth
+		}
+        modifier = {
+			factor = 1.25
+			trait = envious
+		}
+        modifier = {
+			factor = 1.25
+			trait = proud
+		}
+        modifier = {
+			factor = 2.0
+			trait = hedonist
+		}
+        modifier = {
+			factor = 2.0
+			trait = impailer
+		}
+        modifier = {
+			factor = 0.75
+			trait = scholar
+		}
+        modifier = {
+			factor = 0.5
+			culture = italian
+		}
+        modifier = {
+			factor = 0.75
+			tier = count
+		}
+        modifier = {
+			factor = 0.5
+			tier = duke
+		}
+        modifier = {
+			factor = 0.25
+			tier = king
+		}
+        modifier = {
+            factor = 0.01
+            NOT = { year = 1070 }
+        }
+        
+	}
+    option = {
+		name = "EXCELLENT"
+        if = {
+			limit = { 
+				independent =  no
+			}
+			top_liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        if = {
+			limit = { 
+				independent =  no
+                liege = {
+                    independent =  no
+                }
+			}
+            liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        d_card27 = { gain_title = FROM }
+        set_character_flag = appointed_cardinal
+        ROOT = {
+            set_defacto_liege = k_papal_state
+        }
+    }
+}
+character_event = {
+	id = 666828
+	desc = "You Have been appointed as a Cardinal"
+	picture = "GFX_evt_icon"
+	
+	only_men = yes
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	trigger = {
+		religion = catholic
+        is_theocracy = yes
+        piety = 100
+        tier = baron
+        NOT = { has_character_flag = appointed_cardinal }
+        NOT = { any_playable_ruler = { has_landed_title = d_card28 } }
+        NOT = { has_landed_title = k_papal_states }
+	}
+
+	mean_time_to_happen = {
+		months = 120
+        modifier = {
+			factor = 0.75
+			trait = zealous
+		}
+        modifier = {
+			factor = 0.75
+			trait = chaste
+		}
+        modifier = {
+			factor = 0.75
+			trait = temperate
+		}
+        modifier = {
+			factor = 0.75
+			trait = charitable
+		}
+        modifier = {
+			factor = 0.75
+			trait = diligent
+		}
+        modifier = {
+			factor = 0.75
+			trait = kind
+		}
+        modifier = {
+			factor = 0.75
+			trait = patient
+		}
+        modifier = {
+			factor = 0.75
+			trait = humble
+		}
+        modifier = {
+			factor = 0.25
+			trait = celibate
+		}
+        modifier = {
+			factor = 0.75
+			piety = 250
+		}
+        modifier = {
+			factor = 0.75
+			piety = 500
+		}
+        modifier = {
+			factor = 0.5
+			piety = 1000
+		}
+        modifier = {
+			factor = 1.25
+			trait = lustful
+		}
+        modifier = {
+			factor = 1.25
+			trait = gluttonous
+		}
+        modifier = {
+			factor = 1.25
+			trait = greedy
+		}
+        modifier = {
+			factor = 1.25
+			trait = slothful
+		}
+        modifier = {
+			factor = 1.25
+			trait = wroth
+		}
+        modifier = {
+			factor = 1.25
+			trait = envious
+		}
+        modifier = {
+			factor = 1.25
+			trait = proud
+		}
+        modifier = {
+			factor = 2.0
+			trait = hedonist
+		}
+        modifier = {
+			factor = 2.0
+			trait = impailer
+		}
+        modifier = {
+			factor = 0.75
+			trait = scholar
+		}
+        modifier = {
+			factor = 0.5
+			culture = italian
+		}
+        modifier = {
+			factor = 0.75
+			tier = count
+		}
+        modifier = {
+			factor = 0.5
+			tier = duke
+		}
+        modifier = {
+			factor = 0.25
+			tier = king
+		}
+        modifier = {
+            factor = 0.01
+            NOT = { year = 1070 }
+        }
+        
+	}
+    option = {
+		name = "EXCELLENT"
+        if = {
+			limit = { 
+				independent =  no
+			}
+			top_liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        if = {
+			limit = { 
+				independent =  no
+                liege = {
+                    independent =  no
+                }
+			}
+            liege = {
+                character_event = { id = 666800 days = 1 }
+            }
+		}
+        d_card28 = { gain_title = FROM }
+        set_character_flag = appointed_cardinal
+        ROOT = {
+            set_defacto_liege = k_papal_state
+        }
+    }
+}

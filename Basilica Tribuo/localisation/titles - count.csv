@@ -1,0 +1,82 @@
+c_hofgodar;Hofgoðar;;;;;;;;;;;;;x
+c_morfil;Morfil;Morfil;Morfil;;Morfil;;;;;;;;;x
+c_morfil_adj;Morfi;Morfi;Morfi;;Morfi;;;;;;;;;x
+c_matam;Matam;Matam;Matam;;Matam;;;;;;;;;x
+c_matam_adj;Matami;Matami;Matami;;Matami;;;;;;;;;x
+c_gambia;Gambia;Gambia;Gambia;;Gambia;;;;;;;;;x
+c_gambia_adj;Gambian;Gambian;Gambian;;Gambian;;;;;;;;;x
+c_tabacounda;Tabacounda;Tabacounda;Tabacounda;;Tabacounda;;;;;;;;;x
+c_tabacounda_adj;Tabacoundan;Tabacoundan;Tabacoundan;;Tabacoundan;;;;;;;;;x
+c_waalo;Waalo;Waalo;Waalo;;Waalo;;;;;;;;;x
+c_waalo_adj;Waalan;Waalan;Waalan;;Waalan;;;;;;;;;x
+c_cayor;Cayor;Cayor;Cayor;;Cayor;;;;;;;;;x
+c_cayor_adj;Cayoran;Cayoran;Cayoran;;Cayoran;;;;;;;;;x
+c_linguere;Linguere;Linguere;Linguere;;Linguere;;;;;;;;;x
+c_linguere_adj;Lingueran;Lingueran;Lingueran;;Lingueran;;;;;;;;;x
+c_saloum;Saloum;Saloum;Saloum;;Saloum;;;;;;;;;x
+c_saloum_adj;Salouman;Salouman;Salouman;;Salouman;;;;;;;;;x
+c_baol;Baol;Baol;Baol;;Baol;;;;;;;;;x
+c_baol_adj;Baoli;Baoli;Baoli;;Baoli;;;;;;;;;x
+c_taghaza;Taghaza;Taghaza;Taghaza;;Taghaza;;;;;;;;;x
+c_taghaza_adj;Taghazan;Taghazan;Taghazan;;Taghazan;;;;;;;;;x
+c_kirina;Kirina;Kirina;Kirina;;Kirina;;;;;;;;;x
+c_kirina_adj;Kirinan;Kirinan;Kirinan;;Kirinan;;;;;;;;;x
+c_araouane;Araouane;Araouane;Araouane;;Araouane;;;;;;;;;x
+c_araouane_adj;Araouanan;Araouanan;Araouanan;;Araouanan;;;;;;;;;x
+c_aoudagast;Aoudagast;Aoudagast;Aoudagast;;Aoudagast;;;;;;;;;x
+c_aoudagast_adj;Aoudagasti;Aoudagasti;Aoudagasti;;Aoudagasti;;;;;;;;;x
+c_oualata;Oualata;Oualata;Oualata;;Oualata;;;;;;;;;x
+c_oualata_adj;Oualatan;Oualatan;Oualatan;;Oualatan;;;;;;;;;x
+c_koumbi_saleh;Koumbi Saleh;Koumbi Saleh;Koumbi Saleh;;Koumbi Saleh;;;;;;;;;x
+c_koumbi_saleh_adj;Koumbi;Koumbi;Koumbi;;Koumbi;;;;;;;;;x
+c_djenne;Djenne;Djenne;Djenne;;Djenne;;;;;;;;;x
+c_djenne_adj;Djenni;Djenni;Djenni;;Djenni;;;;;;;;;x
+c_sama;Sama;Sama;Sama;;Sama;;;;;;;;;x
+c_sama_adj;Saman;Saman;Saman;;Saman;;;;;;;;;x
+c_gao;Gao;Gao;Gao;;Gao;;;;;;;;;x
+c_gao_adj;Gaoan;Gaoan;Gaoan;;Gaoan;;;;;;;;;x
+c_timbuktu;Timbuktu;Timbuktu;Timbuktu;;Timbuktu;;;;;;;;;x
+c_timbuktu_adj;Timbuktan;Timbuktan;Timbuktan;;Timbuktan;;;;;;;;;x
+c_wagadou;Wagadou;Wagadou;Wagadou;;Wagadou;;;;;;;;;x
+c_wagadou_adj;Wagadin;Wagadin;Wagadin;;Wagadin;;;;;;;;;x
+c_tenkodogo;Tenkodogo;Tenkodogo;Tenkodogo;;Tenkodogo;;;;;;;;;x
+c_tenkodogo_adj;Tenkodogan;Tenkodogan;Tenkodogan;;Tenkodogan;;;;;;;;;x
+c_koudougu;Koudougu;Koudougu;Koudougu;;Koudougu;;;;;;;;;x
+c_koudougu_adj;Koudougan;Koudougan;Koudougan;;Koudougan;;;;;;;;;x
+c_niani;Niani;Niani;Niani;;Niani;;;;;;;;;x
+c_niani_adj;Nianan;Nianan;Nianan;;Nianan;;;;;;;;;x
+c_sikasso;Sikasso;Sikasso;Sikasso;;Sikasso;;;;;;;;;x
+c_sikasso_adj;Sikassi;Sikassi;Sikassi;;Sikassi;;;;;;;;;x
+c_yaresna;Yaresna;Yaresna;Yaresna;;Yaresna;;;;;;;;;x
+c_yaresna_adj;Yaresnan;Yaresnan;Yaresnan;;Yaresnan;;;;;;;;;x
+c_ghiryu;Ghiryu;Ghiryu;Ghiryu;;Ghiryu;;;;;;;;;x
+c_ghiryu_adj;Ghiryu;Ghiryu;Ghiryu;;Ghiryu;;;;;;;;;x
+c_el_aaiun;El Aaiun;El Aaiun;El Aaiun;;El Aaiun;;;;;;;;;x
+c_el_aaiun_adj;El Aaiunic;El Aaiunic;El Aaiunic;;El Aaiunic;;;;;;;;;x
+c_boujdour;Boujdour;Boujdour;Boujdour;;Boujdour;;;;;;;;;x
+c_boujdour_adj;Boujdouran;Boujdouran;Boujdouran;;Boujdouran;;;;;;;;;x
+c_dakhla;Dakhla;Dakhla;Dakhla;;Dakhla;;;;;;;;;x
+c_dakhla_adj;Dakhlan;Dakhlan;Dakhlan;;Dakhlan;;;;;;;;;x
+c_bir_gandlus;Bir Gandouz;Bir Gandouz;Bir Gandouz;;Bir Gandouz;;;;;;;;;x
+c_bir_gandlus_adj;Bir Gandouzi;Bir Gandouzi;Bir Gandouzi;;Bir Gandouzi;;;;;;;;;x
+c_al_qasir;Al Qasir;;;;;;;;;;;;;x
+c_qarah;Qarah;;;;;;;;;;;;;x
+c_mut;Mut;;;;;;;;;;;;;x
+c_ar_rashdah;Ar Rashdah;;;;;;;;;;;;;x
+c_siwah;Siwah;;;;;;;;;;;;;x
+c_ayn_al_wasr;Ayn Al Wasr;;;;;;;;;;;;;x
+c_as_sallum;As Sallum;;;;;;;;;;;;;x
+c_1096;Layla;;;;;;;;;;;;;x
+c_1097;Umm Athelah;;;;;;;;;;;;;x
+c_1098;Ust-Oma;;;;;;;;;;;;;x
+c_1099;Mezen;;;;;;;;;;;;;x
+c_1100;Sengeyskiy;;;;;;;;;;;;;x
+c_1101;Yakshino;;;;;;;;;;;;;x
+c_1102;Garevo;;;;;;;;;;;;;x
+c_1103;Chernogorskaya;;;;;;;;;;;;;x
+c_1104;Vuktyl;;;;;;;;;;;;;x
+c_1105;Sosnogorsk;;;;;;;;;;;;;x
+c_1106;Naryan-Mar;;;;;;;;;;;;;x
+c_1107;Skytyvkar;;;;;;;;;;;;;x
+c_1108;Vorkuta;;;;;;;;;;;;;x
+c_1109;Noyabrsk;;;;;;;;;;;;;x

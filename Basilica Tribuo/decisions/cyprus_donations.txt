@@ -1,0 +1,68 @@
+decisions = {
+    donate_famagusta = {
+	potential = {
+        has_landed_title = c_famagusta
+        any_playable_ruler = { has_landed_title = k_cyprus } 
+        NOT = { realm = k_cyprus }
+        OR = {
+            religion = catholic
+            is_heresy_of = catholic
+        }
+	}
+	allow = {
+        has_landed_title = c_famagusta
+        any_playable_ruler = { has_landed_title = k_cyprus }
+        NOT = { realm = k_cyprus }        
+        OR = {
+            religion = catholic
+            is_heresy_of = catholic
+        }
+	}
+	effect = {
+        k_cyprus = {
+            holder_scope = {
+                c_famagusta = { gain_title = PREV }
+            }
+        }
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 100
+	}		
+    }
+    
+    donate_limisol = {
+	potential = {
+        has_landed_title = c_limisol
+        any_playable_ruler = { has_landed_title = k_cyprus } 
+        NOT = { realm = k_cyprus }
+        OR = {
+            religion = catholic
+            is_heresy_of = catholic
+        }
+	}
+	allow = {
+        has_landed_title = c_limisol
+        any_playable_ruler = { has_landed_title = k_cyprus }
+        NOT = { realm = k_cyprus }        
+        OR = {
+            religion = catholic
+            is_heresy_of = catholic
+        }
+	}
+	effect = {
+        k_cyprus = {
+            holder_scope = {
+                c_limisol = { gain_title = PREV }
+            }
+        }
+	}
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+		factor = 100
+	}		
+    }

@@ -1,0 +1,1204 @@
+character_event = {
+	id = 666710
+	desc = "Who shall take the throne of Jerusalem?"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "A dear family member shall take the throne..."
+        trigger = {
+            any_dynasty_member = {
+                father = {
+                    NOT = { has_landed_title = c_jerusalem }
+                }
+                mother = {
+                    NOT = { has_landed_title = c_jerusalem }
+                }
+                age = 16
+                is_female = no
+                NOT = { demesne_size = 1 }
+            }
+        }
+        random_dynasty_member = {
+			limit = {
+				father = {
+                    NOT = { has_landed_title = c_jerusalem }
+                }
+                mother = {
+                    NOT = { has_landed_title = c_jerusalem }
+                }
+                age = 16
+                is_female = no
+                NOT = { demesne_size = 1 }
+			}
+			c_jerusalem = { gain_title = PREV }
+            k_jerusalem = { gain_title = PREV }
+		}
+    }
+    option = {
+		name = "A dear family member who is a vassal shall take the throne..."
+        trigger = {
+            any_vassal = {
+                dynasty = ROOT
+                age = 16
+                is_female = no
+            }
+        }
+        random_vassal = {
+			limit = {
+                dynasty = ROOT
+                age = 16
+                is_female = no
+			}
+            character_event = { id = 666713 }
+		}
+    }
+    
+    option = {
+		name = "I can not manage the kingdom. We must find a member of my house who can..."
+        trigger = {
+            NOT = {
+                any_dynasty_member = {
+                    father = {
+                        NOT = { has_landed_title = c_jerusalem }
+                    }
+                    mother = {
+                        NOT = { has_landed_title = c_jerusalem }
+                    }
+                    age = 16
+                    is_female = no
+                }
+            }
+        }
+        create_character = {
+                random_traits = yes
+                female = no
+                age = 16
+		}
+        new_character = {
+                c_jerusalem = { gain_title = PREV }
+                k_jerusalem = { gain_title = PREV }
+            }        
+    }
+    option = {
+		name = "I will return my land to my liege and I will take the throne."
+        trigger = {
+            independent = no
+        }
+        top_liege = {
+            character_event = { id = 666711 }
+        }
+    }
+    option = {
+		name = "I will hand the realm to a trusted vassal and I will take the throne."
+        trigger = {
+            independent = yes
+            tier = king
+        }
+        random_vassal = {
+			limit = {
+                is_feudal = yes
+                tier = duke
+			}
+			character_event = { id = 666712 }
+		}
+    }
+    option = {
+		name = "I will hand the realm to a trusted vassal and I will take the throne."
+        trigger = {
+            independent = yes
+            tier = duke
+        }
+        random_vassal = {
+			limit = {
+                is_feudal = yes
+                tier = count
+			}
+			character_event = { id = 666712 }
+		}
+    }
+    option = {
+		name = "I will hand the realm to a trusted vassal and I will take the throne."
+        trigger = {
+            independent = yes
+            tier = count
+        }
+        random_vassal = {
+			limit = {
+                tier = baron
+			}
+			character_event = { id = 666712 }
+		}
+    }
+}
+
+character_event = {
+	id = 666711
+	desc = "A vassal is returning his lands to us to take the throne of Jerusalem."
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "He will be missed."  
+    FROM = {
+        c_jerusalem = { gain_title = PREV }
+        k_jerusalem = { gain_title = PREV }
+        
+        any_demesne_title = {
+            limit = {
+                NOT = {
+                    OR = {
+                        de_jure_liege = e_crusaders
+                        
+                        de_jure_liege = d_jerusalem
+                            de_jure_liege = c_jerusalem
+                            de_jure_liege = c_acre
+                            de_jure_liege = c_hebron
+                        
+                        de_jure_liege = d_ascalon
+                            de_jure_liege = c_ascalon
+                            de_jure_liege = c_darum
+                            de_jure_liege = c_beersheb
+                            de_jure_liege = c_jaffa
+                        
+                        de_jure_liege = d_galilee
+                            de_jure_liege = c_safed
+                            de_jure_liege = c_tyrus
+                            de_jure_liege = c_beirut
+                            de_jure_liege = c_tiberias
+                        
+                        de_jure_liege = d_oultrejourdain
+                            de_jure_liege = c_negev
+                            de_jure_liege = c_monreal
+                            de_jure_liege = c_kerek
+                            de_jure_liege = c_madaba
+                    }
+                }
+            }
+            gain_title = PREVPREV
+        }
+        
+        any_vassal = {
+            limit = {
+                NOT = {
+                    OR = {
+                        any_demesne_title = { de_jure_liege = d_jerusalem }
+                            any_demesne_title = { de_jure_liege = c_jerusalem }
+                            any_demesne_title = { de_jure_liege = c_acre }
+                            any_demesne_title = { de_jure_liege = c_hebron }
+                        
+                        any_demesne_title = { de_jure_liege = d_ascalon }
+                            any_demesne_title = { de_jure_liege = c_ascalon }
+                            any_demesne_title = { de_jure_liege = c_darum }
+                            any_demesne_title = { de_jure_liege = c_beersheb }
+                            any_demesne_title = { de_jure_liege = c_jaffa }
+                        
+                        any_demesne_title = { de_jure_liege = d_galilee }
+                            any_demesne_title = { de_jure_liege = c_safed }
+                            any_demesne_title = { de_jure_liege = c_tyrus }
+                            any_demesne_title = { de_jure_liege = c_beirut }
+                            any_demesne_title = { de_jure_liege = c_tiberias }
+                        
+                        any_demesne_title = { de_jure_liege = d_oultrejourdain }
+                            any_demesne_title = { de_jure_liege = c_negev }
+                            any_demesne_title = { de_jure_liege = c_monreal }
+                            any_demesne_title = { de_jure_liege = c_kerek }
+                            any_demesne_title = { de_jure_liege = c_madaba }
+                    }
+                }
+            }
+            set_defacto_liege = PREVPREV
+        }
+    }
+    }
+}
+character_event = {
+	id = 666712
+	desc = "You Have been chosen to lead the realm as your liege now goes to lead the Kingdom of Jerusalem."
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Excellent."  
+    FROM = {
+        c_jerusalem = { gain_title = FROM }
+        k_jerusalem = { gain_title = FROM }
+        
+        any_demesne_title = {
+            limit = {
+                NOT = {
+                    OR = {
+                        de_jure_liege = e_crusaders
+                        
+                        de_jure_liege = d_jerusalem
+                            de_jure_liege = c_jerusalem
+                            de_jure_liege = c_acre
+                            de_jure_liege = c_hebron
+                        
+                        de_jure_liege = d_ascalon
+                            de_jure_liege = c_ascalon
+                            de_jure_liege = c_darum
+                            de_jure_liege = c_beersheb
+                            de_jure_liege = c_jaffa
+                        
+                        de_jure_liege = d_galilee
+                            de_jure_liege = c_safed
+                            de_jure_liege = c_tyrus
+                            de_jure_liege = c_beirut
+                            de_jure_liege = c_tiberias
+                        
+                        de_jure_liege = d_oultrejourdain
+                            de_jure_liege = c_negev
+                            de_jure_liege = c_monreal
+                            de_jure_liege = c_kerek
+                            de_jure_liege = c_madaba
+                    }
+                }
+            }
+            gain_title = PREVPREV
+        }
+        
+        any_vassal = {
+            limit = {
+                NOT = {
+                    OR = {
+                        any_demesne_title = { de_jure_liege = d_jerusalem }
+                            any_demesne_title = { de_jure_liege = c_jerusalem }
+                            any_demesne_title = { de_jure_liege = c_acre }
+                            any_demesne_title = { de_jure_liege = c_hebron }
+                        
+                        any_demesne_title = { de_jure_liege = d_ascalon }
+                            any_demesne_title = { de_jure_liege = c_ascalon }
+                            any_demesne_title = { de_jure_liege = c_darum }
+                            any_demesne_title = { de_jure_liege = c_beersheb }
+                            any_demesne_title = { de_jure_liege = c_jaffa }
+                        
+                        any_demesne_title = { de_jure_liege = d_galilee }
+                            any_demesne_title = { de_jure_liege = c_safed }
+                            any_demesne_title = { de_jure_liege = c_tyrus }
+                            any_demesne_title = { de_jure_liege = c_beirut }
+                            any_demesne_title = { de_jure_liege = c_tiberias }
+                        
+                        any_demesne_title = { de_jure_liege = d_oultrejourdain }
+                            any_demesne_title = { de_jure_liege = c_negev }
+                            any_demesne_title = { de_jure_liege = c_monreal }
+                            any_demesne_title = { de_jure_liege = c_kerek }
+                            any_demesne_title = { de_jure_liege = c_madaba }
+                    }
+                }
+            }
+            set_defacto_liege = PREVPREV
+        }
+    }
+      set_defacto_liege = ROOT  
+    }
+}
+character_event = {
+	id = 666713
+	desc = "You Have been chosen by your liege to lead the Kingdom of Jerusalem. It seems you have no choice in the matter as he is confiscating your lands..."
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Oh... Um... Okay..."
+        FROM = {
+            character_event = { id = 666711 }
+        }        
+    }
+}
+#ANTIOCH
+character_event = {
+	id = 666714
+	desc = "Who shall take the throne of Antioch?"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "A dear family member shall take the throne..."
+        trigger = {
+            any_dynasty_member = {
+                father = {
+                    NOT = { has_landed_title = c_antiocheia }
+                }
+                mother = {
+                    NOT = { has_landed_title = c_antiocheia }
+                }
+                age = 16
+                is_female = no
+                NOT = { demesne_size = 1 }
+            }
+        }
+        random_dynasty_member = {
+			limit = {
+				father = {
+                    NOT = { has_landed_title = c_antiocheia }
+                }
+                mother = {
+                    NOT = { has_landed_title = c_antiocheia }
+                }
+                age = 16
+                is_female = no
+                NOT = { demesne_size = 1 }
+			}
+			c_antiocheia = { gain_title = PREV }
+            k_antioch = { gain_title = PREV }
+		}
+    }
+    option = {
+		name = "A dear family member who is a vassal shall take the throne..."
+        trigger = {
+            any_vassal = {
+                dynasty = ROOT
+                age = 16
+                is_female = no
+            }
+        }
+        random_vassal = {
+			limit = {
+                dynasty = ROOT
+                age = 16
+                is_female = no
+			}
+            character_event = { id = 666717 }
+		}
+    }
+    
+    option = {
+		name = "I can not manage the kingdom. We must find a member of my house who can..."
+        trigger = {
+            NOT = {
+                any_dynasty_member = {
+                    father = {
+                        NOT = { has_landed_title = c_antiocheia }
+                    }
+                    mother = {
+                        NOT = { has_landed_title = c_antiocheia }
+                    }
+                    age = 16
+                    is_female = no
+                }
+            }
+        }
+        create_character = {
+                random_traits = yes
+                female = no
+                age = 16
+		}
+        new_character = {
+                c_antiocheia = { gain_title = PREV }
+                k_antioch = { gain_title = PREV }
+        }        
+    }
+    option = {
+		name = "I will return my land to my liege and I will take the throne."
+        trigger = {
+            independent = no
+        }
+        top_liege = {
+            character_event = { id = 666715 }
+        }
+    }
+    option = {
+		name = "I will hand the realm to a trusted vassal and I will take the throne."
+        trigger = {
+            independent = yes
+            tier = king
+        }
+        random_vassal = {
+			limit = {
+                is_feudal = yes
+                tier = duke
+			}
+			character_event = { id = 666716 }
+		}
+    }
+    option = {
+		name = "I will hand the realm to a trusted vassal and I will take the throne."
+        trigger = {
+            independent = yes
+            tier = duke
+        }
+        random_vassal = {
+			limit = {
+                is_feudal = yes
+                tier = count
+			}
+			character_event = { id = 666716 }
+		}
+    }
+    option = {
+		name = "I will hand the realm to a trusted vassal and I will take the throne."
+        trigger = {
+            independent = yes
+            tier = count
+        }
+        random_vassal = {
+			limit = {
+                tier = baron
+			}
+			character_event = { id = 666716 }
+		}
+    }
+}
+
+character_event = {
+	id = 666715
+	desc = "A vassal is returning his lands to us to take the throne of Antioch."
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "He will be missed."  
+    FROM = {
+        c_antiocheia = { gain_title = PREV }
+        k_antioch = { gain_title = PREV }
+        
+        any_demesne_title = {
+            limit = {
+                NOT = {
+                    OR = {
+                        de_jure_liege = e_crusaders
+                        
+                        de_jure_liege = d_antioch
+                            de_jure_liege = c_antiocheia
+                            de_jure_liege = c_alexandretta
+                            de_jure_liege = c_archa
+                        
+                        de_jure_liege = d_tripoli
+                            de_jure_liege = c_tortosa
+                            de_jure_liege = c_tripoli
+                            de_jure_liege = c_baalbek
+                        
+                        de_jure_liege = d_edessa
+                            de_jure_liege = c_aintab
+                            de_jure_liege = c_tell_bashir
+                            de_jure_liege = c_edessa
+                        
+                        de_jure_liege = d_armenia_minor
+                            de_jure_liege = c_seleukeia
+                            de_jure_liege = c_tarsos
+                            de_jure_liege = c_adana
+                            de_jure_liege = c_lykandos
+                            de_jure_liege = c_teluch
+                            
+                        de_jure_liege = d_aleppo
+                            de_jure_liege = c_aleppo
+                            de_jure_liege = c_hama
+                            de_jure_liege = c_homs
+                            de_jure_liege = c_asas
+                            de_jure_liege = c_palmyra
+                    }
+                }
+            }
+            gain_title = PREVPREV
+        }
+        
+        any_vassal = {
+            limit = {
+                NOT = {
+                    OR = {
+                        any_demesne_title = { de_jure_liege = d_antioch }
+                            any_demesne_title = { de_jure_liege = c_antiocheia }
+                            any_demesne_title = { de_jure_liege = c_alexandretta }
+                            any_demesne_title = { de_jure_liege = c_archa }
+                        
+                        any_demesne_title = { de_jure_liege = d_tripoli }
+                            any_demesne_title = { de_jure_liege = c_tortosa }
+                            any_demesne_title = { de_jure_liege = c_tripoli }
+                            any_demesne_title = { de_jure_liege = c_baalbek }
+                        
+                        any_demesne_title = { de_jure_liege = d_edessa }
+                            any_demesne_title = { de_jure_liege = c_edessa }
+                            any_demesne_title = { de_jure_liege = c_aintab }
+                            any_demesne_title = { de_jure_liege = c_tell_bashir }
+                        
+                        any_demesne_title = { de_jure_liege = d_armenia_minor }
+                            any_demesne_title = { de_jure_liege = c_seleukeia }
+                            any_demesne_title = { de_jure_liege = c_tarsos }
+                            any_demesne_title = { de_jure_liege = c_adana }
+                            any_demesne_title = { de_jure_liege = c_lykandos }
+                            any_demesne_title = { de_jure_liege = c_teluch }
+                            
+                        any_demesne_title = { de_jure_liege = d_aleppo }
+                            any_demesne_title = { de_jure_liege = c_aleppo }
+                            any_demesne_title = { de_jure_liege = c_homs }
+                            any_demesne_title = { de_jure_liege = c_hama }
+                            any_demesne_title = { de_jure_liege = c_asas }
+                            any_demesne_title = { de_jure_liege = c_palmyra }
+                    }
+                }
+            }
+            set_defacto_liege = PREVPREV
+        }
+    }
+    }
+}
+character_event = {
+	id = 666716
+	desc = "You Have been chosen to lead the realm as your liege now goes to lead the Kingdom of Antioch."
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Excellent."  
+    FROM = {
+        c_antiocheia = { gain_title = FROM }
+        k_antioch = { gain_title = FROM }
+        
+        any_demesne_title = {
+            limit = {
+                NOT = {
+                    OR = {
+                        de_jure_liege = e_crusaders
+                        
+                        de_jure_liege = d_antioch
+                            de_jure_liege = c_antiocheia
+                            de_jure_liege = c_alexandretta
+                            de_jure_liege = c_archa
+                        
+                        de_jure_liege = d_tripoli
+                            de_jure_liege = c_tortosa
+                            de_jure_liege = c_tripoli
+                            de_jure_liege = c_baalbek
+                        
+                        de_jure_liege = d_edessa
+                            de_jure_liege = c_aintab
+                            de_jure_liege = c_tell_bashir
+                            de_jure_liege = c_edessa
+                        
+                        de_jure_liege = d_armenia_minor
+                            de_jure_liege = c_seleukeia
+                            de_jure_liege = c_tarsos
+                            de_jure_liege = c_adana
+                            de_jure_liege = c_lykandos
+                            de_jure_liege = c_teluch
+                            
+                        de_jure_liege = d_aleppo
+                            de_jure_liege = c_aleppo
+                            de_jure_liege = c_hama
+                            de_jure_liege = c_homs
+                            de_jure_liege = c_asas
+                            de_jure_liege = c_palmyra
+                    }
+                }
+            }
+            gain_title = PREVPREV
+        }
+        
+        any_vassal = {
+            limit = {
+                NOT = {
+                    OR = {
+                        any_demesne_title = { de_jure_liege = d_antioch }
+                            any_demesne_title = { de_jure_liege = c_antiocheia }
+                            any_demesne_title = { de_jure_liege = c_alexandretta }
+                            any_demesne_title = { de_jure_liege = c_archa }
+                        
+                        any_demesne_title = { de_jure_liege = d_tripoli }
+                            any_demesne_title = { de_jure_liege = c_tortosa }
+                            any_demesne_title = { de_jure_liege = c_tripoli }
+                            any_demesne_title = { de_jure_liege = c_baalbek }
+                        
+                        any_demesne_title = { de_jure_liege = d_edessa }
+                            any_demesne_title = { de_jure_liege = c_edessa }
+                            any_demesne_title = { de_jure_liege = c_aintab }
+                            any_demesne_title = { de_jure_liege = c_tell_bashir }
+                        
+                        any_demesne_title = { de_jure_liege = d_armenia_minor }
+                            any_demesne_title = { de_jure_liege = c_seleukeia }
+                            any_demesne_title = { de_jure_liege = c_tarsos }
+                            any_demesne_title = { de_jure_liege = c_adana }
+                            any_demesne_title = { de_jure_liege = c_lykandos }
+                            any_demesne_title = { de_jure_liege = c_teluch }
+                            
+                        any_demesne_title = { de_jure_liege = d_aleppo }
+                            any_demesne_title = { de_jure_liege = c_aleppo }
+                            any_demesne_title = { de_jure_liege = c_homs }
+                            any_demesne_title = { de_jure_liege = c_hama }
+                            any_demesne_title = { de_jure_liege = c_asas }
+                            any_demesne_title = { de_jure_liege = c_palmyra }
+                    }
+                }
+            }
+            set_defacto_liege = PREVPREV
+        }
+    }
+      set_defacto_liege = ROOT  
+    }
+}
+character_event = {
+	id = 666717
+	desc = "You Have been chosen by your liege to lead the Kingdom of Antioch. It seems you have no choice in the matter as he is confiscating your lands..."
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Oh... Um... Okay..."
+        FROM = {
+            character_event = { id = 666715 }
+        }        
+    }
+}
+character_event = {
+	id = 666718
+	desc = "Who shall take the throne of Cyprus?"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "A dear family member shall take the throne..."
+        trigger = {
+            any_dynasty_member = {
+                father = {
+                    NOT = { has_landed_title = c_famagusta }
+                }
+                mother = {
+                    NOT = { has_landed_title = c_famagusta }
+                }
+                age = 16
+                is_female = no
+                NOT = { demesne_size = 1 }
+            }
+        }
+        random_dynasty_member = {
+			limit = {
+				father = {
+                    NOT = { has_landed_title = c_famagusta }
+                }
+                mother = {
+                    NOT = { has_landed_title = c_famagusta }
+                }
+                age = 16
+                is_female = no
+                NOT = { demesne_size = 1 }
+			}
+			c_famagusta = { gain_title = PREV }
+            c_limisol = { gain_title = PREV }
+            k_cyprus = { gain_title = PREV }
+		}
+    }
+    option = {
+		name = "A dear family member who is a vassal shall take the throne..."
+        trigger = {
+            any_vassal = {
+                dynasty = ROOT
+                age = 16
+                is_female = no
+            }
+        }
+        random_vassal = {
+			limit = {
+                dynasty = ROOT
+                age = 16
+                is_female = no
+			}
+            character_event = { id = 666721 }
+		}
+    }
+    
+    option = {
+		name = "I can not manage the kingdom. We must find a member of my house who can..."
+        trigger = {
+            NOT = {
+                any_dynasty_member = {
+                    father = {
+                        NOT = { has_landed_title = c_famagusta }
+                    }
+                    mother = {
+                        NOT = { has_landed_title = c_famagusta }
+                    }
+                    age = 16
+                    is_female = no
+                }
+            }
+        }
+        create_character = {
+                random_traits = yes
+                female = no
+                age = 16
+		}
+        new_character = {
+                c_famagusta = { gain_title = PREV }
+                c_limisol = { gain_title = PREV }
+                k_cyprus = { gain_title = PREV }
+        }        
+    }
+    option = {
+		name = "I will return my land to my liege and I will take the throne."
+        trigger = {
+            independent = no
+        }
+        top_liege = {
+            character_event = { id = 666719 }
+        }
+    }
+    option = {
+		name = "I will hand the realm to a trusted vassal and I will take the throne."
+        trigger = {
+            independent = yes
+            tier = king
+        }
+        random_vassal = {
+			limit = {
+                is_feudal = yes
+                tier = duke
+			}
+			character_event = { id = 666720 }
+		}
+    }
+    option = {
+		name = "I will hand the realm to a trusted vassal and I will take the throne."
+        trigger = {
+            independent = yes
+            tier = duke
+        }
+        random_vassal = {
+			limit = {
+                is_feudal = yes
+                tier = count
+			}
+			character_event = { id = 666720 }
+		}
+    }
+    option = {
+		name = "I will hand the realm to a trusted vassal and I will take the throne."
+        trigger = {
+            independent = yes
+            tier = count
+        }
+        random_vassal = {
+			limit = {
+                tier = baron
+			}
+			character_event = { id = 666720 }
+		}
+    }
+}
+
+character_event = {
+	id = 666719
+	desc = "A vassal is returning his lands to us to take the throne of Cyprus."
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "He will be missed."  
+    FROM = {
+        c_famagusta = { gain_title = PREV }
+        c_limisol = { gain_title = PREV }
+        k_cyprus = { gain_title = PREV }
+        
+        any_demesne_title = {
+            limit = {
+                NOT = {
+                    OR = {
+                        de_jure_liege = e_crusaders
+                        
+                        de_jure_liege = d_antioch
+                            de_jure_liege = c_famagusta
+                            de_jure_liege = c_limisol
+                    }
+                }
+            }
+            gain_title = PREVPREV
+        }
+        
+        any_vassal = {
+            limit = {
+                NOT = {
+                    OR = {
+                        any_demesne_title = { de_jure_liege = d_antioch }
+                            any_demesne_title = { de_jure_liege = c_famagusta }
+                            any_demesne_title = { de_jure_liege = c_limisol }
+                    }
+                }
+            }
+            set_defacto_liege = PREVPREV
+        }
+    }
+    }
+}
+character_event = {
+	id = 666720
+	desc = "You Have been chosen to lead the realm as your liege now goes to lead the Kingdom of Cyprus."
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Excellent."  
+    FROM = {
+        c_famagusta = { gain_title = FROM }
+        c_limisol = { gain_title = PREV }
+        k_cyprus = { gain_title = FROM }
+        
+        any_demesne_title = {
+            limit = {
+                NOT = {
+                    OR = {
+                        de_jure_liege = e_crusaders
+                        
+                        de_jure_liege = d_antioch
+                            de_jure_liege = c_famagusta
+                            de_jure_liege = c_limisol
+                    }
+                }
+            }
+            gain_title = PREVPREV
+        }
+        
+        any_vassal = {
+            limit = {
+                NOT = {
+                    OR = {
+                        any_demesne_title = { de_jure_liege = d_antioch }
+                            any_demesne_title = { de_jure_liege = c_famagusta }
+                            any_demesne_title = { de_jure_liege = c_limisol }
+                        
+                    }
+                }
+            }
+            set_defacto_liege = PREVPREV
+        }
+    }
+      set_defacto_liege = ROOT  
+    }
+}
+character_event = {
+	id = 666721
+	desc = "You Have been chosen by your liege to lead the Kingdom of Cyprus. It seems you have no choice in the matter as he is confiscating your lands..."
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Oh... Um... Okay..."
+        FROM = {
+            character_event = { id = 666719 }
+        }        
+    }
+}
+character_event = {
+	id = 666722
+	desc = "Who shall take the throne of Alexandria?"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "A dear family member shall take the throne..."
+        trigger = {
+            any_dynasty_member = {
+                father = {
+                    NOT = { has_landed_title = c_alexandria }
+                }
+                mother = {
+                    NOT = { has_landed_title = c_alexandria }
+                }
+                age = 16
+                is_female = no
+                NOT = { demesne_size = 1 }
+            }
+        }
+        random_dynasty_member = {
+			limit = {
+				father = {
+                    NOT = { has_landed_title = c_alexandria }
+                }
+                mother = {
+                    NOT = { has_landed_title = c_alexandria }
+                }
+                age = 16
+                is_female = no
+                NOT = { demesne_size = 1 }
+			}
+			c_alexandria = { gain_title = PREV }
+            k_alexandria = { gain_title = PREV }
+		}
+    }
+    option = {
+		name = "A dear family member who is a vassal shall take the throne..."
+        trigger = {
+            any_vassal = {
+                dynasty = ROOT
+                age = 16
+                is_female = no
+            }
+        }
+        random_vassal = {
+			limit = {
+                dynasty = ROOT
+                age = 16
+                is_female = no
+			}
+            character_event = { id = 666721 }
+		}
+    }
+    
+    option = {
+		name = "I can not manage the kingdom. We must find a member of my house who can..."
+        trigger = {
+            NOT = {
+                any_dynasty_member = {
+                    father = {
+                        NOT = { has_landed_title = c_alexandria }
+                    }
+                    mother = {
+                        NOT = { has_landed_title = c_alexandria }
+                    }
+                    age = 16
+                    is_female = no
+                }
+            }
+        }
+        create_character = {
+                random_traits = yes
+                female = no
+                age = 16
+		}
+        new_character = {
+                c_alexandria = { gain_title = PREV }
+                k_alexandria = { gain_title = PREV }
+        }        
+    }
+    option = {
+		name = "I will return my land to my liege and I will take the throne."
+        trigger = {
+            independent = no
+        }
+        top_liege = {
+            character_event = { id = 666723 }
+        }
+    }
+    option = {
+		name = "I will hand the realm to a trusted vassal and I will take the throne."
+        trigger = {
+            independent = yes
+            tier = king
+        }
+        random_vassal = {
+			limit = {
+                is_feudal = yes
+                tier = duke
+			}
+			character_event = { id = 666724 }
+		}
+    }
+    option = {
+		name = "I will hand the realm to a trusted vassal and I will take the throne."
+        trigger = {
+            independent = yes
+            tier = duke
+        }
+        random_vassal = {
+			limit = {
+                is_feudal = yes
+                tier = count
+			}
+			character_event = { id = 666725 }
+		}
+    }
+    option = {
+		name = "I will hand the realm to a trusted vassal and I will take the throne."
+        trigger = {
+            independent = yes
+            tier = count
+        }
+        random_vassal = {
+			limit = {
+                tier = baron
+			}
+			character_event = { id = 666726 }
+		}
+    }
+}
+
+character_event = {
+	id = 666723
+	desc = "A vassal is returning his lands to us to take the throne of Alexandria."
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "He will be missed."  
+    FROM = {
+        c_alexandria = { gain_title = PREV }
+        k_alexandria = { gain_title = PREV }
+        
+        any_demesne_title = {
+            limit = {
+                NOT = {
+                    OR = {
+                        de_jure_liege = e_crusaders
+                        
+                        de_jure_liege = d_alexandria
+                            de_jure_liege = c_alexandria
+                            de_jure_liege = c_gizeh
+                            de_jure_liege = c_buhairya
+                            de_jure_liege = c_quattara
+                            de_jure_liege = c_al_alamayn
+                        de_jure_liege = d_damietta
+                            de_jure_liege = c_gabiyaha
+                            de_jure_liege = c_delta
+                            de_jure_liege = c_pelusia
+                            de_jure_liege = c_manupura
+                        de_jure_liege = d_cairo
+                            de_jure_liege = c_cairo
+                            de_jure_liege = c_sarqihya
+                            de_jure_liege = c_asyut
+                            de_jure_liege = c_quena
+                        de_jure_liege = d_sinai
+                            de_jure_liege = c_farama
+                            de_jure_liege = c_sinai
+                            de_jure_liege = c_el-arish
+                            de_jure_liege = c_eilat
+                        de_jure_liege = d_aswan
+                            de_jure_liege = c_aswan
+                            de_jure_liege = c_nubia
+                            de_jure_liege = c_makuria
+                    }
+                }
+            }
+            gain_title = PREVPREV
+        }
+        any_vassal = {
+            limit = {
+                NOT = {
+                    OR = {
+                        de_jure_liege = e_crusaders
+                        
+                        de_jure_liege = d_alexandria
+                            de_jure_liege = c_alexandria
+                            de_jure_liege = c_gizeh
+                            de_jure_liege = c_buhairya
+                            de_jure_liege = c_quattara
+                            de_jure_liege = c_al_alamayn
+                        de_jure_liege = d_damietta
+                            de_jure_liege = c_gabiyaha
+                            de_jure_liege = c_damietta
+                            de_jure_liege = c_pelusia
+                            de_jure_liege = c_manupura
+                        de_jure_liege = d_cairo
+                            de_jure_liege = c_cairo
+                            de_jure_liege = c_sarqihya
+                            de_jure_liege = c_asyut
+                            de_jure_liege = c_quena
+                        de_jure_liege = d_sinai
+                            de_jure_liege = c_farama
+                            de_jure_liege = c_sinai
+                            de_jure_liege = c_el-arish
+                            de_jure_liege = c_eilat
+                        de_jure_liege = d_aswan
+                            de_jure_liege = c_aswan
+                            de_jure_liege = c_nubia
+                            de_jure_liege = c_makuria
+                        
+                            
+                    }
+                }
+            }
+            set_defacto_liege = PREVPREV
+            }
+    }
+    }
+}
+character_event = {
+	id = 666724
+	desc = "You Have been chosen to lead the realm as your liege now goes to lead the Kingdom of Alexandria."
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Excellent."  
+    FROM = {
+        c_alexandria = { gain_title = PREV }
+        k_alexandria = { gain_title = PREV }
+        
+        any_demesne_title = {
+            limit = {
+                NOT = {
+                    OR = {
+                        de_jure_liege = e_crusaders
+                        
+                        de_jure_liege = d_alexandria
+                            de_jure_liege = c_alexandria
+                            de_jure_liege = c_gizeh
+                            de_jure_liege = c_buhairya
+                            de_jure_liege = c_quattara
+                            de_jure_liege = c_al_alamayn
+                        de_jure_liege = d_damietta
+                            de_jure_liege = c_gabiyaha
+                            de_jure_liege = c_damietta
+                            de_jure_liege = c_pelusia
+                            de_jure_liege = c_manupura
+                        de_jure_liege = d_cairo
+                            de_jure_liege = c_cairo
+                            de_jure_liege = c_sarqihya
+                            de_jure_liege = c_asyut
+                            de_jure_liege = c_quena
+                        de_jure_liege = d_sinai
+                            de_jure_liege = c_farama
+                            de_jure_liege = c_sinai
+                            de_jure_liege = c_el-arish
+                            de_jure_liege = c_eilat
+                        de_jure_liege = d_aswan
+                            de_jure_liege = c_aswan
+                            de_jure_liege = c_nubia
+                            de_jure_liege = c_makuria
+                    }
+                }
+            }
+            gain_title = PREVPREV
+        }
+        any_vassal = {
+            limit = {
+                NOT = {
+                    OR = {
+                        de_jure_liege = e_crusaders
+                        
+                        de_jure_liege = d_alexandria
+                            de_jure_liege = c_alexandria
+                            de_jure_liege = c_gizeh
+                            de_jure_liege = c_buhairya
+                            de_jure_liege = c_quattara
+                            de_jure_liege = c_al_alamayn
+                        de_jure_liege = d_damietta
+                            de_jure_liege = c_gabiyaha
+                            de_jure_liege = c_damietta
+                            de_jure_liege = c_pelusia
+                            de_jure_liege = c_manupura
+                        de_jure_liege = d_cairo
+                            de_jure_liege = c_cairo
+                            de_jure_liege = c_sarqihya
+                            de_jure_liege = c_asyut
+                            de_jure_liege = c_quena
+                        de_jure_liege = d_sinai
+                            de_jure_liege = c_farama
+                            de_jure_liege = c_sinai
+                            de_jure_liege = c_el-arish
+                            de_jure_liege = c_eilat
+                        de_jure_liege = d_aswan
+                            de_jure_liege = c_aswan
+                            de_jure_liege = c_nubia
+                            de_jure_liege = c_makuria
+                        
+                            
+                    }
+                }
+            }
+            set_defacto_liege = PREVPREV
+            }
+    }
+      set_defacto_liege = ROOT  
+    }
+}
+character_event = {
+	id = 666725
+	desc = "You Have been chosen by your liege to lead the Kingdom of Alexandria. It seems you have no choice in the matter as he is confiscating your lands..."
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Oh... Um... Okay..."
+        FROM = {
+            character_event = { id = 666723 }
+        }        
+    }
+}

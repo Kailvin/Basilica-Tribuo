@@ -1,0 +1,212 @@
+decisions = {
+found_rum = {
+	is_high_prio = yes	
+	potential = {
+        primary_title = { title = k_persia }
+		NOT = { any_independent_ruler = { has_landed_title = k_rum } }
+        NOT =  { has_global_flag = rum_invasion }
+	}
+	allow = {
+        any_realm_province = {
+            continent = mesopotamia
+        }
+	}
+	effect = {
+		prestige = 100
+        c_archa = { add_claim = FROM }
+        c_aleppo = { add_claim = FROM }
+        c_tell_bashir = { add_claim = FROM }
+        c_aintab = { add_claim = FROM }
+        c_hama = { add_claim = FROM }
+        c_homs = { add_claim = FROM }
+        c_asas = { add_claim = FROM }
+        c_palmyra = { add_claim = FROM }
+        c_al_bichri = { add_claim = FROM }
+        c_tadmor = { add_claim = FROM }
+        c_bira = { add_claim = FROM }
+        c_edessa = { add_claim = FROM }
+        c_amida = { add_claim = FROM }
+        c_taron = { add_claim = FROM }
+        c_alexandretta = { add_claim = FROM }
+        c_tripoli = { add_claim = FROM }
+        c_antiocheia = { add_claim = FROM }
+        c_syria = { add_claim = FROM }
+        c_baalbek = { add_claim = FROM }
+        c_damascus = { add_claim = FROM }
+        c_irbid = { add_claim = FROM }
+        c_az_zarqa = { add_claim = FROM }
+        c_al_mafraq = { add_claim = FROM }
+        c_amman = { add_claim = FROM }
+        c_druz = { add_claim = FROM }
+        c_maan = { add_claim = FROM }
+        c_tabuk = { add_claim = FROM }
+        c_petra = { add_claim = FROM }
+        c_al_aqabah = { add_claim = FROM }
+        c_hijaz = { add_claim = FROM }
+        c_medina = { add_claim = FROM }
+        c_mecca = { add_claim = FROM }
+        c_asir = { add_claim = FROM }
+        c_safed = { add_claim = FROM }
+        c_acre = { add_claim = FROM }
+        c_tiberias = { add_claim = FROM }
+        c_jaffa = { add_claim = FROM }
+        c_madaba = { add_claim = FROM }
+        c_kerak = { add_claim = FROM }
+        c_monreal = { add_claim = FROM }
+        c_jerusalem = { add_claim = FROM }
+        c_hebron = { add_claim = FROM }
+        c_beersheb = { add_claim = FROM }
+        c_ascalon = { add_claim = FROM }
+        c_darum = { add_claim = FROM }
+        c_negev = { add_claim = FROM }
+        war = {
+            target = k_egypt
+			casus_belli = claim_all
+        }
+        
+			create_character = {
+                random_traits = yes
+				dynasty = 613
+                religion = sunni
+                culture = turkish
+                female = no
+                age = 16
+                attributes = {
+                    martial = 12
+                }
+			trait = brilliant_strategist
+			}
+			new_character = {
+                k_rum = { gain_title = PREV }
+                FROM = {
+                    any_demesne_title = {
+                        limit = {
+                            de_jure_liege = k_anatolia
+                        }
+                        gain_title = PREVPREV
+                    }
+                    any_demesne_title = {
+                        limit = {
+                            de_jure_liege = k_armenia
+                        }
+                        gain_title = PREVPREV
+                    }
+                    any_demesne_title = {
+                        limit = {
+                            OR = {
+                                    de_jure_liege = d_nikaea
+                                    de_jure_liege = d_thracesia
+                                    de_jure_liege = d_cibyrrhaeot
+                                    de_jure_liege = d_anatolia
+                                    de_jure_liege = d_paphlagonia
+                                    de_jure_liege = d_armeniacon
+                                    de_jure_liege = d_charsianon
+                                    de_jure_liege = d_armenia_minor
+                                    de_jure_liege = d_coloneia
+                                    de_jure_liege = d_trebizond
+                                    de_jure_liege = d_mesopotamia
+                                    de_jure_liege = d_armenia
+                                    de_jure_liege = d_edessa
+                                    de_jure_liege = d_azerbaijan
+                                    de_jure_liege = d_cyprus
+                                    de_jure_liege = k_anatolia
+                                    de_jure_liege = k_armenia
+                                }
+                        }
+                        gain_title = PREVPREV
+                    }
+                    any_vassal = {
+                        limit = {
+                            OR = {
+                                any_demesne_title = {
+                                    de_jure_liege = d_nikaea
+                                }
+                                any_demesne_title = {
+                                    de_jure_liege = d_thracesia
+                                }
+                                any_demesne_title = {
+                                    de_jure_liege = d_cibyrrhaeot
+                                }
+                                any_demesne_title = {
+                                    de_jure_liege = d_anatolia
+                                }
+                                any_demesne_title = {
+                                    de_jure_liege = d_paphlagonia
+                                }
+                                any_demesne_title = {
+                                    de_jure_liege = d_armeniacon
+                                }
+                                any_demesne_title = {
+                                    de_jure_liege = d_charsianon
+                                }
+                                any_demesne_title = {
+                                    de_jure_liege = d_armenia_minor
+                                }
+                                any_demesne_title = {
+                                    de_jure_liege = d_coloneia
+                                }
+                                any_demesne_title = {
+                                    de_jure_liege = d_trebizond
+                                }
+                                any_demesne_title = {
+                                    de_jure_liege = d_mesopotamia
+                                }
+                                any_demesne_title = {
+                                    de_jure_liege = d_armenia
+                                }
+                                any_demesne_title = {
+                                    de_jure_liege = d_edessa
+                                }
+                                any_demesne_title = {
+                                    de_jure_liege = d_azerbaijan
+                                }
+                                any_demesne_title = {
+                                    de_jure_liege = d_cyprus
+                                }
+                                any_demesne_title = {
+                                    de_jure_liege = k_anatolia
+                                }
+                                any_demesne_title = {
+                                    de_jure_liege = k_armenia
+                                }
+                            }
+                            NOT = { has_landed_title = d_mosul }
+                            NOT = { has_landed_title = d_azerbaijan }
+                        }
+                        abdicate_to = PREVPREV
+                    }
+                    
+                }
+            }
+        }
+	revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+			factor = 100
+	}		
+}
+rum_invasion = {
+	is_high_prio = yes	
+	potential = {
+		primary_title = { title = k_rum }
+        NOT = { has_global_flag = rum_invasion_started }
+	}
+	allow = {
+        primary_title = { title = k_rum }
+	}
+	effect = {
+        character_event = { id = 666701 }
+        e_byzantium = {
+            character_event = { id = 666702 days = 1 }
+        }
+        set_global_flag = rum_invasion_started
+    }
+    
+    revoke_allowed = {
+		always = no
+	}
+	ai_will_do = {
+			factor = 10
+	}	
+}

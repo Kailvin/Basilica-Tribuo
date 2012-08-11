@@ -1,0 +1,227 @@
+k_papal_state = {
+	color={ 255 249 198 }
+	color2={ 220 220 0 }
+	
+	capital = 333 # Rome
+	
+	title = "POPE"
+	foa = "POPE_FOA"
+	short_name = yes
+	location_ruler_title = yes
+	
+	# Always exists
+	landless = yes
+	
+	# Controls a religion
+	controls_religion = catholic
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Regnal names
+	male_names = {
+		John Gregory Benedict Clement Innocent Leo Pius Stephen Boniface Urban Alexander Adrian Paul
+		Celestine Martin Nicholas Sixtus Felix Sergius Anastasius Honorius Eugene Sylvester Victor
+		Lucius Callixtus Julius Pelagius Adeodatus Theodore Marinus Agapetus Damasus Paschal
+		Gelasius Marcellus "John Paul" Anacletus Evaristus Telesphorus Hyginus Anicetus Mark Hilarius 
+		Simplicius Symmachus Hormisdas Silverius Vigilius Sabinian Severinus Vitalian Donus Agatho
+		Conon Sisinnius Constantine Zachary Valentine Formosus Romanus Lando Kailvin
+	}
+    
+    d_card1 = {
+        color = { 255 249 198 }
+        dignity = 100
+        title = "Cardinal"
+        foa = "Your Holyness"
+        short_name = yes
+    }
+    d_card2 = {
+        color = { 255 249 198 }
+        dignity = 100
+        title = "Cardinal"
+        foa = "My Holyness"
+        short_name = yes
+    }
+    d_card3 = {
+        color = { 255 249 198 }
+        dignity = 100
+        title = "Cardinal"
+        foa = "My Holyness"
+        short_name = yes
+    }
+    d_card4 = {
+        color = { 255 249 198 }
+        dignity = 100
+        title = "Cardinal"
+        foa = "My Holyness"
+        short_name = yes
+    }
+    d_card5 = {
+        color = { 255 249 198 }
+        dignity = 100
+        title = "Cardinal"
+        foa = "My Holyness"
+        short_name = yes
+    }
+    d_card6 = {
+        color = { 255 249 198 }
+        dignity = 100
+        title = "Cardinal"
+        foa = "My Holyness"
+        short_name = yes
+    }
+    d_card7 = {
+        color = { 255 249 198 }
+        dignity = 100
+        title = "Cardinal"
+        foa = "My Holyness"
+        short_name = yes
+    }
+    d_card8 = {
+        color = { 255 249 198 }
+        dignity = 100
+        title = "Cardinal"
+        foa = "My Holyness"
+        short_name = yes
+    }
+    d_card9 = {
+        color = { 255 249 198 }
+        dignity = 100
+        title = "Cardinal"
+        foa = "My Holyness"
+        short_name = yes
+    }
+    d_card10 = {
+        color = { 255 249 198 }
+        dignity = 100
+        title = "Cardinal"
+        foa = "My Holyness"
+        short_name = yes
+    }
+    d_card11 = {
+        color = { 255 249 198 }
+        dignity = 100
+        title = "Cardinal"
+        foa = "My Holyness"
+        short_name = yes
+    }
+    d_card12 = {
+        color = { 255 249 198 }
+        dignity = 100
+        title = "Cardinal"
+        foa = "My Holyness"
+        short_name = yes
+    }
+    d_card13 = {
+        color = { 255 249 198 }
+        dignity = 100
+        title = "Cardinal"
+        foa = "My Holyness"
+        short_name = yes
+    }
+    d_card14 = {
+        color = { 255 249 198 }
+        dignity = 100
+        title = "Cardinal"
+        foa = "My Holyness"
+        short_name = yes
+    }
+    d_card15 = {
+        color = { 255 249 198 }
+        dignity = 100
+        title = "Cardinal"
+        foa = "My Holyness"
+        short_name = yes
+    }
+    d_card16 = {
+        color = { 255 249 198 }
+        dignity = 100
+        title = "Cardinal"
+        foa = "My Holyness"
+        short_name = yes
+    }
+    d_card17 = {
+        color = { 255 249 198 }
+        dignity = 100
+        title = "Cardinal"
+        foa = "My Holyness"
+        short_name = yes
+    }
+    d_card18 = {
+        color = { 255 249 198 }
+        dignity = 100
+        title = "Cardinal"
+        foa = "My Holyness"
+        short_name = yes
+    }
+    d_card19 = {
+        color = { 255 249 198 }
+        dignity = 100
+        title = "Cardinal"
+        foa = "My Holyness"
+        short_name = yes
+    }
+    d_card20 = {
+        color = { 255 249 198 }
+        dignity = 100
+        title = "Cardinal"
+        foa = "My Holyness"
+        short_name = yes
+    }
+    d_card21 = {
+        color = { 255 249 198 }
+        dignity = 100
+        title = "Cardinal"
+        foa = "My Holyness"
+        short_name = yes
+    }
+    d_card22 = {
+        color = { 255 249 198 }
+        dignity = 100
+        title = "Cardinal"
+        foa = "My Holyness"
+        short_name = yes
+    }
+    d_card23 = {
+        color = { 255 249 198 }
+        dignity = 100
+        title = "Cardinal"
+        foa = "My Holyness"
+        short_name = yes
+    }
+    d_card24 = {
+        color = { 255 249 198 }
+        dignity = 100
+        title = "Cardinal"
+        foa = "My Holyness"
+        short_name = yes
+    }
+    d_card25 = {
+        color = { 255 249 198 }
+        dignity = 100
+        title = "Cardinal"
+        foa = "My Holyness"
+        short_name = yes
+    }
+    d_card26 = {
+        color = { 255 249 198 }
+        dignity = 100
+        title = "Cardinal"
+        foa = "My Holyness"
+        short_name = yes
+    }
+    d_card27 = {
+        color = { 255 249 198 }
+        dignity = 100
+        title = "Cardinal"
+        foa = "My Holyness"
+        short_name = yes
+    }
+    d_card28 = {
+        color = { 255 249 198 }
+        dignity = 100
+        title = "Cardinal"
+        foa = "My Holyness"
+        short_name = yes
+    }
+}
