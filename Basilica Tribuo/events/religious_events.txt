@@ -64,14 +64,6 @@ province_event = {
             factor = 2.0
             has_law = religious_4
         }
-        modifier = {
-			factor = 1.5
-			NOT = { year = 1100 }
-		}
-        modifier = {
-			factor = 1000
-			NOT = { year = 1070 }
-		}
 	}
 	
 	immediate = {
